@@ -1,0 +1,42 @@
+# Installation
+
+## Requirements
+
+All the items listed below are required to get the CAD up and running smoothly.
+
+- [Git](https://git-scm.com/downloads)
+- [npm](https://npmjs.org)
+- [yarn](https://yarnpkg.com)
+- [Docker Desktop](https://docker.com/get-started) (Windows), [Docker](https://docker.com/get-started) (Linux)
+
+## Installing the CAD
+
+Once you've got all the items installed, we can get started with installing SnailyCADv4.
+
+### Cloning the GitHub repository
+
+<div style={{ marginTop: "1em", background: "#C19C00", color: "#1a1a1a", padding: "0.5em 0.8em", borderRadius: "0.3em" }}>
+    <span style={{fontWeight: "bold"}}>Warning:</span> do not install the CAD in the root folder.
+    Install the CAD in your <span style={{fontWeight: "bold"}}>Documents</span>
+    folder for Windows or <span style={{fontWeight: "bold"}}>home</span> folder for linux.
+</div>
+
+First we'll need to clone to repo to our own machine.
+
+```bash
+git clone https://github.com/SnailyCAD/snaily-cadv4.git
+```
+
+Once it finishes, we can enter the folder
+
+```bash
+cd snaily-cadv4
+```
+
+### Installing dependencies
+
+Now we'll install the dependencies that are required to start SnailyCADv4.
+
+```bash
+yarn
+```
