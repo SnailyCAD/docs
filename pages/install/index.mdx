@@ -15,10 +15,18 @@ Once you've got all the items installed, we can get started with installing Snai
 
 ### Cloning the GitHub repository
 
-<div style={{ marginTop: "1em", background: "#C19C00", color: "#1a1a1a", padding: "0.5em 0.8em", borderRadius: "0.3em" }}>
-    <span style={{fontWeight: "bold"}}>Warning:</span> do not install the CAD in the root folder.
-    Install the CAD in your <span style={{fontWeight: "bold"}}>Documents</span>
-    folder for Windows or <span style={{fontWeight: "bold"}}>home</span> folder for linux.
+<div
+  style={{
+    marginTop: "1em",
+    background: "#C19C00",
+    color: "#1a1a1a",
+    padding: "0.5em 0.8em",
+    borderRadius: "0.3em",
+  }}
+>
+  <span style={{ fontWeight: "bold" }}>Warning:</span> do not install the CAD in the root folder.
+  Install the CAD in your <span style={{ fontWeight: "bold" }}>Documents</span>
+  folder for Windows or <span style={{ fontWeight: "bold" }}>home</span> folder for linux.
 </div>
 
 First we'll need to clone to repo to our own machine.
@@ -39,4 +47,18 @@ Now we'll install the dependencies that are required to start SnailyCADv4.
 
 ```bash
 yarn
+```
+
+### Docker setup
+
+#### Configration
+
+TODO: .env
+
+#### Docker network
+
+Now we must setup a Docker network so the CAD can communicate with it's services.
+
+```
+docker network create cad_web
 ```
