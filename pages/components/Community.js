@@ -1,4 +1,6 @@
 export default function Community({ community }) {
+  if (!community) return null;
+
   return (
     <div>
       <h3 style={{ marginBottom: "-0.5em" }}>{community.name}</h3>

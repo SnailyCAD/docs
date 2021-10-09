@@ -1,5 +1,6 @@
 {
   "license": "MIT",
+  "homepage": "https://snailycad.github.io/docs/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
