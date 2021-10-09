@@ -1,6 +1,6 @@
 export default {
   github: "https://github.com/SnailyCAD",
-  docsRepositoryBase: "https://github.com/SnailyCAD/SnailyCADv4",
+  docsRepositoryBase: "https://github.com/SnailyCAD/docs",
   branch: "main",
   nextLinks: true,
   prevLinks: true,
@@ -24,7 +24,5 @@ export default {
   search: true,
   prevLinks: true,
   nextLinks: true,
-  footer: true,
-  footerEditOnGitHubLink: false,
-  footerText: <>SnailyCADv4</>,
+  footer: false,
 };

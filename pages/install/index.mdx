@@ -13,6 +13,10 @@ All the items listed below are required to get the CAD up and running smoothly.
 
 Once you've got all the items installed, we can get started with installing SnailyCADv4.
 
+### Getting Started
+
+To get started, open the Command Prompt on Windows or the Terminal on Linux.
+
 ### Cloning the GitHub repository
 
 <div
@@ -53,7 +57,32 @@ yarn
 
 #### Configration
 
-TODO: .env
+We'll setup the envrionment variables now, firslty we must copy the `.env.example` file to `.env`.
+
+**Windows:**
+
+```bash
+copy .env.example .env
+```
+
+**Linux:**
+
+```bash
+cp .env.example .env
+```
+
+Now open the `.env` file and edit it's contents. View more info below.
+
+##### .env info
+
+- `POSTGRES_PASSWORD`: the password to the postgress database. This password _does not_ exist yet. So enter some random password.
+- `POSTGRES_USER`: the username to the postgress database. This user _does not_ exist yet. So enter some random username.
+- `DB_HOST`: The database host. **When using docker, keep as is!**
+- `DB_PORT`: The port to the databse. **When using docker, keep as is!**
+- `POSTGRES_DB`: The database name. **When using docker, keep as is!**
+- `DATABASE_URL`: **Do not change unless you know what you're doing!**
+- `JWT_SECRET`: This is a random value to keep the CAD secured.
+- `CORS_ORIGIN_URL`: TODO
 
 #### Docker network
 
@@ -62,3 +91,5 @@ Now we must setup a Docker network so the CAD can communicate with it's services
 ```
 docker network create cad_web
 ```
+
+### Starting SnailyCADv4
