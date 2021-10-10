@@ -6,7 +6,7 @@ All the items listed below are required to get the CAD up and running smoothly.
 
 - [Git](https://git-scm.com/downloads)
 - [npm](https://npmjs.org)
-- [yarn](https://yarnpkg.com)
+- [yarn](https://yarnpkg.com/getting-started/install)
 - [Docker Desktop](https://docker.com/get-started) (Windows), [Docker](https://docker.com/get-started) (Linux)
 
 ## Installing the CAD
@@ -94,7 +94,7 @@ docker network create cad_web
 
 #### Building Client
 
-*Last but not least..*, we must build the client's UI:
+_Last but not least.._, we must build the client's UI:
 
 ```bash
 yarn workspace @snailycad/client build
@@ -121,4 +121,4 @@ After completing all the steps above, we are ready to startup the CAD. To do thi
 docker-compose -f production.docker-compose.yml up -d
 ```
 
-To stop the CAD, simply press `CTRL + C` once in the command prompt/terminal and wait for the services to stop.
+To stop the CAD, simply type `docker-compose down` in the directory where you installed the CAD in a command prompt/terminal and wait for the services to stop.

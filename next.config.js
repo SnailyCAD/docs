@@ -4,10 +4,6 @@ const withNextra = require("nextra")({
 });
 
 module.exports = withNextra({
-  // i18n: {
-  //   locales: ['en', 'id'],
-  //   defaultLocale: 'en'
-  // }
   experimental: {
     optimizeCss: true,
   },
