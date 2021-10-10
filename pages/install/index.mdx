@@ -82,7 +82,7 @@ Now open the `.env` file and edit it's contents. View more info below.
 - `POSTGRES_DB`: The database name. **When using docker, keep as is!**
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
 - `JWT_SECRET`: This is a random value to keep the CAD secured.
-- `CORS_ORIGIN_URL`: TODO
+- `CORS_ORIGIN_URL`: This is the URL to your site where the CAD is hosted, eg `https://cad.mysite.com` or use a wildcard to allow on all sites `*` (**very insecure!**)
 
 #### Docker network
 
@@ -93,3 +93,24 @@ docker network create cad_web
 ```
 
 ### Starting SnailyCADv4
+
+After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
+
+<div
+  style={{
+    marginTop: "1em",
+    background: "#359755",
+    color: "#1a1a1a",
+    padding: "0.5em 0.8em",
+    borderRadius: "0.3em",
+  }}
+>
+  <span style={{ fontWeight: "bold" }}>Tip:</span> When running the command for the fist time, this
+  will pull down all services from the Docker Hub. This can take a few minutes.
+</div>
+
+```
+docker-compose up -d
+```
+
+To stop the CAD, simply press `CTRL+C` once in the command prompt/terminal and wait for the services to stop.
