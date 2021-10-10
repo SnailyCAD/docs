@@ -94,7 +94,11 @@ docker network create cad_web
 
 #### Building Client
 
-TODO
+*Last but not least..*, we must build the client's UI:
+
+```bash
+yarn workspace @snailycad/client build
+```
 
 ### Starting SnailyCADv4
 
@@ -117,4 +121,4 @@ After completing all the steps above, we are ready to startup the CAD. To do thi
 docker-compose -f production.docker-compose.yml up -d
 ```
 
-To stop the CAD, simply press `CTRL+C` once in the command prompt/terminal and wait for the services to stop.
+To stop the CAD, simply press `CTRL + C` once in the command prompt/terminal and wait for the services to stop.
