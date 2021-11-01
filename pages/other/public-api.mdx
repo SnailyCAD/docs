@@ -1,0 +1,44 @@
+# Public API Usage
+
+SnailyCADv4 allows you to create scripts that can communicate with to it. You'll find out how below.
+
+## Creating the token
+
+Firstly, we must create the token. Head over to the cad-settings page and open the `Api Token` tab.
+Once there, it will allow you to enable Public API Access and generate a token.
+Once you've generated a token you can copy it.
+
+**Make sure to not share this token with anyone. If this token gets leaked make sure to re-generate it ASAP.**
+
+## Using the token
+
+When making a script that communicates to the CAD, you can add the token in the headers of the request.
+
+**JavaScript Example**
+
+```jsx
+const fetch = require("node-fetch");
+
+// get the token from `server.cfg`
+const token = GetConvar("snailycad_v4_api_token");
+// example.com/v1
+const apiUrl = GetConvar("snailycad_v4_api_url");
+
+// this must be: "snaily-cad-api-token"
+const API_TOKEN_HEADER_NAME = "snaily-cad-api-token";
+
+async function getValuesFromCAD() {
+  // get all the vehicles, weapons, genders and ethnicities
+  const response = await fetch(`${apiUrl}/admin/values/vehicle?paths=weapon,gender,ethnicity`, {
+    headers: {
+      // send the token via headers.
+      API_TOKEN_HEADER_NAME: token,
+    },
+  });
+  const json = response.ok && (await response.json());
+
+  if (json) {
+    console.log("data from API: ", { json });
+  }
+}
+```

@@ -1,12 +1,8 @@
 export default {
+  floatTOC: true,
   github: "https://github.com/SnailyCAD",
   docsRepositoryBase: "https://github.com/SnailyCAD/docs",
-  branch: "main",
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  darkMode: true,
-  titleSuffix: " | SnailyCADv4 Docs",
+  titleSuffix: " – SnailyCAD Docs",
   logo: (
     <>
       <span className="text-gray-100 font-semibold">SnailyCAD Docs</span>
@@ -25,4 +21,5 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: false,
+  unstable_faviconGlyph: "👻",
 };
