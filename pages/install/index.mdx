@@ -69,6 +69,11 @@ Now open the `.env` file and edit it's contents. View more info below.
 
 ##### .env info
 
+<Callout emoji="💡">
+  <span style={{ fontWeight: "bold" }}>Tip:</span> When changing anything in the `.env` file, make
+  sure to re-build the client!
+</Callout>
+
 - `POSTGRES_PASSWORD`: the password to the postgress database. This password _does not_ exist yet. So enter some random password.
 - `POSTGRES_USER`: the username to the postgress database. This user _does not_ exist yet. So enter some random username.
 - `DB_HOST`: The database host. **When using docker, keep as is!**
@@ -76,7 +81,8 @@ Now open the `.env` file and edit it's contents. View more info below.
 - `POSTGRES_DB`: The database name. **When using docker, keep as is!**
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
 - `JWT_SECRET`: This is a random value to keep the CAD secured.
-- `CORS_ORIGIN_URL`: This is the URL to your site where the CAD is hosted, eg `https://cad.mysite.com` or use a wildcard to allow on all sites `*` (**very insecure!**)
+- `CORS_ORIGIN_URL`: This is the URL to your site where the CAD is hosted, eg `https://cad.mysite.com` or `http://99.99.00.190:3000`, or use a wildcard to allow on all sites `*`
+- `NEXT_PUBLIC_PROD_ORIGIN`: The URL/IP to where the API is hosted eg `https://cad-api.mysite.com/v1` or `http://99.99.00.190:8000/v1`. When testing this locally (on `localhost`), keep as is.
 
 #### Docker network
 
