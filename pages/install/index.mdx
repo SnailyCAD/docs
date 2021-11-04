@@ -25,6 +25,21 @@ To get started, open the Command Prompt on Windows or the Terminal on Linux.
   <span style={{ fontWeight: "bold" }}>Warning:</span> do not install the CAD in the root folder.
   Install the CAD in your <span style={{ fontWeight: "bold" }}>Documents</span>
   folder for Windows or <span style={{ fontWeight: "bold" }}>home</span> folder for linux.
+
+To fix this, run the following command:
+
+**Windows**
+
+```bash
+cd Documents
+```
+
+**Linux**
+
+```bash
+cd /home/$(whoami)
+```
+
 </Callout>
 
 First we'll need to clone to repo to our own machine.
