@@ -92,18 +92,18 @@ Now we must setup a Docker network so the CAD can communicate with it's services
 docker network create cad_web
 ```
 
+## Building util packages
+
+```bash
+yarn workspace @snailycad/schemas build && yarn workspace @snailycad/config build
+```
+
 #### Building Client
 
 _Last but not least.._, we must build the client's UI:
 
 ```bash
 yarn workspace @snailycad/client build
-```
-
-## Building util packages
-
-```bash
-yarn workspace @snailycad/schemas build && yarn workspace @snailycad/config build
 ```
 
 ### Starting SnailyCADv4
