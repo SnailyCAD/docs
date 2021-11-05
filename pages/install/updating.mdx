@@ -40,6 +40,22 @@ yarn workspace @snailycad/client build
 
 To bring the CAD back up run the following command:
 
+### Docker
+
 ```bash
 docker-compose -f production.docker-compose.yml up -d
+```
+
+### Standalone
+
+**Client**
+
+```bash
+yarn workspace @snailycad/client start
+```
+
+**API**
+
+```bash
+yarn workspace @snailycad/api start
 ```
