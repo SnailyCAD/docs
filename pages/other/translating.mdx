@@ -4,6 +4,41 @@ How do add a locale to the CAD?
 
 ## Using an existing locale
 
-todo
+To use an existing locale, you need to set as default in `next.config.js`:
+
+```js
+// packages/client/next.config.js
+// ...
+{
+ i18n: {
+    locales: ["en", /* other locales might be here */],
+    defaultLocale: "en", // replace en with the locale above to corresponds with your language
+  },
+}
+// ...
+
+```
+
+Restarting the client will now set the default locale to the locale you set.
 
 ## Adding a custom locale
+
+To add a custom locale, there are a few more steps.
+
+1. Open the following directory: `packages/client/locales`
+2. Duplicate the `en` folder and rename to a correct [locale code](https://saimana.com/list-of-country-locale-code/)
+3. Start editing the `.json` files in the **newly duplicated** folder.
+4. Once finished, add your locale to `next.config.js`:
+
+```js
+// packages/client/next.config.js
+// ...
+{
+ i18n: {
+    locales: [/* the previous locales */, "YOUR_LOCALE_HERE"],
+    defaultLocale: "YOUR_LOCALE_HERE", // replace this with your locale
+  },
+}
+// ...
+
+```
