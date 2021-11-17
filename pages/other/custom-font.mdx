@@ -1,0 +1,78 @@
+# Installing custom fonts
+
+SnailyCADv4 allows you to install custom fonts. This guide will show you how.
+
+## 1. Downloading the font
+
+You must download your font as a `.woff2` type.
+
+## 2. Adding the font to the client
+
+Once you've downloaded your font, it needs to be placed in a special folder: `packages/client/public/fonts`.
+If the `public/fonts` folder does not exist yet, you can create it.
+
+Once created, place your font in the `/public/fonts` folder.
+
+## 3. Including the font in the client
+
+We must now edit some code to include this font in the client. Open the file: `packages/client/src/styles/globals.scss`.
+
+Now add the following to the file:
+
+```scss
+@font-face {
+  font-family: "MyFontNameHere";
+  src: url("/fonts/MyFontNameHere.woff2");
+}
+```
+
+Once you've added the font-face to the file, we must now update the old font name to the new font name.
+Search for:
+
+```scss
+html,
+body {
+  font-family: "Assistant", sans-serif;
+}
+```
+
+and **Replace with:**
+
+```scss
+html,
+body {
+  font-family: "MyFontNameHere", sans-serif;
+}
+```
+
+## 4. Re-building the client.
+
+Once you've followed all the steps **correctly**, we can now re-build the client. First stop the CAD, then run the following command:
+
+```sh
+yarn workspace @snailycad/client build
+```
+
+## 5. Starting the CAD
+
+Once you've followed all the above steps, we can restart the CAD again with the following command:
+
+### Docker
+
+```bash
+docker-compose -f production.docker-compose.yml up -d
+```
+
+### Standalone
+
+**Client**
+
+```bash
+yarn workspace @snailycad/client start
+```
+
+**API**
+
+```bash
+yarn workspace @snailycad/api start
+```
