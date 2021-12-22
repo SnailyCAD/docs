@@ -1,5 +1,7 @@
 {
     "features": "Features",
     "public-api": "Public API Access",
-    "translating": "Translating"
+    "translating": "Translating",
+    "discord-authentication": "Discord Authentication",
+    "live-map": "Live Map"
 }
