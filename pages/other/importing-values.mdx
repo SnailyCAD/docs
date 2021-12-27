@@ -1,0 +1,96 @@
+# Importing Values
+
+When importing values, you should make sure you're sending the correct data.
+Below you can see all possible types that can be imported and what data they require.
+
+## `GENDER`, `ETHNICITY`, `BLOOD_GROUP`, `IMPOUND_LOT`, `LICENSE` and `OFFICER_RANK`
+
+**Example Object**
+
+- `value`: the name of the value. This will be displayed to the user.
+
+**Note:** You cannot mix these, it must always be 1 type.
+
+```json
+[
+  {
+    "value": "Male"
+  },
+  {
+    "value": "Female"
+  },
+  {
+    "value": "Other"
+  }
+]
+```
+
+## `VEHICLE` and `WEAPON`
+
+**Example Object**
+
+- `value`: the name of the car. This will be displayed to the user
+- `hash`: this is the game hash, optional.
+
+```json
+[
+  {
+    "value": "My Car",
+    "hash": "my_car"
+  }
+]
+```
+
+## `CODES_10`
+
+**Example Object**
+
+- `value`: the name of the 10 code. This will be displayed to the user.
+- `shouldDo`: What the 10 code should do, must match: `SET_OFF_DUTY`, `SET_ON_DUTY`, `SET_ASSIGNED`, `SET_STATUS` or `PANIC_BUTTON`
+- `type`: The type of the 10 code, must match: `STATUS_CODE` or `SITUATION_CODE`.
+- `color`: The color of the 10 code, optional.
+
+```json
+[
+  {
+    "value": "10-8",
+    "shouldDo": "SET_ON_DUTY",
+    "type": "STATUS_CODE"
+  },
+  {
+    "value": "10-42",
+    "shouldDo": "SET_OFF_DUTY",
+    "type": "STATUS_CODE"
+  },
+  {
+    "value": "10-6",
+    "shouldDo": "SET_STATUS",
+    "type": "STATUS_CODE"
+  }
+]
+```
+
+## `DEPARTMENT`
+
+**Example Object**
+
+- `value`: the name of the department. This will be displayed to the user.
+- `callsign`: The callsign symbol of the department, optional.
+- `type`: The type of the department, must match `LEO` or `EMS_FD`
+
+```json
+[
+  {
+    "value": "LSPD",
+    "type": "LEO"
+  },
+  {
+    "value": "LSFD",
+    "type": "EMS_FD"
+  },
+  {
+    "value": "SAPR",
+    "type": "LEO"
+  }
+]
+```
