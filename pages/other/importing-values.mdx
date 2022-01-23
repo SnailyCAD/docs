@@ -94,3 +94,28 @@ Below you can see all possible types that can be imported and what data they req
   }
 ]
 ```
+
+## Citizens
+
+**Example Object**
+
+- `name`: the first name of the citizen.
+- `surname`: The last name of the citizen
+- `dateOfBirth`: The date of birth. format: `YYYY-MM-DD` (eg: `1980-02-22`)
+- `gender`: The **id** of the wanted gender. This id can be fetched via the API.
+- `ethnicity`: The **id** of the wanted ethnicity. This id can be fetched via the API.
+- `hairColor`, `eyeColor`, `address`, `weight` and `height` are also supported but **not required**. All are a string with max `255` characters.
+
+```json
+[
+  {
+    "name": "John",
+    "surname": "Doe",
+    "gender": "ckyr9porq0056heo7yy9r5y0w",
+    "ethnicity": "ckyr9pt6u0122heo71uazokcz",
+    "dateOfBirth": "2022-01-04",
+    "hairColor": "Orange",
+    "eyeColor": "Green"
+  }
+]
+```
