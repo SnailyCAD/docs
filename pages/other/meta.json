@@ -6,5 +6,6 @@
     "live-map": "Live Map",
     "importing-values": "Importing Values",
     "custom-font": "Load custom fonts",
-    "favicon": "Adding a favicon"
+    "favicon": "Adding a favicon",
+    "2fa": "Two Factor Authentication"
 }
