@@ -14,11 +14,13 @@ ENCRYPTION_TOKEN=""
 # ...
 ```
 
-<Callout emoji="💡">
-  <span style={{ fontWeight: "bold" }}>Tip:</span> When changing anything in the `.env` file, make
+<Callout emoji="⚠">
+  <span style={{ fontWeight: "bold" }}>Warning:</span> When changing anything in the `.env` file, make
   sure to run the following steps:
 
 1. `node scripts/copy-env.mjs --client --api`
 2. `yarn workspace @snailycad/client build`
+
+[Read more here](/faq/how-to-properly-update-env)
 
 </Callout>

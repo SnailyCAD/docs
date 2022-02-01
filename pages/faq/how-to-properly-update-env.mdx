@@ -1,0 +1,9 @@
+# How to properly update the `.env` file
+
+There are a few commands that are required to run to correctly update the .env file.
+
+1. Stop SnailyCAD. (CTRL+C)
+2. Update and the save your `.env` file
+3. Run: `node scripts/copy-env.mjs --client --api`
+4. Rebuild the client: `yarn workspace @snailycad/client build`
+5. Start SnailyCAD
