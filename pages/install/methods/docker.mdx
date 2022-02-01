@@ -64,7 +64,7 @@ yarn
 
 ### Docker setup
 
-#### Configration
+#### Configuration
 
 We'll setup the envrionment variables now, firslty we must copy the `.env.example` file to `.env`.
 
@@ -110,13 +110,13 @@ Now we must setup a Docker network so the CAD can communicate with it's services
 docker network create cad_web
 ```
 
-## Building util packages
+### Building util packages
 
 ```bash
 yarn workspace @snailycad/schemas build && yarn workspace @snailycad/config build
 ```
 
-#### Building Client
+### Building Client
 
 _Last but not least.._, we must build the client's UI:
 

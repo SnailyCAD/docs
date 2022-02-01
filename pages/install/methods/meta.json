@@ -1,4 +1,5 @@
 {
   "docker": "Docker installation",
-  "standalone": "Standalone installation"
+  "standalone": "Standalone installation",
+  "autoinstaller": "Autoinstaller installation"
 }
