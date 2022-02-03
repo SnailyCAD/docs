@@ -119,3 +119,47 @@ Below you can see all possible types that can be imported and what data they req
   }
 ]
 ```
+
+## Vehicles
+
+_(Registered Vehicles)_
+
+**Example Object**
+
+- `plate`: The plate of the vehicle. The API will throw an error if there is a duplicate plate found.
+- `ownerId`: the **id** of the owner (citizen's id). This id can be fetched via the API.
+- `modelId`: The **id** of the wanted model. This id can be fetched via the API.
+- `registrationStatusId`: The **id** of the wanted registration status (License Value). This id can be fetched via the API.
+- `color`: string, max 255 characters.
+
+```json
+[
+  {
+    "plate": "coolkids",
+    "ownerId": "ckz5sdu7h0276idlpg52fje0f",
+    "modelId": "ckz5se6va0458idlpg24lzp6u",
+    "registrationStatusId": "ckz5lvsxh0227cpo0q9wyo5j4",
+    "color": "white"
+  }
+]
+```
+
+## Weapons
+
+_(Registered Weapons)_
+
+**Example Object**
+
+- `ownerId`: the id of the owner (citizen's id).
+- `modelId`: The **id** of the wanted model. This id can be fetched via the API.
+- `registrationStatusId`: The **id** of the wanted registration status (License Value). This id can be fetched via the API.
+
+```json
+[
+  {
+    "ownerId": "ckz5sdu7h0276idlpg52fje0f",
+    "modelId": "ckz5se6va0458idlpg24lzp6u",
+    "registrationStatusId": "ckz5lvsxh0227cpo0q9wyo5j4"
+  }
+]
+```
