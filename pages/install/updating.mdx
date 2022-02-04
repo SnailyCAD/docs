@@ -49,18 +49,12 @@ Secondly, we must update dependencies that might've changes from the last releas
 yarn
 ```
 
-#### Building util packages
+#### Building everything
+
+Now we must build all the packages again. *(client, schemas, config, types)*
 
 ```bash
-yarn workspace @snailycad/schemas build && yarn workspace @snailycad/config build
-```
-
-#### Re-building the client
-
-Once the previous command finishes, we must re-build the client's UI:
-
-```bash
-yarn workspace @snailycad/client build
+yarn turbo run build
 ```
 
 #### Startng SnailyCAD
