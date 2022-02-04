@@ -136,5 +136,5 @@ yarn workspace @snailycad/client build
 After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
 
 ```bash
-yarn run concurrently "yarn workspace @snailycad/client start" && "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 ```
