@@ -3,6 +3,7 @@
     "public-api": "Public API Access",
     "translating": "Translating",
     "discord-authentication": "Discord Authentication",
+    "discord-roles": "Discord Roles Integration",
     "live-map": "Live Map",
     "importing-values": "Importing Values",
     "custom-font": "Load custom fonts",
