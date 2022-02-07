@@ -32,7 +32,7 @@ async function getValuesFromCAD() {
   const response = await fetch(`${apiUrl}/admin/values/vehicle?paths=weapon,gender,ethnicity`, {
     headers: {
       // send the token via headers.
-      API_TOKEN_HEADER_NAME: token,
+      [API_TOKEN_HEADER_NAME]: token,
     },
   });
   const json = response.ok && (await response.json());
