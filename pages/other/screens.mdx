@@ -1,0 +1,23 @@
+# Running Snailycad under a screen with linux!
+
+You can run snailycad under a screen so you can safely close the terminal/ssh window without risking it closing out on you!
+
+## Creating a screen
+
+First you need to create the screen do the following:
+`screen -S snailycad`
+You can change `snailycad` to whatever it's just a name nothing important
+
+after you enter it, it will immediatly open a screen session here you can goto your snailycad folder nd do 
+`yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"`
+Afterwards do CTRL A + X (DO NOT CTRL C IT WILL CLOSE THE CAD!)
+
+Now if you want to reopen that session you can list screens by doing
+`screen -list`
+
+to connect to an existing screen like the snailycad one you created do the following
+
+`screen -r -D snailycad`
+again change `snailycad` to your screen name!
+
+And that's it!
