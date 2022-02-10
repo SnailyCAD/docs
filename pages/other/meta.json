@@ -1,5 +1,6 @@
 {
     "features": "Features",
+    "screens": "Screens",
     "public-api": "Public API Access",
     "translating": "Translating",
     "discord-authentication": "Discord Authentication",
