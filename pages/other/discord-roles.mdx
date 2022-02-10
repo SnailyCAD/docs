@@ -1,3 +1,5 @@
+import Callout from "nextra-theme-docs/callout";
+
 # Discord Roles Integration
 
 SnailyCADv4 supports Discord based role permisions. Below you'll find out how to get access to it.
@@ -30,9 +32,14 @@ If you already have an application created in the Discord portal, you can skip t
 
 We'll now have to create the bot in the application.
 
+<Callout emoji="⚠">
+  The bot must have `Manage Roles` permissions and the bot's role must also **be above all the roles
+  that you'd want to add to users**
+</Callout>
+
 1. Head to the `Bot` tab
 2. Create a new bot
-3. Invite this bot to your Discord server (**Must have `Manage Roles` permissions, the bot's role must also be above all the roles that you'd want to add to users**)
+3. Invite this bot to your Discord server
 4. Copy the bot token and save for [#update-env](#update-env)
 
 ## Update `.env`
