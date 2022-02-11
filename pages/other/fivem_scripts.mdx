@@ -1,0 +1,31 @@
+# FiveM Script integration for SnailyCad!
+Need a 911 script for the cad, not to worry we've got you covered!
+
+Downloads:
+911: https://rhys19.xyz/downloads/sc_911.zip
+Postals: https://rhys19.xyz/downloads/sc_postal.zip
+
+## Setting up the script
+First you need to download it and open server.lua
+
+change the following:
+`local CAD_API = 'https://api.yourdomain.com' -- CAD API URL/IP` Change this to your domain and change https to whether you have ssl or not!
+`local CAD_API_KEY = 'CAD_API_KEY'` this is your api key it's located under Admin -> Cad Settings -> Api Token -> Show
+If no token is shown click generate API Token
+`local API_NGINX = true -- using nginx reverse proxy?` this is if your using nginx to reverse proxy the API so instead of ip:8080 or domain.com:8080 it's domain.com
+`local API_PORT = "8080" -- if not using nginx reverse proxy` this is only for if your not using nginx reverse proxy and you changed the api port otherwise leave at default
+Next you need to upload the files to your server!
+
+Then Add to your server.cfg
+
+```
+sc_911
+sc_postal
+```
+
+
+Restart your server and your done!
+
+The default command is `/call911`
+
+You can change this command under server.lua line 21 where it says `RegisterCommand("call911", function(source, args)` change call911 to any command.
