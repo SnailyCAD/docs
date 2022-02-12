@@ -1,0 +1,38 @@
+# Autoinstaller
+
+This guide explains how to setup SnailyCADv4 **with an automated installer process**
+
+## Requirements
+
+All the items listed below are required to get the CAD up and running smoothly.
+
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org) **(16.6+ is required.)**
+- [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)**
+- [PostgreSQL](https://www.postgresql.org/download/) **(version 12 or higher)**
+
+## Installing the CAD
+
+Once you've got all the items installed, we can get started with installing SnailyCADv4.
+
+### Getting Started
+
+To get started, open the Command Prompt on Windows or the Terminal on Linux.
+
+Once it has opened, run the following commands. This will automatically run the commands of the [Standalone installation](/docs/installations/methods/standalone) and will ask questions where needed.
+
+_`curl` is supported on all operating systems._
+
+```bash
+curl https://raw.githubusercontent.com/SnailyCAD/autoinstaller/main/dist/index.js > script.js
+
+node script.js
+```
+
+### Startng SnailyCAD
+
+After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
+
+```bash
+yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+```

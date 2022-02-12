@@ -1,0 +1,60 @@
+# Discord Roles Integration
+
+SnailyCADv4 supports Discord based role permisions. Below you'll find out how to get access to it.
+
+### How this feature works
+
+1. Enable it via the CAD-settings
+2. Fetch the roles you'd like to set for each permission
+3. Save
+
+**Later**
+
+- User's permisions get updated, Discord's roles are also updated
+- User authentications via Discord, user's permissions are updated based on their roles.
+
+## Create Discord application
+
+If you already have an application created in the Discord portal, you can skip this step.
+
+> **Note:** you can use the same application from [Discord Authentication](/docs/discord-integration/discord-authentication)
+
+1. head to [https://discord.com/developers/applications](https://discord.com/developers/applications)
+2. Click the "New Application" button in the top right
+3. Enter a name in the modal and press "Create"
+4. Once created, it will redirect you to the application.
+5. Head to the "OAuth2" section
+6. Copy the "Client ID" and "Client Secret" (these will be used later)
+
+## Creating bot
+
+We'll now have to create the bot in the application.
+
+<span emoji="⚠">
+  The bot must have `Manage Roles` permissions and the bot's role must also **be above all the roles
+  that you'd want to add to users**
+</span>
+
+1. Head to the `Bot` tab
+2. Create a new bot
+3. Invite this bot to your Discord server
+4. Copy the bot token and save for [#update-env](#update-env)
+
+## Update `.env`
+
+Once everything is correctly setup above, we can continue.
+
+1. Open the `.env` file
+2. Add the following lines
+
+```txt
+DISCORD_BOT_TOKEN=""
+DISCORD_SERVER_ID=""
+
+DISCORD_CLIENT_ID=""
+DISCORD_CLIENT_SECRET=""
+```
+
+3. Enter the copied values from earlier in the corresponding name
+4. [Properly update the .env file](/docs/guides/how-to-properly-update-env)
+5. Restart the entire CAD.

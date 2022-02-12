@@ -1,0 +1,27 @@
+import Callout from "nextra-theme-docs/callout";
+
+# How to enable Two Factor Authentication
+
+If you setup SnailyCADv4 before 2022-01-28, you must add another field to your `.env` file:
+
+```bash
+# ...
+
+# string of 32 characters long.
+# Generate one at: https://codebeautify.org/generate-random-string
+ENCRYPTION_TOKEN=""
+
+# ...
+```
+
+:::caution
+
+<span style={{ fontWeight: "bold" }}>Warning:</span> When changing anything in the `.env` file, make
+sure to run the following steps:
+
+1. `node scripts/copy-env.mjs --client --api`
+2. `yarn workspace @snailycad/client build`
+
+[Read more here](/docs/guides/how-to-properly-update-env)
+
+:::
