@@ -1,0 +1,29 @@
+# FiveM Script integration for SnailyCad
+
+Need a 911 script for the cad, not to worry we've got you covered!
+
+## Downloads
+
+- [/call911](/downloads/sc_911.zip)
+- [Postals](/downloads/postals.zip)
+
+## Setting up the script
+
+### Configuration
+
+Donwload the `/call911` resource and open the `server.lua` file.
+
+- `CAD_API`: The URL/IP to your SnailyCADv4 API.
+- `CAD_API_KEY`: The API Token for SnailyCADv4. This can be obtained via the CAD-settings -> "Api Token" tab
+
+### FXServer
+
+1. Download and add the resources to your `resource` folder.
+2. Add the following to your `server.cfg` file
+
+```conf
+start sc_911
+start sc_postal
+```
+
+3. Restart your server and your done!
