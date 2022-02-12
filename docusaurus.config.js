@@ -7,13 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "SnailyCADv4 Documentation",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  tagline: "Documentation provided for SnailyCADv4",
+  url: "https://cad-docs.caspertheghost.me",
   baseUrl: "/",
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",
   organizationName: "SnailyCAD",
   projectName: "docs",
+  trailingSlash: false,
 
   presets: [
     [
