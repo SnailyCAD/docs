@@ -95,6 +95,40 @@ Below you can see all possible types that can be imported and what data they req
 ]
 ```
 
+## `PENAL_CODE`
+
+**Example Object**
+
+- `title`: The title of the penal-code
+- `description`: The description of the penal-code.
+- `warningApplicable`: whether there's a warning applicable
+- `fines`: an array of numbers with length 2 with a minimum and maximum fine.
+- `bail`: an array of numbers with length 2 with a minimum and maximum bail. (`warningApplicable` must be `false`)
+- `prisonTerm`: an array of numbers with length 2 with a minimum and maximum jail time. (`warningApplicable` must be `false`)
+- `groupId`: the **id** of the wanted group
+
+```json
+[
+  {
+    "title": "Testing",
+    "description": "Hello world from 'Testing'!",
+    "warningApplicable": true,
+    "fines": [250, 250],
+    "prisonTerm": null,
+    "bail": null,
+    "groupId": null
+  },
+  {
+    "title": "Testing",
+    "description": "Hello world from 'Testing'!",
+    "warningApplicable": false,
+    "fines": [250, 250],
+    "prisonTerm": [40, 80],
+    "bail": [6000, 35000]
+  }
+]
+```
+
 ## Citizens
 
 **Example Object**
