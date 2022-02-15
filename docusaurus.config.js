@@ -43,6 +43,11 @@ const config = {
           label: "Documentation",
         },
         {
+          position: "left",
+          href: "https://discord.gg/eGnrPqEH7U",
+          label: "Discord",
+        },
+        {
           href: "https://github.com/SnailyCAD/snaily-cadv4",
           label: "GitHub",
           position: "right",
