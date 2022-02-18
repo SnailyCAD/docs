@@ -5,8 +5,8 @@ SnailyCAD has several FiveM integrations.
 - `/call911`
 - `/calltow`
 - ALPR integration that connects with [Wraith ARS 2x](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-3-1/1058277)
-- `/calltaxi` *(Coming soon!)*
-- `sna-postal` *(Coming Soon!)*
+- `/calltaxi` _(Coming soon!)_
+- `sna-postal` _(Coming Soon!)_
 
 ## Downloads
 
@@ -21,10 +21,12 @@ To use these scripts, you must add a view options in your `server.cfg` file.
 ```conf
 set snailycad_url "http://example.com/v1"
 set snailycad_api_key "XXXXXX"
+setr snailycad_use_postal "true"
 ```
 
 - `snailycad_url`: The full URL/IP to your SnailyCADv4 API.
 - `snailycad_api_key`: The API Token for SnailyCADv4. This can be obtained via the CAD-settings -> "Api Token" tab
+- `snailycad_use_postal`: Whether it should use pre-defined postals [(How to change them)](#). `"true"` or `"false"`
 
 ### FXServer
 
