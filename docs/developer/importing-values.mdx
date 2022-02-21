@@ -139,6 +139,8 @@ Below you can see all possible types that can be imported and what data they req
 - `gender`: The **id** of the wanted gender. This id can be fetched via the API.
 - `ethnicity`: The **id** of the wanted ethnicity. This id can be fetched via the API.
 - `hairColor`, `eyeColor`, `address`, `weight` and `height` are also supported but **not required**. All are a string with max `255` characters.
+- `driversLicenseId`, `weaponLicenseId`, `pilotLicenseId`, `ccwId`: The **id** of the wanted license. This id can be fetched the API. _(Optional)_
+- `driversLicenseCategoryIds`, `pilotLicenseCategoryIds`: An array of **ids** of the wanted license category. This id can be fetched via the API. _(Optional)_
 
 ```json
 [
@@ -149,7 +151,9 @@ Below you can see all possible types that can be imported and what data they req
     "ethnicity": "ckyr9pt6u0122heo71uazokcz",
     "dateOfBirth": "2022-01-04",
     "hairColor": "Orange",
-    "eyeColor": "Green"
+    "eyeColor": "Green",
+    "driversLicenseCategoryIds": ["xxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxx"],
+    "driversLicenseId": "xxxxxxxxxxxxxxxxxxxx"
   }
 ]
 ```
