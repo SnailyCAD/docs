@@ -46,3 +46,18 @@ async function getValuesFromCAD() {
   }
 }
 ```
+
+**LUA Example**
+
+```lua
+local APIURL = "URLHERE"
+local APIToken = "TOKENHERE"
+local API_TOKEN_HEADER_NAME = "snaily-cad-api-token"
+
+PerformHttpRequest(APIURL.."admin/values/vehicle?paths=weapon,gender,ethnicity", function (errorCode, resultData, resultHeaders)
+  print("Returned error code:" .. tostring(errorCode))
+  print("Returned data:" .. tostring(resultData))
+  print("Returned result Headers:" .. tostring(resultHeaders))
+end, "GET", json.encode(""), {[API_TOKEN_HEADER_NAME] = APIToken}, ["Content-Type"] = 'application/json'})
+
+```
