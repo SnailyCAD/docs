@@ -135,7 +135,7 @@ Below you can see all possible types that can be imported and what data they req
 
 - `name`: the first name of the citizen.
 - `surname`: The last name of the citizen
-- `dateOfBirth`: The date of birth. format: `YYYY-MM-DD` (eg: `1980-02-22`)
+- `dateOfBirth`: The date of birth. format: [`YYYY-MM-DD` (eg: `1980-02-22`)](https://www.iso.org/iso-8601-date-and-time-format.html)
 - `gender`: The **id** of the wanted gender. This id can be fetched via the API.
 - `ethnicity`: The **id** of the wanted ethnicity. This id can be fetched via the API.
 - `hairColor`, `eyeColor`, `address`, `weight` and `height` are also supported but **not required**. All are a string with max `255` characters.
@@ -152,6 +152,8 @@ Below you can see all possible types that can be imported and what data they req
     "dateOfBirth": "2022-01-04",
     "hairColor": "Orange",
     "eyeColor": "Green",
+    "weight": null,
+    "height": null,
     "driversLicenseCategoryIds": ["xxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxx"],
     "driversLicenseId": "xxxxxxxxxxxxxxxxxxxx"
   }
