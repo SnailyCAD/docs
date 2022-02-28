@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "SnailyCADv4 Documentation",
-  tagline: "Documentation provided for SnailyCADv4",
+  title: "SnailyCAD Documentation",
+  tagline: "Documentation provided for SnailyCAD",
   url: "https://cad-docs.caspertheghost.me",
   baseUrl: "/",
   onBrokenLinks: "log",
@@ -23,9 +23,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-        },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -50,7 +47,7 @@ const config = {
         {
           href: "https://github.com/SnailyCAD/snaily-cadv4",
           label: "GitHub",
-          position: "right",
+          position: "left",
         },
       ],
     },

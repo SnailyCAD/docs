@@ -99,7 +99,7 @@ sure to run the following steps:
 
 - `POSTGRES_PASSWORD`: the password to the postgress database.
 - `POSTGRES_USER`: the username to the postgress database.
-- `DB_HOST`: The database host. *Most likely `localhost`*
+- `DB_HOST`: The database host. _Most likely `localhost`_
 - `DB_PORT`: The port to the database.
 - `POSTGRES_DB`: The database name.
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
@@ -134,3 +134,9 @@ After completing all the steps above, we are ready to startup the CAD. To do thi
 ```bash
 yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 ```
+
+### Accesing SnailyCADv4
+
+You can open SnailyCADv4 via a web browser, on your [LAN IP](https://en.wikipedia.org/wiki/Local_area_network) and the `PORT_CLIENT`, example: `http://192.168.92.20:3000`
+
+SnailyCADv4 also supports domains, [WAN IP](https://en.wikipedia.org/wiki/Wide_area_network), etc.
