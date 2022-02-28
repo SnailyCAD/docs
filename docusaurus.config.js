@@ -6,6 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  favicon: "/icons/logo.svg",
   title: "SnailyCAD Documentation",
   tagline: "Documentation provided for SnailyCAD",
   url: "https://cad-docs.caspertheghost.me",
