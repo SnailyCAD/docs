@@ -3,7 +3,9 @@
 When importing values, you should make sure you're sending the correct data.
 Below you can see all possible types that can be imported and what data they require.
 
-## `GENDER`, `ETHNICITY`, `BLOOD_GROUP`, `IMPOUND_LOT`, `LICENSE` and `OFFICER_RANK`
+## `GENDER`, `ETHNICITY`, `BLOOD_GROUP`, `IMPOUND_LOT`, `LICENSE`, `VEHICLE_FLAG` and `OFFICER_RANK`
+
+**Example URL:** `https://api.example.com/v1/admin/values/license` or `https://api.example.com/v1/admin/values/gender`, etc.
 
 **Example Object**
 
@@ -27,6 +29,8 @@ Below you can see all possible types that can be imported and what data they req
 
 ## `VEHICLE` and `WEAPON`
 
+**Example URL:** `https://api.example.com/v1/admin/values/vehicle`.
+
 **Example Object**
 
 - `value`: the name of the car. This will be displayed to the user
@@ -42,6 +46,8 @@ Below you can see all possible types that can be imported and what data they req
 ```
 
 ## `CODES_10`
+
+**Example URL:** `https://api.example.com/v1/admin/values/codes_10`.
 
 **Example Object**
 
@@ -72,6 +78,8 @@ Below you can see all possible types that can be imported and what data they req
 
 ## `DEPARTMENT`
 
+**Example URL:** `https://api.example.com/v1/admin/values/department`.
+
 **Example Object**
 
 - `value`: the name of the department. This will be displayed to the user.
@@ -96,6 +104,8 @@ Below you can see all possible types that can be imported and what data they req
 ```
 
 ## `PENAL_CODE`
+
+**Example URL:** `https://api.example.com/v1/admin/values/penal_code`.
 
 **Example Object**
 
@@ -131,6 +141,8 @@ Below you can see all possible types that can be imported and what data they req
 
 ## Citizens
 
+**Example URL:** `https://api.example.com/v1/admin/import/citizens`.
+
 **Example Object**
 
 - `name`: the first name of the citizen.
@@ -160,9 +172,11 @@ Below you can see all possible types that can be imported and what data they req
 ]
 ```
 
-## Vehicles
+## Vehicles (Registered)
 
 _(Registered Vehicles)_
+
+**Example URL:** `https://api.example.com/v1/admin/import/vehicles`.
 
 **Example Object**
 
@@ -184,9 +198,11 @@ _(Registered Vehicles)_
 ]
 ```
 
-## Weapons
+## Weapons (Registered)
 
 _(Registered Weapons)_
+
+**Example URL:** `https://api.example.com/v1/admin/import/weapons`.
 
 **Example Object**
 
