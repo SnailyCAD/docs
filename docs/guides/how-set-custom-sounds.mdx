@@ -1,0 +1,27 @@
+# How to set custom sounds
+
+SnailyCADv4 currently supports 2 different types for audio:
+
+- Panic Button
+- Signal 100
+
+There are files stored in the CAD that can be changed to custom sounds for your community.
+
+## How to change these files
+
+1. Open `packages/client/public/sounds`
+2. Overwrite the wanted files.
+
+:::caution
+**Your custom filenames must match the current filenames and must have `.mp3` extensions**
+:::
+
+3. Rebuild the client: `yarn workspace @snailycad/client build`
+4. Restart the CAD
+
+:::info
+
+_default sounds were provided by [rhys19](https://github.com/rhys19). Thanks a lot!
+See original [GitHub issue](https://github.com/SnailyCAD/snaily-cadv4/issues/394)_
+
+:::info
