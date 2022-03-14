@@ -2,26 +2,13 @@
 
 Below you'll find the most common errors. Please read this first before reporting a bug report on GitHub/Discord.
 
-## "An unknown error occurred" on registration
+## "Network Error" on registration
 
-![unknownerrorlogin](/unknownerrorlogin.png)
-
-You're getting an error message stating `An unknown error occurred` once you try register for the first time. This should be a simple fix!
-Verify with the steps below that you've setup everything correctly.
-
-- Is the API online and able to accept connections?
-  - Yes:
-    - Make sure you entered the correct IP/domain of where your API is hosted at.
-    - Make sure that you've correctly entered the `CORS_ORIGIN_URL` and `NEXT_PUBLIC_PROD_ORIGIN` in the `.env` file.
-  - No:
-    - Make sure there are no errors on startup
-    - Make sure the required ports are forwared (`8080` and `3000`)
-    - Make sure you've setup your IP/domain correctly in the `.env` file.
+[Read more here](/docs/errors/network-error-auth)
 
 ## "Error listen: EADDRINUSE: address already in use"
 
-This means a port is already being utilized on your machine, make sure to stop that service.
-If there is no service running on that port try restarting your PC.
+[Read more here](/docs/errors/port-inuse)
 
 ## "UNAUTHORIZED" errors in the API console
 

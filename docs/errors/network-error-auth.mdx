@@ -1,0 +1,19 @@
+# "Network Error" on registration
+
+|                  Example 1                   |                   Example 2                    |
+| :------------------------------------------: | :--------------------------------------------: |
+| ![unknownerrorlogin](/unknownerrorlogin.png) | ![unknownerrorlogin2](/unknownerrorlogin2.png) |
+
+## Possible ways to fix it
+
+You're getting an error message stating `An unknown error occurred` once you try register for the first time. This should be a simple fix!
+Verify with the steps below that you've setup everything correctly.
+
+- Is the API online and able to accept connections?
+  - Yes:
+    - Make sure you entered the correct IP/domain of where your API is hosted at.
+    - Make sure that you've correctly entered the `CORS_ORIGIN_URL` and `NEXT_PUBLIC_PROD_ORIGIN` in the `.env` file.
+  - No:
+    - Make sure there are no errors on startup
+    - Make sure the required ports are forwared (`8080` and `3000`)
+    - Make sure you've setup your IP/domain correctly in the `.env` file.
