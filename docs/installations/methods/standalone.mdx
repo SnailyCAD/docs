@@ -51,11 +51,15 @@ First we'll need to clone to repo to our own machine.
 git clone https://github.com/SnailyCAD/snaily-cadv4.git
 ```
 
+<img src="/gifs/git-clone.gif" alt="Git clone short clip" loading="lazy" width="600px" />
+
 Once it finishes, we can enter the folder
 
 ```bash
 cd snaily-cadv4
 ```
+
+<img src="/gifs/cd.gif" alt="Change directory short clip" loading="lazy" width="600px" />
 
 ### Installing dependencies
 
@@ -64,6 +68,8 @@ Now we'll install the dependencies that are required to start SnailyCADv4.
 ```bash
 yarn
 ```
+
+<img src="/gifs/yarn.gif" alt="yarn install short clip" loading="lazy" width="600px" />
 
 ### Configuration
 
@@ -80,6 +86,8 @@ copy .env.example .env
 ```bash
 cp .env.example .env
 ```
+
+<img src="/gifs/move-env.gif" alt="Move env short clip" loading="lazy" width="600px" />
 
 Now open the `.env` file and edit it's contents. View more info below.
 
@@ -120,6 +128,8 @@ Once you've configured the file. Make sure to copy it to the correct directories
 node scripts/copy-env.mjs --client --api
 ```
 
+<img src="/gifs/copy-env.gif" alt="copy env short clip" loading="lazy" width="600px" />
+
 ### Building everything
 
 Now we must build all the packages again. _(client, schemas, config, types)_
@@ -127,6 +137,8 @@ Now we must build all the packages again. _(client, schemas, config, types)_
 ```bash
 yarn turbo run build
 ```
+
+<img src="/gifs/turbo-build.gif" alt="turbo build short clip" loading="lazy" width="600px" />
 
 ### Starting SnailyCADv4
 
