@@ -1,0 +1,526 @@
+[
+  {
+    "value": "Unarmed",
+    "hash": "WEAPON_UNARMED"
+  },
+  {
+    "value": "Knife",
+    "hash": "WEAPON_KNIFE"
+  },
+  {
+    "value": "Nightstick",
+    "hash": "WEAPON_NIGHTSTICK"
+  },
+  {
+    "value": "Hammer",
+    "hash": "WEAPON_HAMMER"
+  },
+  {
+    "value": "Baseball Bat",
+    "hash": "WEAPON_BAT"
+  },
+  {
+    "value": "Golf Club",
+    "hash": "WEAPON_GOLFCLUB"
+  },
+  {
+    "value": "Crowbar",
+    "hash": "WEAPON_CROWBAR"
+  },
+  {
+    "value": "Pistol",
+    "hash": "WEAPON_PISTOL"
+  },
+  {
+    "value": "Combat Pistol",
+    "hash": "WEAPON_COMBATPISTOL"
+  },
+  {
+    "value": "AP Pistol",
+    "hash": "WEAPON_APPISTOL"
+  },
+  {
+    "value": "Pistol .50",
+    "hash": "WEAPON_PISTOL50"
+  },
+  {
+    "value": "Micro SMG",
+    "hash": "WEAPON_MICROSMG"
+  },
+  {
+    "value": "SMG",
+    "hash": "WEAPON_SMG"
+  },
+  {
+    "value": "Assault SMG",
+    "hash": "WEAPON_ASSAULTSMG"
+  },
+  {
+    "value": "Assault Rifle",
+    "hash": "WEAPON_ASSAULTRIFLE"
+  },
+  {
+    "value": "Carbine Rifle",
+    "hash": "WEAPON_CARBINERIFLE"
+  },
+  {
+    "value": "Advanced Rifle",
+    "hash": "WEAPON_ADVANCEDRIFLE"
+  },
+  {
+    "value": "MG",
+    "hash": "WEAPON_MG"
+  },
+  {
+    "value": "Combat MG",
+    "hash": "WEAPON_COMBATMG"
+  },
+  {
+    "value": "Pump Shotgun",
+    "hash": "WEAPON_PUMPSHOTGUN"
+  },
+  {
+    "value": "Sawed-Off Shotgun",
+    "hash": "WEAPON_SAWNOFFSHOTGUN"
+  },
+  {
+    "value": "Assault Shotgun",
+    "hash": "WEAPON_ASSAULTSHOTGUN"
+  },
+  {
+    "value": "Bullpup Shotgun",
+    "hash": "WEAPON_BULLPUPSHOTGUN"
+  },
+  {
+    "value": "Stun Gun",
+    "hash": "WEAPON_STUNGUN"
+  },
+  {
+    "value": "Sniper Rifle",
+    "hash": "WEAPON_SNIPERRIFLE"
+  },
+  {
+    "value": "Heavy Sniper",
+    "hash": "WEAPON_HEAVYSNIPER"
+  },
+  {
+    "value": "Remote Sniper",
+    "hash": "WEAPON_REMOTESNIPER"
+  },
+  {
+    "value": "Grenade Launcher",
+    "hash": "WEAPON_GRENADELAUNCHER"
+  },
+  {
+    "value": "Tear Gas Launcher",
+    "hash": "WEAPON_GRENADELAUNCHER_SMOKE"
+  },
+  {
+    "value": "RPG",
+    "hash": "WEAPON_RPG"
+  },
+  {
+    "value": "RPG",
+    "hash": "WEAPON_STINGER"
+  },
+  {
+    "value": "Minigun",
+    "hash": "WEAPON_MINIGUN"
+  },
+  {
+    "value": "Grenade",
+    "hash": "WEAPON_GRENADE"
+  },
+  {
+    "value": "Sticky Bomb",
+    "hash": "WEAPON_STICKYBOMB"
+  },
+  {
+    "value": "Tear Gas",
+    "hash": "WEAPON_SMOKEGRENADE"
+  },
+  {
+    "value": "BZ Gas",
+    "hash": "WEAPON_BZGAS"
+  },
+  {
+    "value": "Molotov",
+    "hash": "WEAPON_MOLOTOV"
+  },
+  {
+    "value": "Fire Extinguisher",
+    "hash": "WEAPON_FIREEXTINGUISHER"
+  },
+  {
+    "value": "Jerry Can",
+    "hash": "WEAPON_PETROLCAN"
+  },
+  {
+    "value": "Nightvision Goggles",
+    "hash": "GADGET_NIGHTVISION"
+  },
+  {
+    "value": "Parachute",
+    "hash": "GADGET_PARACHUTE"
+  },
+  {
+    "value": "Ball",
+    "hash": "WEAPON_BALL"
+  },
+  {
+    "value": "Flare",
+    "hash": "WEAPON_FLARE"
+  },
+  {
+    "value": "Tank Cannon",
+    "hash": "VEHICLE_WEAPON_TANK"
+  },
+  {
+    "value": "Missiles",
+    "hash": "VEHICLE_WEAPON_SPACE_ROCKET"
+  },
+  {
+    "value": "Missiles",
+    "hash": "VEHICLE_WEAPON_PLANE_ROCKET"
+  },
+  {
+    "value": "Laser",
+    "hash": "VEHICLE_WEAPON_PLAYER_LASER"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_PLAYER_BULLET"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_PLAYER_BUZZARD"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_PLAYER_HUNTER"
+  },
+  {
+    "value": "Cannon",
+    "hash": "VEHICLE_WEAPON_PLAYER_LAZER"
+  },
+  {
+    "value": "Laser",
+    "hash": "VEHICLE_WEAPON_ENEMY_LASER"
+  },
+  {
+    "value": "Grenade",
+    "hash": "WEAPON_BIRD_CRAP"
+  },
+  {
+    "value": "Bottle",
+    "hash": "WEAPON_BOTTLE"
+  },
+  {
+    "value": "SNS Pistol",
+    "hash": "WEAPON_SNSPISTOL"
+  },
+  {
+    "value": "Bullpup Rifle",
+    "hash": "WEAPON_BULLPUPRIFLE"
+  },
+  {
+    "value": "Special Carbine",
+    "hash": "WEAPON_SPECIALCARBINE"
+  },
+  {
+    "value": "Heavy Pistol",
+    "hash": "WEAPON_HEAVYPISTOL"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "WEAPON_ARENA_MACHINE_GUN"
+  },
+  {
+    "value": "Cannon",
+    "hash": "WEAPON_ARENA_HOMING_MISSILE"
+  },
+  {
+    "value": "Special Carbine Mk II",
+    "hash": "WEAPON_SPECIALCARBINE_MK2"
+  },
+  {
+    "value": "Bullpup Rifle Mk II",
+    "hash": "WEAPON_BULLPUPRIFLE_MK2"
+  },
+  {
+    "value": "Pump Shotgun Mk II",
+    "hash": "WEAPON_PUMPSHOTGUN_MK2"
+  },
+  {
+    "value": "SNS Pistol Mk II",
+    "hash": "WEAPON_SNSPISTOL_MK2"
+  },
+  {
+    "value": "Marksman Rifle Mk II",
+    "hash": "WEAPON_MARKSMANRIFLE_MK2"
+  },
+  {
+    "value": "Double-Action Revolver",
+    "hash": "WEAPON_DOUBLEACTION"
+  },
+  {
+    "value": "Homing Launcher",
+    "hash": "WEAPON_HOMINGLAUNCHER"
+  },
+  {
+    "value": "Proximity Mine",
+    "hash": "WEAPON_PROXMINE"
+  },
+  {
+    "value": "Up-n-Atomizer",
+    "hash": "WEAPON_RAYPISTOL"
+  },
+  {
+    "value": "Unholy Hellbringer",
+    "hash": "WEAPON_RAYCARBINE"
+  },
+  {
+    "value": "Widowmaker",
+    "hash": "WEAPON_RAYMINIGUN"
+  },
+  {
+    "value": "Heavy Revolver Mk II",
+    "hash": "WEAPON_REVOLVER_MK2"
+  },
+  {
+    "value": "Snowball",
+    "hash": "WEAPON_SNOWBALL"
+  },
+  {
+    "value": "Gusenberg Sweeper",
+    "hash": "WEAPON_GUSENBERG"
+  },
+  {
+    "value": "Antique Cavalry Dagger",
+    "hash": "WEAPON_DAGGER"
+  },
+  {
+    "value": "Vintage Pistol",
+    "hash": "WEAPON_VINTAGEPISTOL"
+  },
+  {
+    "value": "Musket",
+    "hash": "WEAPON_MUSKET"
+  },
+  {
+    "value": "Firework Launcher",
+    "hash": "WEAPON_FIREWORK"
+  },
+  {
+    "value": "Railgun",
+    "hash": "WEAPON_RAILGUN"
+  },
+  {
+    "value": "Hatchet",
+    "hash": "WEAPON_HATCHET"
+  },
+  {
+    "value": "Marksman Rifle",
+    "hash": "WEAPON_MARKSMANRIFLE"
+  },
+  {
+    "value": "Heavy Shotgun",
+    "hash": "WEAPON_HEAVYSHOTGUN"
+  },
+  {
+    "value": "Knife",
+    "hash": "WEAPON_HANDCUFFS"
+  },
+  {
+    "value": "Ceramic Pistol",
+    "hash": "WEAPON_CERAMICPISTOL"
+  },
+  {
+    "value": "Hazardous Jerry Can",
+    "hash": "WEAPON_HAZARDCAN"
+  },
+  {
+    "value": "Stun Gun",
+    "hash": "WEAPON_TRANQUILIZER"
+  },
+  {
+    "value": "Knife",
+    "hash": "WEAPON_GARBAGEBAG"
+  },
+  {
+    "value": "Combat Shotgun",
+    "hash": "WEAPON_COMBATSHOTGUN"
+  },
+  {
+    "value": "Perico Pistol",
+    "hash": "WEAPON_GADGETPISTOL"
+  },
+  {
+    "value": "Military Rifle",
+    "hash": "WEAPON_MILITARYRIFLE"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_TURRET_TECHNICAL"
+  },
+  {
+    "value": "Flare Gun",
+    "hash": "WEAPON_FLAREGUN"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_TURRET_INSURGENT"
+  },
+  {
+    "value": "Navy Revolver",
+    "hash": "WEAPON_NAVYREVOLVER"
+  },
+  {
+    "value": "Cannon",
+    "hash": "VEHICLE_WEAPON_PLAYER_SAVAGE"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_NOSE_TURRET_VALKYRIE"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_TURRET_VALKYRIE"
+  },
+  {
+    "value": "Knuckle Duster",
+    "hash": "WEAPON_KNUCKLE"
+  },
+  {
+    "value": "Marksman Pistol",
+    "hash": "WEAPON_MARKSMANPISTOL"
+  },
+  {
+    "value": "Combat PDW",
+    "hash": "WEAPON_COMBATPDW"
+  },
+  {
+    "value": "Double Barrel Shotgun",
+    "hash": "WEAPON_DBSHOTGUN"
+  },
+  {
+    "value": "Compact Rifle",
+    "hash": "WEAPON_COMPACTRIFLE"
+  },
+  {
+    "value": "Machine Pistol",
+    "hash": "WEAPON_MACHINEPISTOL"
+  },
+  {
+    "value": "Machete",
+    "hash": "WEAPON_MACHETE"
+  },
+  {
+    "value": "Flashlight",
+    "hash": "WEAPON_FLASHLIGHT"
+  },
+  {
+    "value": "Cannon",
+    "hash": "WEAPON_AIR_DEFENCE_GUN"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_TURRET_LIMO"
+  },
+  {
+    "value": "Heavy Revolver",
+    "hash": "WEAPON_REVOLVER"
+  },
+  {
+    "value": "Switchblade",
+    "hash": "WEAPON_SWITCHBLADE"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_TURRET_BOXVILLE"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_CANNON_BLAZER"
+  },
+  {
+    "value": "Machine Gun",
+    "hash": "VEHICLE_WEAPON_RUINER_BULLET"
+  },
+  {
+    "value": "Missiles",
+    "hash": "VEHICLE_WEAPON_RUINER_ROCKET"
+  },
+  {
+    "value": "Sweeper Shotgun",
+    "hash": "WEAPON_AUTOSHOTGUN"
+  },
+  {
+    "value": "Compact Grenade Launcher",
+    "hash": "WEAPON_COMPACTLAUNCHER"
+  },
+  {
+    "value": "Mini SMG",
+    "hash": "WEAPON_MINISMG"
+  },
+  {
+    "value": "Pool Cue",
+    "hash": "WEAPON_POOLCUE"
+  },
+  {
+    "value": "Battle Axe",
+    "hash": "WEAPON_BATTLEAXE"
+  },
+  {
+    "value": "Pipe Wrench",
+    "hash": "WEAPON_WRENCH"
+  },
+  {
+    "value": "Pipe Bomb",
+    "hash": "WEAPON_PIPEBOMB"
+  },
+  {
+    "value": "Pistol Mk II",
+    "hash": "WEAPON_PISTOL_MK2"
+  },
+  {
+    "value": "Assault Rifle Mk II",
+    "hash": "WEAPON_ASSAULTRIFLE_MK2"
+  },
+  {
+    "value": "Carbine Rifle Mk II",
+    "hash": "WEAPON_CARBINERIFLE_MK2"
+  },
+  {
+    "value": "Combat MG Mk II",
+    "hash": "WEAPON_COMBATMG_MK2"
+  },
+  {
+    "value": "SMG Mk II",
+    "hash": "WEAPON_SMG_MK2"
+  },
+  {
+    "value": "Heavy Sniper Mk II",
+    "hash": "WEAPON_HEAVYSNIPER_MK2"
+  },
+  {
+    "value": "Stone Hatchet",
+    "hash": "WEAPON_STONE_HATCHET"
+  },
+  {
+    "value": "Stun Gun",
+    "hash": "WEAPON_STUNGUN_MP"
+  },
+  {
+    "value": "Fertilizer Can",
+    "hash": "WEAPON_FERTILIZERCAN"
+  },
+  {
+    "value": "Heavy Rifle",
+    "hash": "WEAPON_HEAVYRIFLE"
+  },
+  {
+    "value": "Compact EMP Launcher",
+    "hash": "WEAPON_EMPLAUNCHER"
+  }
+]

@@ -1,0 +1,3018 @@
+[
+  {
+      "value": "Truffade Adder",
+      "hash": "adder"
+  },
+  {
+      "value": "Airport Bus",
+      "hash": "Airbus"
+  },
+  {
+      "value": "Airtug",
+      "hash": "Airtug"
+  },
+  {
+      "value": "Akula",
+      "hash": "akula"
+  },
+  {
+      "value": "Dinka Akuma",
+      "hash": "akuma"
+  },
+  {
+      "value": "RO-86 Alkonost",
+      "hash": "alkonost"
+  },
+  {
+      "value": "Albany Alpha",
+      "hash": "alpha"
+  },
+  {
+      "value": "Buckingham Alpha-Z1",
+      "hash": "alphaz1"
+  },
+  {
+      "value": "Ambulance",
+      "hash": "AMBULANCE"
+  },
+  {
+      "value": "Annihilator",
+      "hash": "annihilator"
+  },
+  {
+      "value": "Annihilator Stealth",
+      "hash": "annihilator2"
+  },
+  {
+      "value": "HVY APC",
+      "hash": "apc"
+  },
+  {
+      "value": "Ocelot Ardent",
+      "hash": "ardent"
+  },
+  {
+      "value": "Army Trailer",
+      "hash": "armytanker"
+  },
+  {
+      "value": "Army Trailer",
+      "hash": "armytrailer"
+  },
+  {
+      "value": "Army Trailer",
+      "hash": "armytrailer2"
+  },
+  {
+      "value": "Maxwell Asbo",
+      "hash": "asbo"
+  },
+  {
+      "value": "Declasse Asea",
+      "hash": "asea"
+  },
+  {
+      "value": "Declasse Asea",
+      "hash": "asea2"
+  },
+  {
+      "value": "Karin Asterope",
+      "hash": "asterope"
+  },
+  {
+      "value": "Pfister Astron",
+      "hash": "astron"
+  },
+  {
+      "value": "Overflod Autarch",
+      "hash": "autarch"
+  },
+  {
+      "value": "LCC Avarus",
+      "hash": "avarus"
+  },
+  {
+      "value": "Mammoth Avenger",
+      "hash": "avenger"
+  },
+  {
+      "value": "Mammoth Avenger",
+      "hash": "avenger2"
+  },
+  {
+      "value": "Kraken Avisa",
+      "hash": "avisa"
+  },
+  {
+      "value": "Western Bagger",
+      "hash": "bagger"
+  },
+  {
+      "value": "Baletrailer",
+      "hash": "baletrailer"
+  },
+  {
+      "value": "Gallivanter Baller",
+      "hash": "Baller"
+  },
+  {
+      "value": "Gallivanter Baller",
+      "hash": "baller2"
+  },
+  {
+      "value": "Gallivanter Baller LE",
+      "hash": "baller3"
+  },
+  {
+      "value": "Gallivanter Baller LE LWB",
+      "hash": "baller4"
+  },
+  {
+      "value": "Gallivanter Baller LE (Armored)",
+      "hash": "baller5"
+  },
+  {
+      "value": "Gallivanter Baller LE LWB (Armored)",
+      "hash": "baller6"
+  },
+  {
+      "value": "Gallivanter Baller ST",
+      "hash": "baller7"
+  },
+  {
+      "value": "Bravado Banshee",
+      "hash": "banshee"
+  },
+  {
+      "value": "Bravado Banshee 900R",
+      "hash": "banshee2"
+  },
+  {
+      "value": "Barracks",
+      "hash": "BARRACKS"
+  },
+  {
+      "value": "HVY Barracks Semi",
+      "hash": "BARRACKS2"
+  },
+  {
+      "value": "Barracks",
+      "hash": "BARRACKS3"
+  },
+  {
+      "value": "Barrage",
+      "hash": "barrage"
+  },
+  {
+      "value": "Pegassi Bati 801",
+      "hash": "bati"
+  },
+  {
+      "value": "Pegassi Bati 801RR",
+      "hash": "bati2"
+  },
+  {
+      "value": "Vapid Benson",
+      "hash": "Benson"
+  },
+  {
+      "value": "Western Besra",
+      "hash": "besra"
+  },
+  {
+      "value": "Grotti Bestia GTS",
+      "hash": "bestiagts"
+  },
+  {
+      "value": "Nagasaki BF400",
+      "hash": "bf400"
+  },
+  {
+      "value": "BF Injection",
+      "hash": "BfInjection"
+  },
+  {
+      "value": "HVY Biff",
+      "hash": "Biff"
+  },
+  {
+      "value": "BF Bifta",
+      "hash": "bifta"
+  },
+  {
+      "value": "Bravado Bison",
+      "hash": "bison"
+  },
+  {
+      "value": "Bravado Bison",
+      "hash": "Bison2"
+  },
+  {
+      "value": "Bravado Bison",
+      "hash": "Bison3"
+  },
+  {
+      "value": "Karin BeeJay XL",
+      "hash": "BjXL"
+  },
+  {
+      "value": "Vapid Blade",
+      "hash": "blade"
+  },
+  {
+      "value": "Nagasaki Blazer",
+      "hash": "blazer"
+  },
+  {
+      "value": "Nagasaki Blazer Lifeguard",
+      "hash": "blazer2"
+  },
+  {
+      "value": "Nagasaki Hot Rod Blazer",
+      "hash": "blazer3"
+  },
+  {
+      "value": "Nagasaki Street Blazer",
+      "hash": "blazer4"
+  },
+  {
+      "value": "Nagasaki Blazer Aqua",
+      "hash": "blazer5"
+  },
+  {
+      "value": "Atomic Blimp",
+      "hash": "BLIMP"
+  },
+  {
+      "value": "Xero Blimp",
+      "hash": "BLIMP2"
+  },
+  {
+      "value": "Blimp",
+      "hash": "blimp3"
+  },
+  {
+      "value": "Dinka Blista",
+      "hash": "blista"
+  },
+  {
+      "value": "Dinka Blista Compact",
+      "hash": "blista2"
+  },
+  {
+      "value": "Dinka Go Go Monkey Blista",
+      "hash": "blista3"
+  },
+  {
+      "value": "BMX",
+      "hash": "BMX"
+  },
+  {
+      "value": "Boat Trailer",
+      "hash": "boattrailer"
+  },
+  {
+      "value": "Vapid Bobcat XL",
+      "hash": "bobcatXL"
+  },
+  {
+      "value": "Canis Bodhi",
+      "hash": "Bodhi2"
+  },
+  {
+      "value": "RM-10 Bombushka",
+      "hash": "bombushka"
+  },
+  {
+      "value": "Brute Boxville",
+      "hash": "boxville"
+  },
+  {
+      "value": "Boxville",
+      "hash": "boxville2"
+  },
+  {
+      "value": "Brute Boxville",
+      "hash": "boxville3"
+  },
+  {
+      "value": "Brute Boxville",
+      "hash": "boxville4"
+  },
+  {
+      "value": "Armored Boxville",
+      "hash": "boxville5"
+  },
+  {
+      "value": "Coil Brawler",
+      "hash": "brawler"
+  },
+  {
+      "value": "MTL Brickade",
+      "hash": "brickade"
+  },
+  {
+      "value": "Grotti Brioso R/A",
+      "hash": "brioso"
+  },
+  {
+      "value": "Grotti Brioso 300",
+      "hash": "brioso2"
+  },
+  {
+      "value": "Benefactor Apocalypse Bruiser",
+      "hash": "bruiser"
+  },
+  {
+      "value": "Benefactor Future Shock Bruiser",
+      "hash": "bruiser2"
+  },
+  {
+      "value": "Benefactor Nightmare Bruiser",
+      "hash": "bruiser3"
+  },
+  {
+      "value": "Declasse Apocalypse Brutus",
+      "hash": "brutus"
+  },
+  {
+      "value": "Declasse Future Shock Brutus",
+      "hash": "brutus2"
+  },
+  {
+      "value": "Declasse Nightmare Brutus",
+      "hash": "brutus3"
+  },
+  {
+      "value": "Albany Roosevelt",
+      "hash": "btype"
+  },
+  {
+      "value": "Albany Fränken Stange",
+      "hash": "btype2"
+  },
+  {
+      "value": "Albany Roosevelt Valor",
+      "hash": "btype3"
+  },
+  {
+      "value": "Albany Buccaneer",
+      "hash": "buccaneer"
+  },
+  {
+      "value": "Albany Buccaneer Custom",
+      "hash": "buccaneer2"
+  },
+  {
+      "value": "Bravado Buffalo",
+      "hash": "buffalo"
+  },
+  {
+      "value": "Bravado Buffalo S",
+      "hash": "buffalo2"
+  },
+  {
+      "value": "Bravado Sprunk Buffalo",
+      "hash": "buffalo3"
+  },
+  {
+      "value": "Bravado Buffalo STX",
+      "hash": "buffalo4"
+  },
+  {
+      "value": "HVY Dozer",
+      "hash": "bulldozer"
+  },
+  {
+      "value": "Vapid Bullet",
+      "hash": "bullet"
+  },
+  {
+      "value": "Declasse Burrito",
+      "hash": "Burrito"
+  },
+  {
+      "value": "Declasse Bugstars Burrito",
+      "hash": "burrito2"
+  },
+  {
+      "value": "Declasse Burrito",
+      "hash": "burrito3"
+  },
+  {
+      "value": "Declasse Burrito",
+      "hash": "Burrito4"
+  },
+  {
+      "value": "Declasse Burrito",
+      "hash": "burrito5"
+  },
+  {
+      "value": "Bus",
+      "hash": "BUS"
+  },
+  {
+      "value": "Buzzard Attack Chopper",
+      "hash": "buzzard"
+  },
+  {
+      "value": "Buzzard",
+      "hash": "Buzzard2"
+  },
+  {
+      "value": "Cable Car",
+      "hash": "cablecar"
+  },
+  {
+      "value": "Caddy",
+      "hash": "caddy"
+  },
+  {
+      "value": "Caddy",
+      "hash": "Caddy2"
+  },
+  {
+      "value": "Caddy",
+      "hash": "caddy3"
+  },
+  {
+      "value": "Karin Calico GTF",
+      "hash": "calico"
+  },
+  {
+      "value": "Brute Camper",
+      "hash": "CAMPER"
+  },
+  {
+      "value": "Vapid Caracara",
+      "hash": "caracara"
+  },
+  {
+      "value": "Vapid Caracara 4x4",
+      "hash": "caracara2"
+  },
+  {
+      "value": "Grotti Carbonizzare",
+      "hash": "carbonizzare"
+  },
+  {
+      "value": "Nagasaki Carbon RS",
+      "hash": "carbonrs"
+  },
+  {
+      "value": "Cargobob",
+      "hash": "Cargobob"
+  },
+  {
+      "value": "Cargobob",
+      "hash": "cargobob2"
+  },
+  {
+      "value": "Cargobob",
+      "hash": "Cargobob3"
+  },
+  {
+      "value": "Cargobob",
+      "hash": "Cargobob4"
+  },
+  {
+      "value": "Cargo Plane",
+      "hash": "cargoplane"
+  },
+  {
+      "value": "Lampadati Casco",
+      "hash": "casco"
+  },
+  {
+      "value": "Albany Cavalcade",
+      "hash": "cavalcade"
+  },
+  {
+      "value": "Albany Cavalcade",
+      "hash": "cavalcade2"
+  },
+  {
+      "value": "MTL Apocalypse Cerberus",
+      "hash": "cerberus"
+  },
+  {
+      "value": "MTL Future Shock Cerberus",
+      "hash": "cerberus2"
+  },
+  {
+      "value": "MTL Nightmare Cerberus",
+      "hash": "cerberus3"
+  },
+  {
+      "value": "Dewbauchee Champion",
+      "hash": "champion"
+  },
+  {
+      "value": "RUNE Cheburek",
+      "hash": "cheburek"
+  },
+  {
+      "value": "Grotti Cheetah",
+      "hash": "cheetah"
+  },
+  {
+      "value": "Grotti Cheetah Classic",
+      "hash": "cheetah2"
+  },
+  {
+      "value": "Chernobog",
+      "hash": "chernobog"
+  },
+  {
+      "value": "Nagasaki Chimera",
+      "hash": "chimera"
+  },
+  {
+      "value": "Vapid Chino",
+      "hash": "chino"
+  },
+  {
+      "value": "Vapid Chino Custom",
+      "hash": "chino2"
+  },
+  {
+      "value": "Lampadati Cinquemila",
+      "hash": "cinquemila"
+  },
+  {
+      "value": "Western Cliffhanger",
+      "hash": "cliffhanger"
+  },
+  {
+      "value": "Vapid Clique",
+      "hash": "clique"
+  },
+  {
+      "value": "BF Club",
+      "hash": "club"
+  },
+  {
+      "value": "Dashound",
+      "hash": "coach"
+  },
+  {
+      "value": "Enus Cognoscenti 55",
+      "hash": "cog55"
+  },
+  {
+      "value": "Enus Cognoscenti 55 (Armored)",
+      "hash": "cog552"
+  },
+  {
+      "value": "Enus Cognoscenti Cabrio",
+      "hash": "cogcabrio"
+  },
+  {
+      "value": "Enus Cognoscenti",
+      "hash": "cognoscenti"
+  },
+  {
+      "value": "Enus Cognoscenti (Armored)",
+      "hash": "cognoscenti2"
+  },
+  {
+      "value": "Pfister Comet",
+      "hash": "comet2"
+  },
+  {
+      "value": "Pfister Comet Retro Custom",
+      "hash": "comet3"
+  },
+  {
+      "value": "Pfister Comet Safari",
+      "hash": "comet4"
+  },
+  {
+      "value": "Pfister Comet SR",
+      "hash": "comet5"
+  },
+  {
+      "value": "Pfister Comet S2",
+      "hash": "comet6"
+  },
+  {
+      "value": "Pfister Comet S2 Cabrio",
+      "hash": "comet7"
+  },
+  {
+      "value": "Vapid Contender",
+      "hash": "contender"
+  },
+  {
+      "value": "Invetero Coquette",
+      "hash": "coquette"
+  },
+  {
+      "value": "Invetero Coquette Classic",
+      "hash": "coquette2"
+  },
+  {
+      "value": "Invetero Coquette BlackFin",
+      "hash": "coquette3"
+  },
+  {
+      "value": "Invetero Coquette D10",
+      "hash": "coquette4"
+  },
+  {
+      "value": "Cruiser",
+      "hash": "cruiser"
+  },
+  {
+      "value": "Canis Crusader",
+      "hash": "CRUSADER"
+  },
+  {
+      "value": "Cuban 800",
+      "hash": "cuban800"
+  },
+  {
+      "value": "HVY Cutter",
+      "hash": "cutter"
+  },
+  {
+      "value": "Coil Cyclone",
+      "hash": "cyclone"
+  },
+  {
+      "value": "Ubermacht Cypher",
+      "hash": "cypher"
+  },
+  {
+      "value": "Western Daemon",
+      "hash": "daemon"
+  },
+  {
+      "value": "Western Daemon",
+      "hash": "daemon2"
+  },
+  {
+      "value": "Western Apocalypse Deathbike",
+      "hash": "deathbike"
+  },
+  {
+      "value": "Western Future Shock Deathbike",
+      "hash": "deathbike2"
+  },
+  {
+      "value": "Western Nightmare Deathbike",
+      "hash": "deathbike3"
+  },
+  {
+      "value": "Shitzu Defiler",
+      "hash": "defiler"
+  },
+  {
+      "value": "Enus Deity",
+      "hash": "deity"
+  },
+  {
+      "value": "Imponte Deluxo",
+      "hash": "deluxo"
+  },
+  {
+      "value": "Principe Deveste Eight",
+      "hash": "deveste"
+  },
+  {
+      "value": "Schyster Deviant",
+      "hash": "deviant"
+  },
+  {
+      "value": "Principe Diabolus",
+      "hash": "diablous"
+  },
+  {
+      "value": "Principe Diabolus Custom",
+      "hash": "diablous2"
+  },
+  {
+      "value": "Karin Dilettante",
+      "hash": "dilettante"
+  },
+  {
+      "value": "Karin Dilettante",
+      "hash": "dilettante2"
+  },
+  {
+      "value": "Nagasaki Dinghy",
+      "hash": "Dinghy"
+  },
+  {
+      "value": "Nagasaki Dinghy",
+      "hash": "dinghy2"
+  },
+  {
+      "value": "Nagasaki Dinghy",
+      "hash": "dinghy3"
+  },
+  {
+      "value": "Nagasaki Dinghy",
+      "hash": "dinghy4"
+  },
+  {
+      "value": "Nagasaki Weaponized Dinghy",
+      "hash": "dinghy5"
+  },
+  {
+      "value": "Bravado Duneloader",
+      "hash": "dloader"
+  },
+  {
+      "value": "Docktug",
+      "hash": "docktug"
+  },
+  {
+      "value": "Mammoth Dodo",
+      "hash": "dodo"
+  },
+  {
+      "value": "Vapid Dominator",
+      "hash": "Dominator"
+  },
+  {
+      "value": "Vapid Pisswasser Dominator",
+      "hash": "dominator2"
+  },
+  {
+      "value": "Vapid Dominator GTX",
+      "hash": "dominator3"
+  },
+  {
+      "value": "Vapid Apocalypse Dominator",
+      "hash": "dominator4"
+  },
+  {
+      "value": "Vapid Future Shock Dominator",
+      "hash": "dominator5"
+  },
+  {
+      "value": "Vapid Nightmare Dominator",
+      "hash": "dominator6"
+  },
+  {
+      "value": "Vapid Dominator ASP",
+      "hash": "dominator7"
+  },
+  {
+      "value": "Vapid Dominator GTT",
+      "hash": "dominator8"
+  },
+  {
+      "value": "Dinka Double-T",
+      "hash": "double"
+  },
+  {
+      "value": "Obey 8F Drafter",
+      "hash": "drafter"
+  },
+  {
+      "value": "Benefactor Dubsta",
+      "hash": "dubsta"
+  },
+  {
+      "value": "Benefactor Dubsta",
+      "hash": "dubsta2"
+  },
+  {
+      "value": "Benefactor Dubsta 6x6",
+      "hash": "dubsta3"
+  },
+  {
+      "value": "Imponte Dukes",
+      "hash": "dukes"
+  },
+  {
+      "value": "Imponte Duke O'Death",
+      "hash": "dukes2"
+  },
+  {
+      "value": "Imponte Beater Dukes",
+      "hash": "dukes3"
+  },
+  {
+      "value": "HVY Dump",
+      "hash": "dump"
+  },
+  {
+      "value": "BF Dune Buggy",
+      "hash": "dune"
+  },
+  {
+      "value": "Space Docker",
+      "hash": "dune2"
+  },
+  {
+      "value": "BF Dune FAV",
+      "hash": "dune3"
+  },
+  {
+      "value": "Ramp Buggy",
+      "hash": "dune4"
+  },
+  {
+      "value": "Ramp Buggy",
+      "hash": "dune5"
+  },
+  {
+      "value": "Duster",
+      "hash": "duster"
+  },
+  {
+      "value": "Weeny Dynasty",
+      "hash": "Dynasty"
+  },
+  {
+      "value": "Annis Elegy Retro Custom",
+      "hash": "elegy"
+  },
+  {
+      "value": "Annis Elegy RH8",
+      "hash": "elegy2"
+  },
+  {
+      "value": "Vapid Ellie",
+      "hash": "ellie"
+  },
+  {
+      "value": "Progen Emerus",
+      "hash": "emerus"
+  },
+  {
+      "value": "Albany Emperor",
+      "hash": "emperor"
+  },
+  {
+      "value": "Albany Emperor",
+      "hash": "Emperor2"
+  },
+  {
+      "value": "Albany Emperor",
+      "hash": "emperor3"
+  },
+  {
+      "value": "Dinka Enduro",
+      "hash": "enduro"
+  },
+  {
+      "value": "Overflod Entity XXR",
+      "hash": "entity2"
+  },
+  {
+      "value": "Overflod Entity XF",
+      "hash": "entityxf"
+  },
+  {
+      "value": "Pegassi Esskey",
+      "hash": "esskey"
+  },
+  {
+      "value": "Annis Euros",
+      "hash": "Euros"
+  },
+  {
+      "value": "Karin Everon",
+      "hash": "everon"
+  },
+  {
+      "value": "Dewbauchee Exemplar",
+      "hash": "exemplar"
+  },
+  {
+      "value": "Ocelot F620",
+      "hash": "f620"
+  },
+  {
+      "value": "Willard Faction",
+      "hash": "faction"
+  },
+  {
+      "value": "Willard Faction Custom",
+      "hash": "faction2"
+  },
+  {
+      "value": "Willard Faction Custom Donk",
+      "hash": "faction3"
+  },
+  {
+      "value": "Vulcar Fagaloa",
+      "hash": "fagaloa"
+  },
+  {
+      "value": "Pegassi Faggio Sport",
+      "hash": "faggio"
+  },
+  {
+      "value": "Pegassi Faggio",
+      "hash": "faggio2"
+  },
+  {
+      "value": "Pegassi Faggio Mod",
+      "hash": "faggio3"
+  },
+  {
+      "value": "FIB",
+      "hash": "FBI"
+  },
+  {
+      "value": "FIB",
+      "hash": "FBI2"
+  },
+  {
+      "value": "Pegassi FCR 1000",
+      "hash": "fcr"
+  },
+  {
+      "value": "Pegassi FCR 1000 Custom",
+      "hash": "fcr2"
+  },
+  {
+      "value": "Lampadati Felon",
+      "hash": "felon"
+  },
+  {
+      "value": "Lampadati Felon GT",
+      "hash": "felon2"
+  },
+  {
+      "value": "Benefactor Feltzer",
+      "hash": "feltzer2"
+  },
+  {
+      "value": "Benefactor Stirling GT",
+      "hash": "feltzer3"
+  },
+  {
+      "value": "MTL Fire Truck",
+      "hash": "firetruk"
+  },
+  {
+      "value": "Fixter",
+      "hash": "fixter"
+  },
+  {
+      "value": "Vapid Flash GT",
+      "hash": "flashgt"
+  },
+  {
+      "value": "MTL Flatbed",
+      "hash": "FLATBED"
+  },
+  {
+      "value": "Vapid FMJ",
+      "hash": "fmj"
+  },
+  {
+      "value": "HVY Forklift",
+      "hash": "FORKLIFT"
+  },
+  {
+      "value": "Progen PR4",
+      "hash": "formula"
+  },
+  {
+      "value": "Ocelot R88",
+      "hash": "formula2"
+  },
+  {
+      "value": "Fathom FQ 2",
+      "hash": "fq2"
+  },
+  {
+      "value": "Canis Freecrawler",
+      "hash": "freecrawler"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "freight"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "freightcar"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "freightcar2"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "freightcont1"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "freightcont2"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "freightgrain"
+  },
+  {
+      "value": "Frogger",
+      "hash": "Frogger"
+  },
+  {
+      "value": "Frogger",
+      "hash": "frogger2"
+  },
+  {
+      "value": "Cheval Fugitive",
+      "hash": "fugitive"
+  },
+  {
+      "value": "Grotti Furia",
+      "hash": "furia"
+  },
+  {
+      "value": "Lampadati Furore GT",
+      "hash": "furoregt"
+  },
+  {
+      "value": "Schyster Fusilade",
+      "hash": "fusilade"
+  },
+  {
+      "value": "Karin Futo",
+      "hash": "futo"
+  },
+  {
+      "value": "Karin Futo GTX",
+      "hash": "futo2"
+  },
+  {
+      "value": "Western Gargoyle",
+      "hash": "gargoyle"
+  },
+  {
+      "value": "Bravado Gauntlet",
+      "hash": "Gauntlet"
+  },
+  {
+      "value": "Bravado Redwood Gauntlet",
+      "hash": "gauntlet2"
+  },
+  {
+      "value": "Bravado Gauntlet Classic",
+      "hash": "gauntlet3"
+  },
+  {
+      "value": "Bravado Gauntlet Hellfire",
+      "hash": "gauntlet4"
+  },
+  {
+      "value": "Bravado Gauntlet Classic Custom",
+      "hash": "gauntlet5"
+  },
+  {
+      "value": "Vapid GB200",
+      "hash": "gb200"
+  },
+  {
+      "value": "Declasse Gang Burrito",
+      "hash": "gburrito"
+  },
+  {
+      "value": "Declasse Gang Burrito",
+      "hash": "gburrito2"
+  },
+  {
+      "value": "Benefactor Glendale",
+      "hash": "glendale"
+  },
+  {
+      "value": "Benefactor Glendale Custom",
+      "hash": "glendale2"
+  },
+  {
+      "value": "Progen GP1",
+      "hash": "gp1"
+  },
+  {
+      "value": "Graintrailer",
+      "hash": "graintrailer"
+  },
+  {
+      "value": "Declasse Granger",
+      "hash": "GRANGER"
+  },
+  {
+      "value": "Declasse Granger 3600LX",
+      "hash": "granger2"
+  },
+  {
+      "value": "Bravado Gresley",
+      "hash": "gresley"
+  },
+  {
+      "value": "Pfister Growler",
+      "hash": "growler"
+  },
+  {
+      "value": "Grotti GT500",
+      "hash": "gt500"
+  },
+  {
+      "value": "Vapid Guardian",
+      "hash": "guardian"
+  },
+  {
+      "value": "Emperor Habanero",
+      "hash": "habanero"
+  },
+  {
+      "value": "Shitzu Hakuchou",
+      "hash": "hakuchou"
+  },
+  {
+      "value": "Shitzu Hakuchou Drag",
+      "hash": "hakuchou2"
+  },
+  {
+      "value": "Bravado Half-track",
+      "hash": "halftrack"
+  },
+  {
+      "value": "Dock Handler",
+      "hash": "handler"
+  },
+  {
+      "value": "JoBuilt Hauler",
+      "hash": "Hauler"
+  },
+  {
+      "value": "JoBuilt Hauler Custom",
+      "hash": "Hauler2"
+  },
+  {
+      "value": "Nagasaki Havok",
+      "hash": "havok"
+  },
+  {
+      "value": "Annis Hellion",
+      "hash": "hellion"
+  },
+  {
+      "value": "Albany Hermes",
+      "hash": "hermes"
+  },
+  {
+      "value": "LCC Hexer",
+      "hash": "hexer"
+  },
+  {
+      "value": "Vapid Hotknife",
+      "hash": "hotknife"
+  },
+  {
+      "value": "Declasse Hotring Sabre",
+      "hash": "hotring"
+  },
+  {
+      "value": "Buckingham Howard NX-25",
+      "hash": "howard"
+  },
+  {
+      "value": "FH-1 Hunter",
+      "hash": "hunter"
+  },
+  {
+      "value": "Enus Huntley S",
+      "hash": "huntley"
+  },
+  {
+      "value": "Vapid Hustler",
+      "hash": "hustler"
+  },
+  {
+      "value": "Mammoth Hydra",
+      "hash": "hydra"
+  },
+  {
+      "value": "Pegassi Ignus",
+      "hash": "ignus"
+  },
+  {
+      "value": "Overflod Imorgon",
+      "hash": "imorgon"
+  },
+  {
+      "value": "Declasse Impaler",
+      "hash": "impaler"
+  },
+  {
+      "value": "Declasse Apocalypse Impaler",
+      "hash": "impaler2"
+  },
+  {
+      "value": "Declasse Future Shock Impaler",
+      "hash": "impaler3"
+  },
+  {
+      "value": "Declasse Nightmare Impaler",
+      "hash": "impaler4"
+  },
+  {
+      "value": "Vapid Apocalypse Imperator",
+      "hash": "imperator"
+  },
+  {
+      "value": "Vapid Future Shock Imperator",
+      "hash": "imperator2"
+  },
+  {
+      "value": "Vapid Nightmare Imperator",
+      "hash": "imperator3"
+  },
+  {
+      "value": "Pegassi Infernus",
+      "hash": "infernus"
+  },
+  {
+      "value": "Pegassi Infernus Classic",
+      "hash": "infernus2"
+  },
+  {
+      "value": "Vulcar Ingot",
+      "hash": "ingot"
+  },
+  {
+      "value": "LCC Innovation",
+      "hash": "innovation"
+  },
+  {
+      "value": "HVY Insurgent Pick-Up",
+      "hash": "insurgent"
+  },
+  {
+      "value": "HVY Insurgent",
+      "hash": "insurgent2"
+  },
+  {
+      "value": "HVY Insurgent Pick-Up Custom",
+      "hash": "insurgent3"
+  },
+  {
+      "value": "Karin Intruder",
+      "hash": "intruder"
+  },
+  {
+      "value": "Weeny Issi",
+      "hash": "issi2"
+  },
+  {
+      "value": "Weeny Issi Classic",
+      "hash": "issi3"
+  },
+  {
+      "value": "Weeny Apocalypse Issi",
+      "hash": "issi4"
+  },
+  {
+      "value": "Weeny Future Shock Issi",
+      "hash": "issi5"
+  },
+  {
+      "value": "Weeny Nightmare Issi",
+      "hash": "issi6"
+  },
+  {
+      "value": "Weeny Issi Sport",
+      "hash": "issi7"
+  },
+  {
+      "value": "Progen Itali GTB",
+      "hash": "italigtb"
+  },
+  {
+      "value": "Progen Itali GTB Custom",
+      "hash": "italigtb2"
+  },
+  {
+      "value": "Grotti Itali GTO",
+      "hash": "italigto"
+  },
+  {
+      "value": "Grotti Itali RSX",
+      "hash": "italirsx"
+  },
+  {
+      "value": "Obey I-Wagen",
+      "hash": "iwagen"
+  },
+  {
+      "value": "Ocelot Jackal",
+      "hash": "jackal"
+  },
+  {
+      "value": "Dewbauchee JB 700",
+      "hash": "jb700"
+  },
+  {
+      "value": "Dewbauchee JB 700W",
+      "hash": "jb7002"
+  },
+  {
+      "value": "Dinka Jester",
+      "hash": "jester"
+  },
+  {
+      "value": "Dinka Jester (Racecar)",
+      "hash": "jester2"
+  },
+  {
+      "value": "Dinka Jester Classic",
+      "hash": "jester3"
+  },
+  {
+      "value": "Dinka Jester RR",
+      "hash": "jester4"
+  },
+  {
+      "value": "Jet",
+      "hash": "jet"
+  },
+  {
+      "value": "Shitzu Jetmax",
+      "hash": "jetmax"
+  },
+  {
+      "value": "Zirconium Journey",
+      "hash": "journey"
+  },
+  {
+      "value": "Enus Jubilee",
+      "hash": "jubilee"
+  },
+  {
+      "value": "Ocelot Jugular",
+      "hash": "jugular"
+  },
+  {
+      "value": "Canis Kalahari",
+      "hash": "kalahari"
+  },
+  {
+      "value": "Canis Kamacho",
+      "hash": "kamacho"
+  },
+  {
+      "value": "Dinka Blista Kanjo",
+      "hash": "kanjo"
+  },
+  {
+      "value": "Hijak Khamelion",
+      "hash": "khamelion"
+  },
+  {
+      "value": "TM-02 Khanjali",
+      "hash": "khanjali"
+  },
+  {
+      "value": "Lampadati Komoda",
+      "hash": "komoda"
+  },
+  {
+      "value": "RUNE Kosatka",
+      "hash": "kosatka"
+  },
+  {
+      "value": "Benefactor Krieger",
+      "hash": "krieger"
+  },
+  {
+      "value": "Karin Kuruma",
+      "hash": "kuruma"
+  },
+  {
+      "value": "Karin Kuruma (armored)",
+      "hash": "kuruma2"
+  },
+  {
+      "value": "Dundreary Landstalker",
+      "hash": "landstalker"
+  },
+  {
+      "value": "Dundreary Landstalker XL",
+      "hash": "landstalker2"
+  },
+  {
+      "value": "P-996 LAZER",
+      "hash": "Lazer"
+  },
+  {
+      "value": "Annis RE-7B",
+      "hash": "le7b"
+  },
+  {
+      "value": "Principe Lectro",
+      "hash": "lectro"
+  },
+  {
+      "value": "Declasse Lifeguard",
+      "hash": "lguard"
+  },
+  {
+      "value": "Benefactor Turreted Limo",
+      "hash": "limo2"
+  },
+  {
+      "value": "Ocelot Locust",
+      "hash": "locust"
+  },
+  {
+      "value": "Shitzu Longfin",
+      "hash": "longfin"
+  },
+  {
+      "value": "Albany Lurcher",
+      "hash": "lurcher"
+  },
+  {
+      "value": "Buckingham Luxor",
+      "hash": "luxor"
+  },
+  {
+      "value": "Buckingham Luxor Deluxe",
+      "hash": "luxor2"
+  },
+  {
+      "value": "Ocelot Lynx",
+      "hash": "lynx"
+  },
+  {
+      "value": "Declasse Mamba",
+      "hash": "mamba"
+  },
+  {
+      "value": "Mammatus",
+      "hash": "mammatus"
+  },
+  {
+      "value": "Albany Manana",
+      "hash": "manana"
+  },
+  {
+      "value": "Albany Manana Custom",
+      "hash": "manana2"
+  },
+  {
+      "value": "Maibatsu Manchez",
+      "hash": "manchez"
+  },
+  {
+      "value": "Maibatsu Manchez Scout",
+      "hash": "manchez2"
+  },
+  {
+      "value": "Dinka Marquis",
+      "hash": "marquis"
+  },
+  {
+      "value": "Cheval Marshall",
+      "hash": "marshall"
+  },
+  {
+      "value": "Dewbauchee Massacro",
+      "hash": "massacro"
+  },
+  {
+      "value": "Dewbauchee Massacro (Racecar)",
+      "hash": "massacro2"
+  },
+  {
+      "value": "Maverick",
+      "hash": "maverick"
+  },
+  {
+      "value": "HVY Menacer",
+      "hash": "menacer"
+  },
+  {
+      "value": "Canis Mesa",
+      "hash": "MESA"
+  },
+  {
+      "value": "Canis Mesa",
+      "hash": "mesa2"
+  },
+  {
+      "value": "Canis Mesa",
+      "hash": "MESA3"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "metrotrain"
+  },
+  {
+      "value": "Lampadati Michelli GT",
+      "hash": "michelli"
+  },
+  {
+      "value": "Nagasaki Ultralight",
+      "hash": "microlight"
+  },
+  {
+      "value": "Buckingham Miljet",
+      "hash": "Miljet"
+  },
+  {
+      "value": "Invade and Persuade Tank",
+      "hash": "minitank"
+  },
+  {
+      "value": "Vapid Minivan",
+      "hash": "minivan"
+  },
+  {
+      "value": "Vapid Minivan Custom",
+      "hash": "minivan2"
+  },
+  {
+      "value": "HVY Mixer",
+      "hash": "Mixer"
+  },
+  {
+      "value": "HVY Mixer",
+      "hash": "Mixer2"
+  },
+  {
+      "value": "Mammoth Mogul",
+      "hash": "mogul"
+  },
+  {
+      "value": "V-65 Molotok",
+      "hash": "molotok"
+  },
+  {
+      "value": "Pegassi Monroe",
+      "hash": "monroe"
+  },
+  {
+      "value": "Vapid Monster",
+      "hash": "monster"
+  },
+  {
+      "value": "Bravado Apocalypse Sasquatch",
+      "hash": "monster3"
+  },
+  {
+      "value": "Bravado Future Shock Sasquatch",
+      "hash": "monster4"
+  },
+  {
+      "value": "Bravado Nightmare Sasquatch",
+      "hash": "monster5"
+  },
+  {
+      "value": "Declasse Moonbeam",
+      "hash": "moonbeam"
+  },
+  {
+      "value": "Declasse Moonbeam Custom",
+      "hash": "moonbeam2"
+  },
+  {
+      "value": "Lawn Mower",
+      "hash": "Mower"
+  },
+  {
+      "value": "Maibatsu Mule",
+      "hash": "Mule"
+  },
+  {
+      "value": "Maibatsu Mule",
+      "hash": "Mule2"
+  },
+  {
+      "value": "Maibatsu Mule",
+      "hash": "Mule3"
+  },
+  {
+      "value": "Maibatsu Mule Custom",
+      "hash": "mule4"
+  },
+  {
+      "value": "Maibatsu Mule",
+      "hash": "mule5"
+  },
+  {
+      "value": "Vulcar Nebula Turbo",
+      "hash": "nebula"
+  },
+  {
+      "value": "Principe Nemesis",
+      "hash": "nemesis"
+  },
+  {
+      "value": "Vysser Neo",
+      "hash": "neo"
+  },
+  {
+      "value": "Pfister Neon",
+      "hash": "neon"
+  },
+  {
+      "value": "Truffade Nero",
+      "hash": "nero"
+  },
+  {
+      "value": "Truffade Nero Custom",
+      "hash": "nero2"
+  },
+  {
+      "value": "Western Nightblade",
+      "hash": "nightblade"
+  },
+  {
+      "value": "Imponte Nightshade",
+      "hash": "nightshade"
+  },
+  {
+      "value": "HVY Nightshark",
+      "hash": "nightshark"
+  },
+  {
+      "value": "Buckingham Nimbus",
+      "hash": "nimbus"
+  },
+  {
+      "value": "Obey 9F",
+      "hash": "ninef"
+  },
+  {
+      "value": "Obey 9F Cabrio",
+      "hash": "ninef2"
+  },
+  {
+      "value": "P-45 Nokota",
+      "hash": "nokota"
+  },
+  {
+      "value": "Lampadati Novak",
+      "hash": "Novak"
+  },
+  {
+      "value": "Obey Omnis",
+      "hash": "omnis"
+  },
+  {
+      "value": "Benefactor BR8",
+      "hash": "openwheel1"
+  },
+  {
+      "value": "Declasse DR1",
+      "hash": "openwheel2"
+  },
+  {
+      "value": "Pegassi Oppressor",
+      "hash": "oppressor"
+  },
+  {
+      "value": "Pegassi Oppressor Mk II",
+      "hash": "oppressor2"
+  },
+  {
+      "value": "Ubermacht Oracle XS",
+      "hash": "oracle"
+  },
+  {
+      "value": "Ubermacht Oracle",
+      "hash": "oracle2"
+  },
+  {
+      "value": "Pegassi Osiris",
+      "hash": "osiris"
+  },
+  {
+      "value": "Nagasaki Outlaw",
+      "hash": "outlaw"
+  },
+  {
+      "value": "MTL Packer",
+      "hash": "Packer"
+  },
+  {
+      "value": "Benefactor Panto",
+      "hash": "panto"
+  },
+  {
+      "value": "Bravado Paradise",
+      "hash": "paradise"
+  },
+  {
+      "value": "Enus Paragon R",
+      "hash": "paragon"
+  },
+  {
+      "value": "Enus Paragon R (Armored)",
+      "hash": "paragon2"
+  },
+  {
+      "value": "Ocelot Pariah",
+      "hash": "pariah"
+  },
+  {
+      "value": "Mammoth Patriot",
+      "hash": "patriot"
+  },
+  {
+      "value": "Mammoth Patriot Stretch",
+      "hash": "patriot2"
+  },
+  {
+      "value": "Mammoth Patriot Mil-Spec",
+      "hash": "patriot3"
+  },
+  {
+      "value": "Kurtz 31 Patrol Boat",
+      "hash": "patrolboat"
+  },
+  {
+      "value": "Police Prison Bus",
+      "hash": "pbus"
+  },
+  {
+      "value": "Festival Bus",
+      "hash": "pbus2"
+  },
+  {
+      "value": "Shitzu PCJ 600",
+      "hash": "pcj"
+  },
+  {
+      "value": "Ocelot Penetrator",
+      "hash": "penetrator"
+  },
+  {
+      "value": "Maibatsu Penumbra",
+      "hash": "penumbra"
+  },
+  {
+      "value": "Maibatsu Penumbra FF",
+      "hash": "penumbra2"
+  },
+  {
+      "value": "Vapid Peyote",
+      "hash": "peyote"
+  },
+  {
+      "value": "Vapid Peyote Gasser",
+      "hash": "peyote2"
+  },
+  {
+      "value": "Vapid Peyote Custom",
+      "hash": "peyote3"
+  },
+  {
+      "value": "Pfister 811",
+      "hash": "pfister811"
+  },
+  {
+      "value": "JoBuilt Phantom",
+      "hash": "Phantom"
+  },
+  {
+      "value": "JoBuilt Phantom Wedge",
+      "hash": "phantom2"
+  },
+  {
+      "value": "JoBuilt Phantom Custom",
+      "hash": "phantom3"
+  },
+  {
+      "value": "Imponte Phoenix",
+      "hash": "Phoenix"
+  },
+  {
+      "value": "Cheval Picador",
+      "hash": "picador"
+  },
+  {
+      "value": "Lampadati Pigalle",
+      "hash": "pigalle"
+  },
+  {
+      "value": "Police Cruiser",
+      "hash": "police"
+  },
+  {
+      "value": "Police Cruiser",
+      "hash": "police2"
+  },
+  {
+      "value": "Police Cruiser",
+      "hash": "police3"
+  },
+  {
+      "value": "Unmarked Cruiser",
+      "hash": "police4"
+  },
+  {
+      "value": "Police Bike",
+      "hash": "policeb"
+  },
+  {
+      "value": "Police Rancher",
+      "hash": "policeold1"
+  },
+  {
+      "value": "Police Roadcruiser",
+      "hash": "policeold2"
+  },
+  {
+      "value": "Police Transporter",
+      "hash": "policet"
+  },
+  {
+      "value": "Police Maverick",
+      "hash": "polmav"
+  },
+  {
+      "value": "Brute Pony",
+      "hash": "pony"
+  },
+  {
+      "value": "Brute Pony",
+      "hash": "pony2"
+  },
+  {
+      "value": "MTL Pounder",
+      "hash": "Pounder"
+  },
+  {
+      "value": "MTL Pounder Custom",
+      "hash": "pounder2"
+  },
+  {
+      "value": "Bollokan Prairie",
+      "hash": "prairie"
+  },
+  {
+      "value": "Park Ranger",
+      "hash": "pRanger"
+  },
+  {
+      "value": "Police Predator",
+      "hash": "Predator"
+  },
+  {
+      "value": "Declasse Premier",
+      "hash": "premier"
+  },
+  {
+      "value": "Karin Previon",
+      "hash": "previon"
+  },
+  {
+      "value": "Albany Primo",
+      "hash": "primo"
+  },
+  {
+      "value": "Albany Primo Custom",
+      "hash": "primo2"
+  },
+  {
+      "value": "Grotti X80 Proto",
+      "hash": "prototipo"
+  },
+  {
+      "value": "Buckingham Pyro",
+      "hash": "pyro"
+  },
+  {
+      "value": "Vapid Radius",
+      "hash": "radi"
+  },
+  {
+      "value": "Coil Raiden",
+      "hash": "raiden"
+  },
+  {
+      "value": "Trailer",
+      "hash": "raketrailer"
+  },
+  {
+      "value": "MTL Dune",
+      "hash": "rallytruck"
+  },
+  {
+      "value": "Declasse Rancher XL",
+      "hash": "RancherXL"
+  },
+  {
+      "value": "Declasse Rancher XL",
+      "hash": "rancherxl2"
+  },
+  {
+      "value": "Dewbauchee Rapid GT",
+      "hash": "RapidGT"
+  },
+  {
+      "value": "Dewbauchee Rapid GT",
+      "hash": "RapidGT2"
+  },
+  {
+      "value": "Dewbauchee Rapid GT Classic",
+      "hash": "rapidgt3"
+  },
+  {
+      "value": "BF Raptor",
+      "hash": "raptor"
+  },
+  {
+      "value": "Western Rat Bike",
+      "hash": "ratbike"
+  },
+  {
+      "value": "Rat-Loader",
+      "hash": "ratloader"
+  },
+  {
+      "value": "Bravado Rat-Truck",
+      "hash": "ratloader2"
+  },
+  {
+      "value": "RC Bandito",
+      "hash": "rcbandito"
+  },
+  {
+      "value": "Pegassi Reaper",
+      "hash": "reaper"
+  },
+  {
+      "value": "Karin Rusty Rebel",
+      "hash": "Rebel"
+  },
+  {
+      "value": "Karin Rebel",
+      "hash": "rebel2"
+  },
+  {
+      "value": "Ubermacht Rebla GTS",
+      "hash": "rebla"
+  },
+  {
+      "value": "Western Reever",
+      "hash": "reever"
+  },
+  {
+      "value": "Dundreary Regina",
+      "hash": "regina"
+  },
+  {
+      "value": "Annis Remus",
+      "hash": "remus"
+  },
+  {
+      "value": "Rental Shuttle Bus",
+      "hash": "Rentalbus"
+  },
+  {
+      "value": "Vapid Retinue",
+      "hash": "retinue"
+  },
+  {
+      "value": "Vapid Retinue Mk II",
+      "hash": "retinue2"
+  },
+  {
+      "value": "Ubermacht Revolter",
+      "hash": "revolter"
+  },
+  {
+      "value": "Declasse Rhapsody",
+      "hash": "rhapsody"
+  },
+  {
+      "value": "Rhino Tank",
+      "hash": "RHINO"
+  },
+  {
+      "value": "Vapid Riata",
+      "hash": "riata"
+  },
+  {
+      "value": "Police Riot",
+      "hash": "RIOT"
+  },
+  {
+      "value": "RCV",
+      "hash": "riot2"
+  },
+  {
+      "value": "Ripley",
+      "hash": "Ripley"
+  },
+  {
+      "value": "Obey Rocoto",
+      "hash": "rocoto"
+  },
+  {
+      "value": "Western Rogue",
+      "hash": "rogue"
+  },
+  {
+      "value": "Chariot Romero Hearse",
+      "hash": "romero"
+  },
+  {
+      "value": "Western Rampant Rocket",
+      "hash": "rrocket"
+  },
+  {
+      "value": "Dinka RT3000",
+      "hash": "rt3000"
+  },
+  {
+      "value": "JoBuilt Rubble",
+      "hash": "Rubble"
+  },
+  {
+      "value": "Pegassi Ruffian",
+      "hash": "ruffian"
+  },
+  {
+      "value": "Imponte Ruiner",
+      "hash": "ruiner"
+  },
+  {
+      "value": "Imponte Ruiner 2000",
+      "hash": "ruiner2"
+  },
+  {
+      "value": "Imponte Ruiner",
+      "hash": "ruiner3"
+  },
+  {
+      "value": "Bravado Rumpo",
+      "hash": "rumpo"
+  },
+  {
+      "value": "Bravado Rumpo",
+      "hash": "rumpo2"
+  },
+  {
+      "value": "Bravado Rumpo Custom",
+      "hash": "rumpo3"
+  },
+  {
+      "value": "Hijak Ruston",
+      "hash": "ruston"
+  },
+  {
+      "value": "Annis S80RR",
+      "hash": "s80"
+  },
+  {
+      "value": "Declasse Sabre Turbo",
+      "hash": "sabregt"
+  },
+  {
+      "value": "Declasse Sabre Turbo Custom",
+      "hash": "sabregt2"
+  },
+  {
+      "value": "Vapid Sadler",
+      "hash": "Sadler"
+  },
+  {
+      "value": "Vapid Sadler",
+      "hash": "sadler2"
+  },
+  {
+      "value": "Maibatsu Sanchez (livery)",
+      "hash": "Sanchez"
+  },
+  {
+      "value": "Maibatsu Sanchez",
+      "hash": "sanchez2"
+  },
+  {
+      "value": "LCC Sanctus",
+      "hash": "sanctus"
+  },
+  {
+      "value": "Vapid Sandking XL",
+      "hash": "sandking"
+  },
+  {
+      "value": "Vapid Sandking SWB",
+      "hash": "sandking2"
+  },
+  {
+      "value": "Savage",
+      "hash": "savage"
+  },
+  {
+      "value": "Annis Savestra",
+      "hash": "savestra"
+  },
+  {
+      "value": "Ubermacht SC1",
+      "hash": "sc1"
+  },
+  {
+      "value": "HVY Apocalypse Scarab",
+      "hash": "scarab"
+  },
+  {
+      "value": "HVY Future Shock Scarab",
+      "hash": "scarab2"
+  },
+  {
+      "value": "HVY Nightmare Scarab",
+      "hash": "scarab3"
+  },
+  {
+      "value": "Benefactor Schafter",
+      "hash": "schafter2"
+  },
+  {
+      "value": "Benefactor Schafter V12",
+      "hash": "schafter3"
+  },
+  {
+      "value": "Benefactor Schafter LWB",
+      "hash": "schafter4"
+  },
+  {
+      "value": "Benefactor Schafter V12 (Armored)",
+      "hash": "schafter5"
+  },
+  {
+      "value": "Benefactor Schafter LWB (Armored)",
+      "hash": "schafter6"
+  },
+  {
+      "value": "Benefactor Schlagen GT",
+      "hash": "schlagen"
+  },
+  {
+      "value": "Benefactor Schwartzer",
+      "hash": "schwarzer"
+  },
+  {
+      "value": "Scorcher",
+      "hash": "scorcher"
+  },
+  {
+      "value": "Declasse Scramjet",
+      "hash": "scramjet"
+  },
+  {
+      "value": "Scrap Truck",
+      "hash": "scrap"
+  },
+  {
+      "value": "Western Seabreeze",
+      "hash": "seabreeze"
+  },
+  {
+      "value": "Speedophile Seashark",
+      "hash": "seashark"
+  },
+  {
+      "value": "Speedophile Seashark",
+      "hash": "seashark2"
+  },
+  {
+      "value": "Speedophile Seashark",
+      "hash": "seashark3"
+  },
+  {
+      "value": "Sea Sparrow",
+      "hash": "seasparrow"
+  },
+  {
+      "value": "Sparrow",
+      "hash": "seasparrow2"
+  },
+  {
+      "value": "Sparrow",
+      "hash": "seasparrow3"
+  },
+  {
+      "value": "Canis Seminole",
+      "hash": "Seminole"
+  },
+  {
+      "value": "Canis Seminole Frontier",
+      "hash": "seminole2"
+  },
+  {
+      "value": "Ubermacht Sentinel XS",
+      "hash": "sentinel"
+  },
+  {
+      "value": "Ubermacht Sentinel",
+      "hash": "sentinel2"
+  },
+  {
+      "value": "Ubermacht Sentinel",
+      "hash": "sentinel3"
+  },
+  {
+      "value": "Benefactor Serrano",
+      "hash": "serrano"
+  },
+  {
+      "value": "Dewbauchee Seven-70",
+      "hash": "SEVEN70"
+  },
+  {
+      "value": "Buckingham Shamal",
+      "hash": "Shamal"
+  },
+  {
+      "value": "Emperor ETR1",
+      "hash": "sheava"
+  },
+  {
+      "value": "Sheriff Cruiser",
+      "hash": "SHERIFF"
+  },
+  {
+      "value": "Sheriff SUV",
+      "hash": "sheriff2"
+  },
+  {
+      "value": "Nagasaki Shinobi",
+      "hash": "shinobi"
+  },
+  {
+      "value": "Nagasaki Shotaro",
+      "hash": "shotaro"
+  },
+  {
+      "value": "Skylift",
+      "hash": "skylift"
+  },
+  {
+      "value": "Vapid Slamtruck",
+      "hash": "slamtruck"
+  },
+  {
+      "value": "Vapid Slamvan",
+      "hash": "slamvan"
+  },
+  {
+      "value": "Vapid Lost Slamvan",
+      "hash": "slamvan2"
+  },
+  {
+      "value": "Vapid Slamvan Custom",
+      "hash": "slamvan3"
+  },
+  {
+      "value": "Vapid Apocalypse Slamvan",
+      "hash": "slamvan4"
+  },
+  {
+      "value": "Vapid Future Shock Slamvan",
+      "hash": "slamvan5"
+  },
+  {
+      "value": "Vapid Nightmare Slamvan",
+      "hash": "slamvan6"
+  },
+  {
+      "value": "Western Sovereign",
+      "hash": "sovereign"
+  },
+  {
+      "value": "Dewbauchee Specter",
+      "hash": "SPECTER"
+  },
+  {
+      "value": "Dewbauchee Specter Custom",
+      "hash": "SPECTER2"
+  },
+  {
+      "value": "Pegassi Speeder",
+      "hash": "speeder"
+  },
+  {
+      "value": "Pegassi Speeder",
+      "hash": "speeder2"
+  },
+  {
+      "value": "Vapid Speedo",
+      "hash": "speedo"
+  },
+  {
+      "value": "Vapid Clown Van",
+      "hash": "speedo2"
+  },
+  {
+      "value": "Vapid Speedo Custom",
+      "hash": "speedo4"
+  },
+  {
+      "value": "Mammoth Squaddie",
+      "hash": "squaddie"
+  },
+  {
+      "value": "Shitzu Squalo",
+      "hash": "squalo"
+  },
+  {
+      "value": "Enus Stafford",
+      "hash": "stafford"
+  },
+  {
+      "value": "Declasse Stallion",
+      "hash": "stalion"
+  },
+  {
+      "value": "Declasse Burger Shot Stallion",
+      "hash": "stalion2"
+  },
+  {
+      "value": "Vapid Stanier",
+      "hash": "stanier"
+  },
+  {
+      "value": "LF-22 Starling",
+      "hash": "starling"
+  },
+  {
+      "value": "Grotti Stinger",
+      "hash": "stinger"
+  },
+  {
+      "value": "Grotti Stinger GT",
+      "hash": "stingergt"
+  },
+  {
+      "value": "Brute Stockade",
+      "hash": "stockade"
+  },
+  {
+      "value": "Brute Stockade",
+      "hash": "stockade3"
+  },
+  {
+      "value": "Zirconium Stratum",
+      "hash": "stratum"
+  },
+  {
+      "value": "Benefactor Streiter",
+      "hash": "streiter"
+  },
+  {
+      "value": "Dundreary Stretch",
+      "hash": "stretch"
+  },
+  {
+      "value": "B-11 Strikeforce",
+      "hash": "strikeforce"
+  },
+  {
+      "value": "Ocelot Stromberg",
+      "hash": "stromberg"
+  },
+  {
+      "value": "Nagasaki Stryder",
+      "hash": "Stryder"
+  },
+  {
+      "value": "Mallard",
+      "hash": "Stunt"
+  },
+  {
+      "value": "Submersible",
+      "hash": "submersible"
+  },
+  {
+      "value": "Kraken",
+      "hash": "submersible2"
+  },
+  {
+      "value": "Dinka Sugoi",
+      "hash": "Sugoi"
+  },
+  {
+      "value": "Karin Sultan",
+      "hash": "sultan"
+  },
+  {
+      "value": "Karin Sultan Classic",
+      "hash": "sultan2"
+  },
+  {
+      "value": "Karin Sultan RS Classic",
+      "hash": "sultan3"
+  },
+  {
+      "value": "Karin Sultan RS",
+      "hash": "sultanrs"
+  },
+  {
+      "value": "Shitzu Suntrap",
+      "hash": "Suntrap"
+  },
+  {
+      "value": "Enus Super Diamond",
+      "hash": "superd"
+  },
+  {
+      "value": "Buckingham SuperVolito",
+      "hash": "supervolito"
+  },
+  {
+      "value": "Buckingham SuperVolito Carbon",
+      "hash": "supervolito2"
+  },
+  {
+      "value": "Benefactor Surano",
+      "hash": "Surano"
+  },
+  {
+      "value": "BF Surfer",
+      "hash": "SURFER"
+  },
+  {
+      "value": "BF Surfer",
+      "hash": "Surfer2"
+  },
+  {
+      "value": "Cheval Surge",
+      "hash": "surge"
+  },
+  {
+      "value": "Buckingham Swift",
+      "hash": "swift"
+  },
+  {
+      "value": "Buckingham Swift Deluxe",
+      "hash": "swift2"
+  },
+  {
+      "value": "Ocelot Swinger",
+      "hash": "swinger"
+  },
+  {
+      "value": "Progen T20",
+      "hash": "t20"
+  },
+  {
+      "value": "Taco Van",
+      "hash": "Taco"
+  },
+  {
+      "value": "Obey Tailgater",
+      "hash": "tailgater"
+  },
+  {
+      "value": "Obey Tailgater S",
+      "hash": "tailgater2"
+  },
+  {
+      "value": "Cheval Taipan",
+      "hash": "taipan"
+  },
+  {
+      "value": "Declasse Tampa",
+      "hash": "tampa"
+  },
+  {
+      "value": "Declasse Drift Tampa",
+      "hash": "tampa2"
+  },
+  {
+      "value": "Declasse Weaponized Tampa",
+      "hash": "tampa3"
+  },
+  {
+      "value": "Trailer",
+      "hash": "tanker"
+  },
+  {
+      "value": "Freight Train",
+      "hash": "tankercar"
+  },
+  {
+      "value": "Taxi",
+      "hash": "taxi"
+  },
+  {
+      "value": "Karin Technical",
+      "hash": "technical"
+  },
+  {
+      "value": "Karin Technical Aqua",
+      "hash": "technical2"
+  },
+  {
+      "value": "Karin Technical Custom",
+      "hash": "technical3"
+  },
+  {
+      "value": "Pegassi Tempesta",
+      "hash": "tempesta"
+  },
+  {
+      "value": "Benefactor Terrorbyte",
+      "hash": "terbyte"
+  },
+  {
+      "value": "Pegassi Tezeract",
+      "hash": "tezeract"
+  },
+  {
+      "value": "Truffade Thrax",
+      "hash": "thrax"
+  },
+  {
+      "value": "Dinka Thrust",
+      "hash": "thrust"
+  },
+  {
+      "value": "Mammoth Thruster",
+      "hash": "thruster"
+  },
+  {
+      "value": "Lampadati Tigon",
+      "hash": "tigon"
+  },
+  {
+      "value": "Brute Tipper",
+      "hash": "TipTruck"
+  },
+  {
+      "value": "Tipper",
+      "hash": "TipTruck2"
+  },
+  {
+      "value": "Titan",
+      "hash": "titan"
+  },
+  {
+      "value": "Pegassi Toreador",
+      "hash": "toreador"
+  },
+  {
+      "value": "Pegassi Torero",
+      "hash": "torero"
+  },
+  {
+      "value": "Declasse Tornado",
+      "hash": "tornado"
+  },
+  {
+      "value": "Declasse Tornado",
+      "hash": "tornado2"
+  },
+  {
+      "value": "Declasse Tornado",
+      "hash": "tornado3"
+  },
+  {
+      "value": "Declasse Tornado",
+      "hash": "tornado4"
+  },
+  {
+      "value": "Declasse Tornado Custom",
+      "hash": "tornado5"
+  },
+  {
+      "value": "Declasse Tornado Rat Rod",
+      "hash": "tornado6"
+  },
+  {
+      "value": "Lampadati Toro",
+      "hash": "toro"
+  },
+  {
+      "value": "Lampadati Toro",
+      "hash": "toro2"
+  },
+  {
+      "value": "Pegassi Toros",
+      "hash": "toros"
+  },
+  {
+      "value": "Tourbus",
+      "hash": "TOURBUS"
+  },
+  {
+      "value": "Towtruck",
+      "hash": "TOWTRUCK"
+  },
+  {
+      "value": "Towtruck",
+      "hash": "Towtruck2"
+  },
+  {
+      "value": "Trailer",
+      "hash": "tr2"
+  },
+  {
+      "value": "Trailer",
+      "hash": "tr3"
+  },
+  {
+      "value": "Trailer",
+      "hash": "tr4"
+  },
+  {
+      "value": "Tractor",
+      "hash": "TRACTOR"
+  },
+  {
+      "value": "Stanley Fieldmaster",
+      "hash": "tractor2"
+  },
+  {
+      "value": "Stanley Fieldmaster",
+      "hash": "tractor3"
+  },
+  {
+      "value": "Mobile Operations Center",
+      "hash": "trailerlarge"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trailerlogs"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trailers"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trailers2"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trailers3"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trailers4"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trailersmall"
+  },
+  {
+      "value": "Vom Feuer Anti-Aircraft Trailer",
+      "hash": "trailersmall2"
+  },
+  {
+      "value": "Trashmaster",
+      "hash": "Trash"
+  },
+  {
+      "value": "Trashmaster",
+      "hash": "trash2"
+  },
+  {
+      "value": "Trailer",
+      "hash": "trflat"
+  },
+  {
+      "value": "Whippet Race Bike",
+      "hash": "tribike"
+  },
+  {
+      "value": "Endurex Race Bike",
+      "hash": "tribike2"
+  },
+  {
+      "value": "Tri-Cycles Race Bike",
+      "hash": "tribike3"
+  },
+  {
+      "value": "Vapid Trophy Truck",
+      "hash": "trophytruck"
+  },
+  {
+      "value": "Vapid Desert Raid",
+      "hash": "trophytruck2"
+  },
+  {
+      "value": "Shitzu Tropic",
+      "hash": "tropic"
+  },
+  {
+      "value": "Shitzu Tropic",
+      "hash": "tropic2"
+  },
+  {
+      "value": "Lampadati Tropos Rallye",
+      "hash": "tropos"
+  },
+  {
+      "value": "Tug",
+      "hash": "tug"
+  },
+  {
+      "value": "Mammoth Tula",
+      "hash": "tula"
+  },
+  {
+      "value": "Declasse Tulip",
+      "hash": "tulip"
+  },
+  {
+      "value": "Grotti Turismo Classic",
+      "hash": "turismo2"
+  },
+  {
+      "value": "Grotti Turismo R",
+      "hash": "turismor"
+  },
+  {
+      "value": "Trailer",
+      "hash": "tvtrailer"
+  },
+  {
+      "value": "Overflod Tyrant",
+      "hash": "tyrant"
+  },
+  {
+      "value": "Progen Tyrus",
+      "hash": "tyrus"
+  },
+  {
+      "value": "Utility Truck",
+      "hash": "utillitruck"
+  },
+  {
+      "value": "Utility Truck",
+      "hash": "utillitruck2"
+  },
+  {
+      "value": "Utility Truck",
+      "hash": "Utillitruck3"
+  },
+  {
+      "value": "Pegassi Vacca",
+      "hash": "vacca"
+  },
+  {
+      "value": "Shitzu Vader",
+      "hash": "Vader"
+  },
+  {
+      "value": "Dewbauchee Vagner",
+      "hash": "vagner"
+  },
+  {
+      "value": "Maxwell Vagrant",
+      "hash": "vagrant"
+  },
+  {
+      "value": "Valkyrie",
+      "hash": "valkyrie"
+  },
+  {
+      "value": "Valkyrie MOD.0",
+      "hash": "valkyrie2"
+  },
+  {
+      "value": "Declasse Vamos",
+      "hash": "vamos"
+  },
+  {
+      "value": "Emperor Vectre",
+      "hash": "vectre"
+  },
+  {
+      "value": "Velum",
+      "hash": "velum"
+  },
+  {
+      "value": "Velum 5-Seater",
+      "hash": "velum2"
+  },
+  {
+      "value": "Bravado Verlierer",
+      "hash": "verlierer2"
+  },
+  {
+      "value": "Dinka Verus",
+      "hash": "verus"
+  },
+  {
+      "value": "Buckingham Vestra",
+      "hash": "vestra"
+  },
+  {
+      "value": "Vetir",
+      "hash": "vetir"
+  },
+  {
+      "value": "Dinka Veto Classic",
+      "hash": "veto"
+  },
+  {
+      "value": "Dinka Veto Modern",
+      "hash": "veto2"
+  },
+  {
+      "value": "Declasse Vigero",
+      "hash": "vigero"
+  },
+  {
+      "value": "Vigilante",
+      "hash": "vigilante"
+  },
+  {
+      "value": "Dinka Vindicator",
+      "hash": "vindicator"
+  },
+  {
+      "value": "Albany Virgo",
+      "hash": "virgo"
+  },
+  {
+      "value": "Dundreary Virgo Classic Custom",
+      "hash": "virgo2"
+  },
+  {
+      "value": "Dundreary Virgo Classic",
+      "hash": "virgo3"
+  },
+  {
+      "value": "Lampadati Viseris",
+      "hash": "viseris"
+  },
+  {
+      "value": "Grotti Visione",
+      "hash": "visione"
+  },
+  {
+      "value": "Volatol",
+      "hash": "volatol"
+  },
+  {
+      "value": "Buckingham Volatus",
+      "hash": "volatus"
+  },
+  {
+      "value": "Coil Voltic",
+      "hash": "voltic"
+  },
+  {
+      "value": "Coil Rocket Voltic",
+      "hash": "voltic2"
+  },
+  {
+      "value": "Declasse Voodoo Custom",
+      "hash": "voodoo"
+  },
+  {
+      "value": "Declasse Voodoo",
+      "hash": "voodoo2"
+  },
+  {
+      "value": "Pegassi Vortex",
+      "hash": "vortex"
+  },
+  {
+      "value": "Albany V-STR",
+      "hash": "vstr"
+  },
+  {
+      "value": "Vulcar Warrener",
+      "hash": "warrener"
+  },
+  {
+      "value": "Vulcar Warrener HKR",
+      "hash": "warrener2"
+  },
+  {
+      "value": "Albany Washington",
+      "hash": "washington"
+  },
+  {
+      "value": "MTL Wastelander",
+      "hash": "wastelander"
+  },
+  {
+      "value": "BF Weevil",
+      "hash": "weevil"
+  },
+  {
+      "value": "Enus Windsor",
+      "hash": "windsor"
+  },
+  {
+      "value": "Enus Windsor Drop",
+      "hash": "windsor2"
+  },
+  {
+      "value": "Vapid Winky",
+      "hash": "winky"
+  },
+  {
+      "value": "Western Wolfsbane",
+      "hash": "wolfsbane"
+  },
+  {
+      "value": "Ocelot XA-21",
+      "hash": "xa21"
+  },
+  {
+      "value": "Benefactor XLS",
+      "hash": "xls"
+  },
+  {
+      "value": "Benefactor XLS (Armored)",
+      "hash": "xls2"
+  },
+  {
+      "value": "Declasse Yosemite",
+      "hash": "yosemite"
+  },
+  {
+      "value": "Declasse Drift Yosemite",
+      "hash": "yosemite2"
+  },
+  {
+      "value": "Declasse Yosemite Rancher",
+      "hash": "yosemite3"
+  },
+  {
+      "value": "Bravado Youga",
+      "hash": "youga"
+  },
+  {
+      "value": "Bravado Youga Classic",
+      "hash": "youga2"
+  },
+  {
+      "value": "Bravado Youga Classic 4x4",
+      "hash": "youga3"
+  },
+  {
+      "value": "Vapid Youga Custom",
+      "hash": "youga4"
+  },
+  {
+      "value": "Karin 190z",
+      "hash": "z190"
+  },
+  {
+      "value": "Overflod Zeno",
+      "hash": "zeno"
+  },
+  {
+      "value": "Pegassi Zentorno",
+      "hash": "zentorno"
+  },
+  {
+      "value": "RUNE Zhaba",
+      "hash": "zhaba"
+  },
+  {
+      "value": "Ubermacht Zion",
+      "hash": "zion"
+  },
+  {
+      "value": "Ubermacht Zion Cabrio",
+      "hash": "zion2"
+  },
+  {
+      "value": "Ubermacht Zion Classic",
+      "hash": "zion3"
+  },
+  {
+      "value": "Western Zombie Bobber",
+      "hash": "zombiea"
+  },
+  {
+      "value": "Western Zombie Chopper",
+      "hash": "zombieb"
+  },
+  {
+      "value": "Pegassi Zorrusso",
+      "hash": "zorrusso"
+  },
+  {
+      "value": "Annis ZR350",
+      "hash": "zr350"
+  },
+  {
+      "value": "Annis Apocalypse ZR380",
+      "hash": "zr380"
+  },
+  {
+      "value": "Annis Future Shock ZR380",
+      "hash": "zr3802"
+  },
+  {
+      "value": "Annis Nightmare ZR380",
+      "hash": "zr3803"
+  },
+  {
+      "value": "Truffade Z-Type",
+      "hash": "Ztype"
+  }
+]
