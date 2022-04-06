@@ -1,0 +1,34 @@
+# Telemetry
+
+With telemetry, SnailyCAD sends anounymous error reports to our project managing software.
+This makes it easier for us to fix bugs.
+SnailyCAD only collects required data to correctly fix the incoming errors.
+
+<details>
+  <summary>See example error report</summary>
+
+```
+Error message here.
+```
+
+## Information
+
+- Date: Thursday, 01/01/1970, 00:00:00
+- CAD version: 1.0.0-beta.79
+- OS: linux
+- Platform: linux
+- Binaries
+  - Node: v16.9.1
+  - npm: 7.21.1
+  - Yarn: 3.2.0
+
+</details>
+
+## How to disable telemetry
+
+_Disabling telemetry will not have any drawbacks, it will just make it harder for me to fix bugs._
+
+1. Open the `.env` file.
+2. Add `TELEMETRY_ENABLED="false"`
+3. [Correctly save the `.env` file](/docs/guides/how-to-properly-update-env)
+4. Done.
