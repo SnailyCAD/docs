@@ -7,7 +7,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
   React.useEffect(() => {
-    window.location.href = "/docs/intro";
+    window.location.href = "/docs/getting-started";
   });
 
   return (
