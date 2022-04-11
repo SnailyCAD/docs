@@ -1,0 +1,40 @@
+# FaQ
+
+- [Is SnailyCAD complete](#is-snailycad-complete)
+- [Can I host this on X platform](#can-i-host-this-on-x-platform)
+- [How to add a custom favicon (Browser icon)](#how-to-add-a-custom-favicon-browser-icon)
+- [How can I report a bug or issue](#how-can-i-report-a-bug-or-issue)
+- [Where can I suggest a new feature](#where-can-i-suggest-a-new-feature)
+- [How can I translate the CAD](/docs/features/translating)
+- [How do I install NodeJS/Yarn](/docs/guides/how-to-install-node-yarn-npm)
+- [How do I install PostgreSQL on Windows](/docs/guides/how-to-install-postgresql)
+
+## Is SnailyCAD complete
+
+Yes! SnailyCAD is complete, it's always being updated.
+
+## Can I host this on X platform
+
+Currently known supported platforms are:
+
+- Windows OS
+- Linux OS
+- Zap Hosting
+- cPanel - **Only if it has node.js support!**
+
+## How to add a custom favicon (Browser icon)
+
+1. Get your image ready, make sure it's png format (`image/png`) and that it's called `favicon.png`.
+2. Navigate to the following folder: `packages/client/public`.
+3. Place that image in that folder. (**with name `favicon.png`**)
+4. Stop the SnailyCAD
+5. Rebuild the client `yarn workspace @snailycad/client build`
+6. Restart the SnailyCAD
+
+## How can I report a bug or issue
+
+You can [join our Discord support server](https://discord.gg/eGnrPqEH7U) or [open a GitHub issue](https://github.com/SnailyCAD/snaily-cadv4/issues/new/choose)
+
+## Where can I suggest a new feature
+
+You can [join our Discord support server](https://discord.gg/eGnrPqEH7U) or [open a GitHub issue](https://github.com/SnailyCAD/snaily-cadv4/issues/new/choose)
