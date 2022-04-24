@@ -31,12 +31,32 @@ const apiUrl = GetConvar("snailycad_v4_api_url");
 // this must be: "snaily-cad-api-token"
 const API_TOKEN_HEADER_NAME = "snaily-cad-api-token";
 
+const USER_API_TOKEN_HEADER_NAME = "snaily-cad-user-api-token";
+
+// send a request with the global CAD's API Token
 async function getValuesFromCAD() {
   // get all the vehicles, weapons, genders and ethnicities
   const response = await fetch(`${apiUrl}/admin/values/vehicle?paths=weapon,gender,ethnicity`, {
     headers: {
       // send the token via headers.
       [API_TOKEN_HEADER_NAME]: token,
+    },
+  });
+  const json = response.ok && (await response.json());
+
+  if (json) {
+    console.log("data from API: ", { json });
+  }
+}
+
+// send a request with the user's API token.
+// Note: only available from version 1.0.0-beta.89
+async function getMyCitizens() {
+  // get all the citizens of the authenticated user
+  const response = await fetch(`${apiUrl}/citizen`, {
+    headers: {
+      // send the token via headers.
+      [USER_API_TOKEN_HEADER_NAME]: "user api token",
     },
   });
   const json = response.ok && (await response.json());
