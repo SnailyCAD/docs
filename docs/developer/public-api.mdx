@@ -83,7 +83,9 @@ PerformHttpRequest(
     end,
     "GET",
     json.encode("{}"),
-    {[API_TOKEN_HEADER_NAME] = API_TOKEN},
-    {["Content-Type"] = "application/json"}
+    {
+        [API_TOKEN_HEADER_NAME] = API_TOKEN,
+        ["Content-Type"] = "application/json"
+    }
 )
 ```
