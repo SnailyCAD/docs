@@ -1,0 +1,27 @@
+# Steam Authentication
+
+SnailyCADv4 supports Steam authentication. Below you'll find out how to get access to it.
+
+## Create Steam API key
+
+If you already have an API key in the Steam developer portal, you can skip this step.
+
+1. head to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey)
+2. Generate a new API key
+3. Copy the `Key` (these will be used later)
+
+## Update `.env`
+
+Once everything is correctly setup above, we can continue.
+
+1. Open the `.env` file
+2. Add the following lines
+
+```txt
+STEAM_API_KEY=""
+```
+
+3. Enter the copied API key from earlier
+4. Run this command in the root of the CAD: `node scripts/copy-env.mjs --client --api`
+5. Restart the entire CAD.
+6. Enable the feature from the CAD Settings -> Features -> `Steam Oauth`
