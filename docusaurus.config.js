@@ -32,7 +32,6 @@ const config = {
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 
   themeConfig: {
-    metadata: [{ name: "docusaurus_tag", content: "docs-default-current" }],
     navbar: {
       title: "SnailyCADv4 Docs",
       items: [
