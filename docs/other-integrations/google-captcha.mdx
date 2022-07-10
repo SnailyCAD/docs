@@ -1,0 +1,25 @@
+# Google Captcha Integration
+
+You can use Google Captcha to protect the registration form from spam bots.
+
+## How to enable Google Captcha
+
+### Create the Google Captcha application
+
+1. Head to [the Google Captcha console](https://www.google.com/recaptcha/admin) and create a new application.
+2. Copy the `Site key` and `Secret key` from the `Keys` section.
+3. Store these keys for the next step.
+
+### Update `.env`
+
+1. Add the following to your `.env` file:
+
+```
+NEXT_PUBLIC_GOOGLE_CAPTCHA_SITE_KEY=""
+GOOGLE_CAPTCHA_SECRET=""
+```
+
+3. Enter the copied values from earlier in the corresponding name
+4. Run this command in the root of the CAD: `node scripts/copy-env.mjs --client --api`
+5. Rebuild the client: `yarn workspace @snailycad/client build`
+5. Restart the entire CAD.
