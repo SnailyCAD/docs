@@ -1,0 +1,18 @@
+# How to use SnailyCADv4 with PM2
+
+## Requirements
+
+- [SnailyCADv4](https://www.snailycad.com/snailycadv4/)
+- [PM2](https://pm2.io/)
+
+## Usage
+
+1. Have an installed SnailyCADv4 version with version `1.18.1` (`873a314`) or higher.
+2. Stop SnailyCAD if already running.
+3. In the Command Prompt/Terminal run: `pm2 start npm --name SnailyCADv4 -- run start`
+4. Done!
+
+## Useful commands
+
+- `pm2 logs`: view the logs of the pm2 processes.
+- `pm2 monit`: view the usage of the pm2 processes
