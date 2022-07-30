@@ -2,32 +2,29 @@
 
 This guide explains how to setup SnailyCADv4 **without Docker**.
 
-You can also find [a video guide here](https://youtu.be/06NiiO8-rIM)
+You can also find [a video version](https://youtu.be/06NiiO8-rIM) of this guide.
 
 ## Requirements
 
-All the items listed below are required to get the CAD up and running smoothly.
+All the items listed below are required to get SnailyCADv4 up and running smoothly.
 
 - [Git](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org) **(16.6+ is required.)** ([Video Guide](https://youtu.be/rp308wNdXU8))
 - [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Video Guide](https://youtu.be/rp308wNdXU8))
 - [PostgreSQL](https://www.postgresql.org/download/) **(version 14 or higher)** ([Video Guide](https://www.youtube.com/watch?v=ZKWZvafvqwM))
 
-## Installing the CAD
+## Getting Started
 
 Once you've got all the items installed, we can get started with installing SnailyCADv4.
+Open the Command Prompt on Windows or the Terminal on Linux.
 
-### Getting Started
-
-To get started, open the Command Prompt on Windows or the Terminal on Linux.
-
-### Cloning the GitHub repository
+### 1. Cloning the GitHub repository
 
 :::caution
 
-<span style={{ fontWeight: "bold" }}>Warning:</span> do not install the CAD in the root folder. Install
-the CAD in your <span style={{ fontWeight: "bold" }}>Documents</span>
-folder for Windows or <span style={{ fontWeight: "bold" }}>home</span> folder for linux.
+<span style={{ fontWeight: "bold" }}>Warning:</span> Do not install SnailyCADv4 in the root folder. Install
+it in your <span style={{ fontWeight: "bold" }}>Documents </span>
+folder on Windows or <span style={{ fontWeight: "bold" }}>home</span> folder on Linux.
 
 To fix this, run the following command:
 
@@ -45,7 +42,7 @@ cd /home/$(whoami)
 
 :::
 
-First we'll need to clone to repo to our own machine.
+Firstly, we need to clone the GitHub repository to our local machine:
 
 ```bash
 git clone https://github.com/SnailyCAD/snaily-cadv4.git
@@ -53,7 +50,7 @@ git clone https://github.com/SnailyCAD/snaily-cadv4.git
 
 <img src="/gifs/git-clone.gif" alt="Git clone short clip" loading="lazy" width="600px" />
 
-Once it finishes, we can enter the folder
+Once the files have been cloned from GitHub, we can enter that folder:
 
 ```bash
 cd snaily-cadv4
@@ -61,9 +58,9 @@ cd snaily-cadv4
 
 <img src="/gifs/cd.gif" alt="Change directory short clip" loading="lazy" width="600px" />
 
-### Installing dependencies
+### 2. Installing dependencies
 
-Now we'll install the dependencies that are required to start SnailyCADv4.
+Now we will install the dependencies that are required for SnailyCADv4 to function properly.
 
 ```bash
 yarn
@@ -71,9 +68,13 @@ yarn
 
 <img src="/gifs/yarn.gif" alt="yarn install short clip" loading="lazy" width="600px" />
 
-### Configuration
+### 3. Configuration
 
-We'll setup the envrionment variables now, firslty we must copy the `.env.example` file to `.env`.
+Configuration can be a bit complicated, so pay close attention. The following steps will help you configure SnailyCADv4's environment variables.
+These variables are used by SnailyCADv4 to connect to the database and store special tokens used for SnailyCAD's features.
+_**Tip:** In support channels, this will be referenced as the `.env` file._
+
+We must first copy the `.env.example` file to `.env`:
 
 **Windows:**
 
@@ -89,38 +90,26 @@ cp .env.example .env
 
 <img src="/gifs/move-env.gif" alt="Move env short clip" loading="lazy" width="600px" />
 
-Now open the `.env` file and edit it's contents. View more info below.
+Now we can start configuring the variables in the `.env` file. See next step [3.1 .env file](#31-env-info).
 
-#### .env info
+#### 3.1 .env info
 
-:::caution
-
-<span style={{ fontWeight: "bold" }}>Warning:</span> When changing anything in the `.env` file, make
-sure to run the following steps:
-
-1. `node scripts/copy-env.mjs --client --api`
-2. `yarn workspace @snailycad/client build`
-
-[Read more here](/docs/guides/how-to-properly-update-env)
-
-:::
-
-- `POSTGRES_PASSWORD`: the password to the postgress database.
-- `POSTGRES_USER`: the username to the postgress database.
+- `POSTGRES_PASSWORD`: The password to the PostgreSQL database.
+- `POSTGRES_USER`: The username to the PostgreSQL database.
 - `DB_HOST`: The database host. _Most likely `localhost`_
 - `DB_PORT`: The port to the database.
 - `POSTGRES_DB`: The database name.
-- `DATABASE_URL`: **Do not change unless you know what you're doing!**
 - `JWT_SECRET`: This is a random value to keep the CAD secured.
 - `CORS_ORIGIN_URL`: The URL/IP to where the CAD is hosted at, e.g., `https://cad.mysite.com` or `http://99.99.00.190:3000`.
 - `NEXT_PUBLIC_PROD_ORIGIN`: The URL/IP to where the API is hosted at, e.g., `https://cad-api.mysite.com/v1` or `http://99.99.00.190:8000/v1`.
-- `PORT_API`: The port where you want to run the API at. _(Default 8080)_
-- `PORT_CLIENT`: The port where you want to run the client at. _(Default: 3000)_
+- `PORT_API`: The port where the API should run on. _(Default 8080)_
+- `PORT_CLIENT`: The port where the client should run on. _(Default: 3000)_
 - `ENCRYPTION_TOKEN`: Used to generate encrypted values. **Must be 32 characters long**
+- `DATABASE_URL`: **Do not change unless you know what you're doing!**
 
-#### Moving env file
+#### 3.2 Moving env file
 
-Once you've configured the file. Make sure to copy it to the correct directories:
+Once you've **correctly configured all the variables**, we must copy the `.env` file to the client and API:
 
 **Windows/Linux:**
 
@@ -130,9 +119,23 @@ node scripts/copy-env.mjs --client --api
 
 <img src="/gifs/copy-env.gif" alt="copy env short clip" loading="lazy" width="600px" />
 
-### Building everything
+:::caution
+**WARNING:** Please, do not edit `packages/client/.env` or `packages/api/.env` directly. Always edit the root `.env` file.
 
-Now we must build all the packages again. _(client, schemas, config, types)_
+When changing something in the `.env` file after the installation process, make sure to run the following steps:
+
+1. `node scripts/copy-env.mjs --client --api`
+2. `yarn workspace @snailycad/client build`
+
+[Read more here](/docs/guides/how-to-properly-update-env)
+
+:::
+
+### 4. Building everything
+
+Now we must build all the packages. _(client, schemas, config, types)_
+
+_**Note:** this process might take 2 to 5minutes_
 
 ```bash
 yarn turbo run build
@@ -140,7 +143,7 @@ yarn turbo run build
 
 <img src="/gifs/turbo-build.gif" alt="turbo build short clip" loading="lazy" width="600px" />
 
-### Starting SnailyCADv4
+### 5. Starting SnailyCADv4
 
 After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
 
@@ -148,7 +151,7 @@ After completing all the steps above, we are ready to startup the CAD. To do thi
 yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 ```
 
-### Accesing SnailyCADv4
+### 6. Accesing SnailyCADv4
 
 You can open SnailyCADv4 via a web browser, on your [LAN IP](https://en.wikipedia.org/wiki/Local_area_network) and the `PORT_CLIENT`, example: `http://192.168.92.20:3000`
 

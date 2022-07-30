@@ -2,6 +2,22 @@
 
 This means the port SnailyCAD requires is already in-use. This should be a simple fix.
 
+## Example Error
+
+```bash
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+at listenInCluster (node:net:1420:12)
+at doListen (node:net:1559:7)
+at processTicksAndRejections (node:internal/process/task_queues:84:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3000
+}
+```
+
 ## Possible ways to fix it
 
 - Verify there are no other programs/processes running on this port.
