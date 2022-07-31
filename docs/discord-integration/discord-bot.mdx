@@ -1,0 +1,106 @@
+# Discord Bot Integration
+
+SnailyCAD now has a bot which can be used to call emergency, tow and taxi services.
+
+## Requirements
+
+All the items listed below are required to use the bot.
+
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org) **(16.6+ is required.)** ([Video Guide](https://youtu.be/rp308wNdXU8))
+- [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Video Guide](https://youtu.be/rp308wNdXU8))
+- [PostgreSQL](https://www.postgresql.org/download/) **(version 14 or higher)** ([Video Guide](https://www.youtube.com/watch?v=ZKWZvafvqwM))
+
+## Installation
+
+### 1. Cloning the GitHub repository
+
+:::caution
+
+<span style={{ fontWeight: "bold" }}>Warning:</span> Do not install the bot in the root folder. Install
+it in your <span style={{ fontWeight: "bold" }}>Documents </span>
+folder on Windows or <span style={{ fontWeight: "bold" }}>home</span> folder on Linux.
+
+To fix this, run the following command:
+
+**Windows**
+
+```bash
+cd Documents
+```
+
+**Linux**
+
+```bash
+cd /home/$(whoami)
+```
+
+:::
+
+Firstly, we need to clone the GitHub repository to our local machine:
+
+```bash
+git clone https://github.com/SnailyCAD/snailycad-bot.git
+```
+
+Once the files have been cloned from GitHub, we can enter that folder:
+
+```bash
+cd snailycad-bot
+```
+
+### 2. Installing dependencies
+
+Now we will install the dependencies that are required for the bot to function properly.
+
+```bash
+yarn
+```
+
+### 3. Configuration
+
+Configuration can be a bit complicated, so pay close attention. The following steps will help you configure the bot's environment variables.
+These variables are used by the bot to connect to the database.
+
+_**Tip:** In support channels, this will be referenced as the `.env` file._
+
+#### 3.1 Copy .env.example to .env
+
+We must first copy the `.env.example` file to `.env`:
+
+**Windows:**
+
+```bash
+copy .env.example .env
+```
+
+**Linux:**
+
+```bash
+cp .env.example .env
+```
+
+Now we can start configuring the variables in the `.env` file. See next step [3.2 .env file](#32-env-info).
+
+#### 3.2 .env info
+
+- `POSTGRES_PASSWORD`: The password to the PostgreSQL database.
+- `POSTGRES_USER`: The username to the PostgreSQL database.
+- `DB_HOST`: The database host. _Most likely `localhost`_
+- `DB_PORT`: The port to the database.
+- `POSTGRES_DB`: The database name.
+- `BOT_TOKEN`: The token to your [bot application.](https://discord.com/developers/applications)
+
+### 4. Build the bot
+
+```bash
+yarn build
+```
+
+### 5. Starting the bot
+
+After completing all the steps above, we are ready to startup the bot. To do this run the following command:
+
+```bash
+yarn start
+```
