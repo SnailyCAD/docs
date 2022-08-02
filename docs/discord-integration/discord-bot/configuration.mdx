@@ -1,0 +1,35 @@
+# Configuration within Discord
+
+## Requirements
+
+- Enable SnailyCAD API Token in CAD-Settings
+- Enable "User API Token"'s feature in CAD-Settings
+
+## Getting Started
+
+In Discord, go to the server where the bot needs to be configured.
+
+### 1. Set the CAD's API configuration
+
+To set the API configuration so the bot knows what URL to use and what token to use, use the following command in Discord:
+Enter both the API Token and API URL.
+
+```
+/config set <...>
+```
+
+### 2. Set the user configuration
+
+To allow the bot to use the user's API token, use the following command in Discord:
+
+:::info
+Each user that wants to use the bot's features that require the personal API Token, must first use this command.
+:::
+
+```
+/user-config set <...>
+```
+
+### 3. Start using the bot
+
+Use `/help` to see the available commands.
