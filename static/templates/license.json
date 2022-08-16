@@ -1,0 +1,17 @@
+[
+  {
+    "value": "None"
+  },
+  {
+    "value": "Valid"
+  },
+  {
+    "value": "Invalid"
+  },
+  {
+    "value": "Expired"
+  },
+  {
+    "value": "Suspended"
+  }
+]
