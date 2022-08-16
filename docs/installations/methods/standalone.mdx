@@ -107,6 +107,70 @@ Now we can start configuring the variables in the `.env` file. See next step [3.
 - `ENCRYPTION_TOKEN`: Used to generate encrypted values. **Must be 32 characters long**
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
 
+<details>
+  <summary>View Example .env file</summary>
+
+```bash
+# Documentation can be found at:  https://cad-docs.caspertheghost.me/docs/installations
+
+# This is the password to the postgress database.
+POSTGRES_PASSWORD="Y8CURkTv"
+
+# This is the username to the postgress database.
+POSTGRES_USER="postgres"
+
+# The database host - Set as 'postgres' when using docker-compose
+DB_HOST="localhost"
+
+# The database port - keep port as '5432' when using docker-compose
+DB_PORT="5432"
+
+# The database name.
+POSTGRES_DB="snaily-cad-v4"
+
+# This is a random value to keep the CAD's cookies secured. Make sure to change this!
+JWT_SECRET="GxuPM0XmlxvCDX0QfZeqLSo0uvNm3FsEZN56JRZYNSU="
+
+# string of 32 characters long. Make sure to change this!
+# Generate one at: https://codebeautify.org/generate-random-string
+ENCRYPTION_TOKEN="BOqZR1ycU0zl6vEo64JgZB8BPtjcR7"
+
+# This is the URL/IP to your site where the CAD is hosted.
+# -> e.g. https://cad.mysite.com or http://99.99.00.190:3000
+CORS_ORIGIN_URL="https://cad.example.com"
+
+# The URL/IP to where the API is hosted.
+# -> e.g. https://cad-api.mysite.com/v1 or http://99.99.00.190:8080/v1
+NEXT_PUBLIC_PROD_ORIGIN="https://cad-api.example.com/v1"
+
+# only enter this value if you're using a domain!
+# domain should only be the domain, NOT including sub-domains
+# example: `DOMAIN="example.com"`
+DOMAIN="example.com"
+
+# "true" or "false"
+# Can only be enabled when having valid SSL (https) and a domain.
+SECURE_COOKIES_FOR_IFRAME="false"
+
+# The port of which the API will run on. Default: 8080
+# When using Docker, make sure to change this in the `production.docker-compose.yml` file too.
+PORT_API=8080
+
+# The port of which the client will run on. Default: 3000
+PORT_CLIENT=3000
+
+# Errors get reported to Linear (Project manager). This is done so errors can be fixed faster.
+TELEMETRY_ENABLED="true"
+
+# Do not change this.
+NODE_ENV="production"
+
+# Do not change this, unless you know what you're doing!
+DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_PORT}/${POSTGRES_DB}?sslmode=prefer
+```
+
+</details>
+
 #### 3.2 Moving env file
 
 Once you've **correctly configured all the variables**, we must copy the `.env` file to the client and API:
