@@ -4,7 +4,7 @@ SnailyCADv4 allows you to install custom fonts. This guide will show you how.
 
 ## 1. Downloading the font
 
-You must download your font as a `.woff2` type.
+You must download your font as a `.woff2` or `.ttf` type.
 
 ## 2. Adding the font to the client
 
@@ -15,14 +15,14 @@ Once created, place your font in the `/public/fonts` folder.
 
 ## 3. Including the font in the client
 
-We must now edit some code to include this font in the client. Open the file: `packages/client/src/styles/globals.scss`.
+We must now edit some code to include this font in the client. Open the file: `packages/client/src/styles/fonts.scss`.
 
 Now add the following to the file:
 
 ```scss
 @font-face {
   font-family: "MyFontNameHere";
-  src: url("/fonts/MyFontNameHere.woff2");
+  src: url("../../public/fonts/MyFontNameHere.woff2");
 }
 ```
 
