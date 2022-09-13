@@ -1,0 +1,74 @@
+[
+  {
+    "value": "Juvenile Beyond Control",
+    "priority": null
+  },
+  {
+    "value": "Juvenile Disturbance",
+    "priority": null
+  },
+  {
+    "value": "Child Abuse",
+    "priority": "A"
+  },
+  {
+    "value": "Sexual Assault under the age of 15",
+    "priority": "A"
+  },
+  {
+    "value": "Sexual Assault over the age of 15",
+    "priority": "A"
+  },
+  {
+    "value": "Elder Abuse",
+    "priority": "A"
+  },
+  {
+    "value": "Domestic Abuse",
+    "priority": "A"
+  },
+  {
+    "value": "Person Attempting Suicide",
+    "priority": "A"
+  },
+  {
+    "value": "Death / Coroner"
+  },
+  {
+    "value": "Mental Health Detention"
+  },
+  {
+    "value": "Burglary Alarm",
+    "priority": "B"
+  },
+  {
+    "value": "Traffic Stop",
+    "priority": "B"
+  },
+  {
+    "value": "Passing calls"
+  },
+  {
+    "value": "Bomb Threat",
+    "priority": "A"
+  },
+  {
+    "value": "Suspected explosive device found",
+    "priority": "A"
+  },
+  {
+    "value": "Suspicious Mailing"
+  },
+  {
+    "value": "Hospital Watch"
+  },
+  {
+    "value": "Eviction"
+  },
+  {
+    "value": "Warrant Service"
+  },
+  {
+    "value": "Welfare Check"
+  }
+]
