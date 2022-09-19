@@ -6,8 +6,16 @@ Below you will find out how to use an existing locale or how to add a new custom
 
 To use an existing locale, you need to set as default in `next.config.js`:
 
+:::caution
+
+It is advised not to edit an existing language directly.
+This could cause merge conflicts in the future.
+Update the language remotely on GitHub via a Pull Request or create a new language entry.
+
+:::
+
 ```js
-// packages/client/next.config.js
+// apps/client/next.config.js
 // ...
 {
  i18n: {
@@ -25,13 +33,13 @@ Restarting the client will now set the default locale to the locale you set.
 
 To add a custom locale, there are a few more steps.
 
-1. Open the following directory: `packages/client/locales`
+1. Open the following directory: `apps/client/locales`
 2. Duplicate the `en` folder and rename to a correct [locale code](https://github.com/meikidd/iso-639-1/blob/master/src/data.js)
 3. Start editing the `.json` files in the **newly duplicated** folder.
 4. Once finished, add your locale to `next.config.js`:
 
 ```js
-// packages/client/next.config.js
+// apps/client/next.config.js
 // ...
 {
  i18n: {
