@@ -49,19 +49,21 @@ body {
 
 Once you've followed all the steps **correctly**, we can now re-build the client. First stop the CAD, then run the following command:
 
+### Standalone
+
 ```sh
 yarn workspace @snailycad/client build
+```
+
+### Docker
+
+```sh
+docker-compose -f production.docker-compose.yml build
 ```
 
 ## 5. Starting the CAD
 
 Once you've followed all the above steps, we can restart the CAD again with the following command:
-
-### Docker
-
-```bash
-docker-compose -f production.docker-compose.yml up -d
-```
 
 ### Standalone
 
@@ -75,4 +77,10 @@ yarn workspace @snailycad/client start
 
 ```bash
 yarn workspace @snailycad/api start
+```
+
+### Docker
+
+```bash
+docker-compose -f production.docker-compose.yml up -d
 ```

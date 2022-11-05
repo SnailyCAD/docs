@@ -54,16 +54,6 @@ cd snaily-cadv4
 
 <img src="/gifs/cd.gif" alt="Change directory short clip" loading="lazy" width="600px" />
 
-### 2. Installing dependencies
-
-Now we will install the dependencies that are required for SnailyCADv4 to function properly.
-
-```bash
-yarn
-```
-
-<img src="/gifs/yarn.gif" alt="yarn install short clip" loading="lazy" width="600px" />
-
 ### 3. Configuration
 
 Configuration can be a bit complicated, so pay close attention. The following steps will help you configure SnailyCADv4's environment variables.
@@ -177,10 +167,14 @@ docker network create cad_web
 
 ### 4. Building everything
 
-Now we must build all the packages & apps again. _(client, schemas, config, types)_
+Now we must build the Docker container. This will automatically install the dependencies build the packages and more.
+
+:::caution
+This command must **always** be run after changing the `.env` file
+:::
 
 ```bash
-yarn turbo run build
+docker-compose -f production.docker-compose.yml up -d
 ```
 
 ### 5. Starting SnailyCADv4
@@ -196,8 +190,8 @@ docker-compose -f production.docker-compose.yml up -d
 
 #### 5.1 Tips
 
-- To stop SnailyCADv4, enter `docker-compose down` in a command prompt/terminal in the directory where you installed the CAD and wait for the services to stop.
-- To view Docker's logs for SnailyCAdv4, enter `docker-compose logs` in a command prompt/terminal in the directory where you installed the CAD.
+- To stop SnailyCADv4, enter `docker-compose -f production.docker-compose.yml down` in a command prompt/terminal in the directory where you installed the CAD and wait for the services to stop.
+- To view Docker's logs for SnailyCAdv4, enter `docker-compose -f production.docker-compose.yml logs` in a command prompt/terminal in the directory where you installed the CAD.
 
 ### 6. Accessing SnailyCADv4
 

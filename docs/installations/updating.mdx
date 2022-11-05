@@ -5,7 +5,7 @@ This guide explains how to update SnailyCADv4 to a new version.
 ## Getting started
 
 First, shut down the CAD.
-This can be done by pressing `CTRL+C` in the Command Prompt for standalone installations or `docker-compose down` for Docker installations
+This can be done by pressing `CTRL+C` in the Command Prompt for standalone installations or `docker-compose -f production.docker-compose.yml down` for Docker installations
 
 There are 2 ways of updating SnailyCADv4:
 
@@ -13,6 +13,12 @@ There are 2 ways of updating SnailyCADv4:
 - [Manually](#manual)
 
 ### Automatic
+
+:::caution
+
+**This method can only be used for Standalone installations. Please see [Manual update section](#manual).**
+
+:::
 
 :::caution
 
@@ -58,22 +64,30 @@ If there's something that needs to be changed in the .env file, make sure to do 
 
 Now we must build all the packages & apps again. _(client, schemas, config, types)_
 
-```bash
+**Standalone**
+
+```sh
 yarn turbo run build
+```
+
+**Docker**
+
+```sh
+docker-compose -f production.docker-compose.yml build
 ```
 
 ### Starting SnailyCAD
 
 To bring the CAD back up run the following command:
 
-##### Docker
-
-```bash
-docker-compose -f production.docker-compose.yml up -d
-```
-
 ##### Standalone
 
 ```bash
 yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+```
+
+##### Docker
+
+```bash
+docker-compose -f production.docker-compose.yml up -d
 ```
