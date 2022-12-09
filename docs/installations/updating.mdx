@@ -48,6 +48,17 @@ First we must update our local code:
 git pull origin main
 ```
 
+:::caution
+If you encounter any merge conflicts, please resolve them before continuing.
+
+This can be done by backing up any locale changes you've made including `apps/client/next.config.js`. Then you can safely run the following command:
+
+```bash
+git stash && git pull origin main
+```
+
+:::
+
 #### Updating dependencies
 
 Secondly, we must update dependencies that might've changes from the last release. To do so, run the following command:
