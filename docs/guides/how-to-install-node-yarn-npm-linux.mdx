@@ -1,0 +1,43 @@
+# How to install Node.js, npm and yarn on Linux
+
+In this short guide you will learn how to install Node.js and yarn for SnailyCADv4.
+
+## Node.js
+
+First, update your existing list of packages with the following command:
+
+```bash
+sudo apt update
+```
+
+Next, install the Node.js source repository with the following command:
+
+```bash
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+```
+
+Finally, install Node.js with the following command:
+
+```bash
+sudo apt install nodejs
+```
+
+This will install both Node.js and npm on your Ubuntu system.
+
+## Yarn
+
+To install yarn, run the following command:
+
+```bash
+sudo npm install --global yarn
+```
+
+## Verify the installation
+
+To verify that Node.js and yarn are installed, run the following commands:
+
+```bash
+node -v
+npm -v
+yarn -v
+```
