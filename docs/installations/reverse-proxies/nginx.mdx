@@ -148,7 +148,33 @@ sudo systemctl restart nginx
 SnailyCAD is now running behind NGINX. You can now access SnailyCAD by visiting `http://cad.example.com` with the API accessible via `http://cad-api.example.com`.
 :::
 
-## 5. SSL
+## 5. Enabling Firewall
+
+To enable the firewall, we will use the `ufw` tool. To install `ufw`, run the following command:
+
+```bash
+sudo apt install ufw
+```
+
+Now, we need to allow the SSH, HTTP and HTTPS ports. To do this, run the following commands:
+
+```bash
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+```
+
+Now, we need to enable the firewall. To do this, run the following command:
+
+```bash
+sudo ufw enable
+```
+
+:::tip
+You will be asked to confirm the action. Type `y` and press `Enter` to confirm.
+:::
+
+## 6. SSL
 
 To enable SSL, we will use the `certbot` tool. To install `certbot`, run the following command:
 
@@ -176,7 +202,7 @@ Successfully deployed certificate for https://cad.example.com
 #...
 ```
 
-## 6. Updating SnailyCAD configuration
+## 7. Updating SnailyCAD configuration
 
 You must now update the SnailyCAD configuration to use the SSL certificate. To do this, open the SnailyCAD `.env` file:
 
