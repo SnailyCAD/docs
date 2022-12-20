@@ -1,0 +1,237 @@
+# NGINX Reverse Proxy Guide
+
+:::caution
+This guide is targetted for Linux (Debian, Ubuntu) users. For Windows users, a guide will be made available early 2023.
+:::
+
+## Terminology
+
+- **API**: The API of SnailyCAD - the backend.
+- **Client**: The client (UI) of SnailyCAD - the frontend.
+- **NGINX**: NGINX is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
+
+## 1. Installing NGINX
+
+First, we need to install NGINX. To do this, we will use the `apt` package manager. To install NGINX, run the following command:
+
+```bash
+sudo apt install nginx
+```
+
+## 2. Configuring NGINX
+
+Next, we need to configure NGINX. To do this, we will use the `nano` text editor. We will separate the configuration for the API and the client.
+
+### 2.1 Configuring NGINX for SnailyCAD's API
+
+To open the NGINX configuration file, run the following command:
+
+```bash
+sudo nano /etc/nginx/sites-available/cad-api
+```
+
+Now, we need to add the following configuration to the file:
+
+```bash
+# SnailyCAD API Reverse Proxy
+server {
+  # Replace `example.com` with your domain name.
+  server_name cad-api.example.com;
+
+  location / {
+    proxy_pass http://localhost:8080; # The API port of SnailyCAD's API (Default: 8080)
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+  }
+
+
+  # Security headers
+  add_header X-XSS-Protection          "1; mode=block" always;
+  add_header X-Content-Type-Options    "nosniff" always;
+  add_header Referrer-Policy           "no-referrer" always;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+  add_header X-DNS-Prefetch-Control on;
+  add_header Cross-Origin-Resource-Policy "same-site";
+  add_header X-Frame-Options DENY always;
+
+  # keep this as-is unless you know what you're doing.
+  # for SSL, see step 6
+  listen 80;
+}
+```
+
+:::tip
+To save the file, press `CTRL + X` and then `Y` to confirm.
+:::
+
+### 2.2 Configuring NGINX for SnailyCAD's client (UI)
+
+Again, to open the NGINX configuration file, run the following command:
+
+```bash
+sudo nano /etc/nginx/sites-available/cad-client
+```
+
+Now, we need to add the following configuration to the file:
+
+```bash
+# SnailyCAD Client Reverse Proxy
+server {
+  # Replace `example.com` with your domain name.
+  server_name cad.example.com;
+
+  location / {
+    proxy_pass http://localhost:3000; # The API port of SnailyCAD's client (Default: 3000)
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+  }
+
+
+  # Security headers
+  add_header X-XSS-Protection          "1; mode=block" always;
+  add_header X-Content-Type-Options    "nosniff" always;
+  add_header Referrer-Policy           "no-referrer" always;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+  add_header X-DNS-Prefetch-Control on;
+  add_header Cross-Origin-Resource-Policy "same-site";
+  add_header X-Frame-Options DENY always;
+
+  # keep this as-is unless you know what you're doing.
+  # for SSL, see step 6
+  listen 80;
+}
+```
+
+:::tip
+To save the file, press `CTRL + X` and then `Y` to confirm.
+:::
+
+### 2.3 Verify NGINX configuration
+
+To verify the NGINX configuration, run the following command:
+
+```bash
+sudo nginx -t
+```
+
+If the configuration is valid, you should see the following output:
+
+```bash
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+
+## 3. Enabling NGINX configuration
+
+Now, we need to enable the NGINX configuration. To do this, run the following commands:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/cad-api /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/cad-client /etc/nginx/sites-enabled/
+```
+
+## 4. Restarting NGINX
+
+Finally, we need to restart NGINX. To do this, run the following command:
+
+```bash
+sudo systemctl restart nginx
+```
+
+:::tip
+SnailyCAD is now running behind NGINX. You can now access SnailyCAD by visiting `http://cad.example.com` with the API accessible via `http://cad-api.example.com`.
+:::
+
+## 5. Enabling Firewall
+
+To enable the firewall, we will use the `ufw` tool. To install `ufw`, run the following command:
+
+```bash
+sudo apt install ufw
+```
+
+Now, we need to allow the SSH, HTTP and HTTPS ports. To do this, run the following commands:
+
+```bash
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+```
+
+Now, we need to enable the firewall. To do this, run the following command:
+
+```bash
+sudo ufw enable
+```
+
+:::tip
+You will be asked to confirm the action. Type `y` and press `Enter` to confirm.
+:::
+
+## 6. SSL
+
+To enable SSL, we will use the `certbot` tool. To install `certbot`, run the following command:
+
+```bash
+sudo apt install certbot python3-certbot-nginx
+```
+
+Now, we need to generate the SSL certificate. To do this, run the following command:
+
+```bash
+certbot --nginx
+```
+
+:::tip
+You will be asked to enter your email address and agree to the terms of service.
+Once accepted the ToS, Certbot will ask you to select the domain name you want to generate the SSL certificate for.
+Select the domain name you want to generate the SSL certificate for and press `Enter`.
+:::
+
+Now, Certbot will generate the SSL certificate for you. Once it's done, you should see the following output:
+
+```bash
+Certificate Deployed
+Successfully deployed certificate for https://cad.example.com
+#...
+```
+
+## 7. Updating SnailyCAD configuration
+
+You must now update the SnailyCAD configuration to use the SSL certificate. To do this, open the SnailyCAD `.env` file:
+
+```bash
+# This is the URL to your site where the CAD is hosted.
+CORS_ORIGIN_URL="https://cad.example.com"
+
+# This is the URL to your site where the CAD is hosted.
+NEXT_PUBLIC_CLIENT_URL="https://cad.example.com"
+
+# The URL to where the API is hosted.
+NEXT_PUBLIC_PROD_ORIGIN="https://cad-api.example.com/v1"
+
+# The domain of your site. Without any subdomains or paths.
+DOMAIN="example.com"
+```
+
+:::tip
+Replace `example.com` with your domain name.
+:::
+
+:::tip
+You can now access SnailyCAD via `https://cad.example.com` with the API accessible via `https://cad-api.example.com`.
+:::
+
+## Troubleshooting
+
+If you are having issues with NGINX, you can check the NGINX logs. To do this, run the following command:
+
+```bash
+sudo tail -f /var/log/nginx/error.log
+```
