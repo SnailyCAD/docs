@@ -58,7 +58,7 @@ server {
   add_header X-Frame-Options DENY always;
 
   # keep this as-is unless you know what you're doing.
-  # for SSL, further read the guide.
+  # for SSL, see step 6
   listen 80;
 }
 ```
@@ -103,7 +103,7 @@ server {
   add_header X-Frame-Options DENY always;
 
   # keep this as-is unless you know what you're doing.
-  # for SSL, further read the guide.
+  # for SSL, see step 6
   listen 80;
 }
 ```
@@ -179,7 +179,7 @@ You will be asked to confirm the action. Type `y` and press `Enter` to confirm.
 To enable SSL, we will use the `certbot` tool. To install `certbot`, run the following command:
 
 ```bash
-sudo apt install certbot
+sudo apt install certbot python3-certbot-nginx
 ```
 
 Now, we need to generate the SSL certificate. To do this, run the following command:
