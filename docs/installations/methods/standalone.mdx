@@ -214,6 +214,10 @@ After completing all the steps above, we are ready to startup the CAD. To do thi
 yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 ```
 
+:::tip
+To run SnailyCADv4 in the background, [you can use PM2](/docs/guides/how-to-start-with-pm2) instead of the command above.
+:::
+
 ### 6. Accessing SnailyCADv4
 
 By default, you can access SnailyCADv4 via a web browser on your [LAN IP](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) and the `PORT_CLIENT`, example: `http://192.168.92.20:3000`
