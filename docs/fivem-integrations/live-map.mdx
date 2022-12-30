@@ -1,59 +1,45 @@
+---
+sidebar_position: 0
+---
+
 # Live Map
 
 This guide will show you how to install connect the live_map addon.
-SnailyCADv4 uses [an amazing script made by TGRHavoc](https://github.com/TGRHavoc/live_map).
+SnailyCADv4 forked an amazing script made by TGRHavoc.
+
+:::caution
+You must have [Discord Authentication](/docs/discord-integration/discord-authentication) or [Steam Authentication](/docs/steam-integration/steam-authentication) enabled in your SnailyCAD.
+:::
 
 ## Installation
 
-1. Download the [live_map ZIP](https://github.com/TGRHavoc/live_map/archive/refs/heads/master.zip)
-2. Extract and place in your resources folder (`resources/live_map`)
-3. Update your server.cfg
+:::caution
+You **must** download via the releases tab. **Not** the source code.
+:::
+
+1. Download [the latest release](https://github.com/SnailyCAD/live-map/releases) (`sna-live-map`).
+2. Extract and place in your resources folder (`resources/sna-live-map`)
+3. Update your server.cfg:
 
 ```bash
-set socket_port 30121
-set livemap_debug "warn" # "[all]" 'trace', 'debug', 'info', 'warn', 'error', 'fatal', 'off'
-set livemap_access_control "*"
-set livemap_use_nucleus true # Allow livemap to set up a secure reverseProxy using the Nucleus project
+set socket_port 30121 # `sna-live-map` default socket port
 
-ensure live_map
+ensure sna-live-map
 ```
 
-More documentation [can be found here](https://docs.tgrhavoc.co.uk/livemap_resource/).
+5. Start the resource in your server.
 
 ## Connecting to SnailyCADv4
 
 1. Start the resource in your server.
-2. - Using Nucleus? -> You can copy the provided WebSocket URL (`wss://`)
-   - Using Custom URL? -> You should get your WebSocket URL from your server. The default port is `30121`.
-3. Open the CAD-Settings page and head to the `Misc Settings` tab.
-4. Find the `Live map URL` field and paste your copied URL from step 2.
-5. Open the live map via the dispatch dropdown.
-6. All done!
+2. Open the CAD-Settings page and head to the `Misc Settings` tab.
+3. Find the `Live map URL` field and paste your copied URL from step.
+   -> `http://FIVEM_SERVER_IP:PORT`. Example: `http://182.148.288.102:30121`.
+4. Open the live map via the dispatch dropdown.
+5. All done!
 
-## Errors
+## Latest features
 
-If you're running into errors, the most common errors can be found below:
-
-- [Nucleus Proxy](#nucleus-proxy)
-- [Not Connecting](#not-connecting)
-- [Using SSL in your domain](#using-ssl-in-your-domain)
-
-### Nucleus Proxy
-
-At this time there seems to be some issues with the Nucleus Proxy method which doesn't allow connections.
-This is a known issue on the Live Map resource and can be tracked [here](https://github.com/TGRHavoc/live_map/issues/83).
-
-### Not connecting
-
-- Make sure the port is port forwarded.
-- Make sure the URL starts with `ws://` or `wss://`.
-- Make sure the IP/domain is correct and supports WebSockets.
-- Make sure your FiveM server is online.
-- Make sure the `live_map` resource is started.
-
-### Using SSL in your domain
-
-If you're using SSL in your domain, you must have a Secure WebSocket connection.
-This can be done by creating a proxy for the WebSocket and adding an SSL certificate to it.
-
-Once that's configured, you can use `wss://.....`. _replace the dots with your actual domain and such._
+- Discord connections support
+- Steam connections support
+- Updated socket server

@@ -6,9 +6,9 @@ This guide explains how to setup SnailyCADv4 **with an automated installer proce
 
 All the items listed below are required to get the CAD up and running smoothly.
 
-- [Git](https://git-scm.com/downloads)
-- [Node.js](https://nodejs.org) **(16.6+ is required.)** ([Video Guide](https://youtu.be/rp308wNdXU8))
-- [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Video Guide](https://youtu.be/rp308wNdXU8))
+- [Git](https://git-scm.com/downloads) ([Windows Guide](https://youtu.be/EsNgheQPZs4)) ([Linux Guide](/docs/guides/how-to-install-git-linux))
+- [Node.js](https://nodejs.org) **(16.6+ is required.)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux))
+- [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux#yarn))
 - [PostgreSQL](https://www.postgresql.org/download/) **(version 14 or higher)** ([Video Guide](https://www.youtube.com/watch?v=ZKWZvafvqwM))
 
 ## Getting Started
@@ -48,6 +48,10 @@ After completing all the steps above, we are ready to startup the CAD. To do thi
 ```bash
 yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 ```
+
+:::tip
+To run SnailyCADv4 in the background, [you can use PM2](/docs/guides/how-to-start-with-pm2) instead of the command above.
+:::
 
 ### 6. Accessing SnailyCADv4
 

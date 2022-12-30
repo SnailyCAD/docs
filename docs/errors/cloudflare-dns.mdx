@@ -1,0 +1,33 @@
+# Cloudflare DNS Issues
+
+When using Cloudflare as DNS, you're required to update some settings for SnailyCAD to properly work.
+
+## 1. Disable Brotli caching
+
+1. Open your site on the dasboard
+2. Head to Speed -> Optimizations
+3. Look for and disable "Brotli"
+
+![Brotli Caching](/brotli-cache.png)
+
+## 2. Set caching level
+
+1. Head to Caching -> Configuration
+2. Look for "Caching Level"
+3. Set it to `No query string`
+
+![set cache level](/brotli-cache.png)
+
+## 3. Set Cache TTL
+
+1. Head to Caching -> Configuration
+2. Look for "Browser Cache TTL"
+3. Set to `Respect Existing Headers`
+
+![set cache ttl](/cache-ttl.png)
+
+## 4. Done
+
+You should have now successfully configured Cloudflare to support SnailyCAD.
+
+_Thanks to Shain on Discord for providing this information._

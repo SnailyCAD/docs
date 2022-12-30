@@ -29,7 +29,20 @@ const config = {
     ],
   ],
 
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  plugins: [
+    require.resolve("@cmfcmf/docusaurus-search-local"),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          { to: "/docs/guides/how-to-translate", from: "/docs/features/translating" },
+          { to: "/docs/guides/how-to-add-a-custom-favicon", from: "/docs/features/favicon" },
+          { to: "/docs/guides/how-to-install-custom-fonts", from: "/docs/features/custom-fonts" },
+          { to: "/docs/guides/how-to-start-with-screen", from: "/docs/features/using-screen" },
+        ],
+      },
+    ],
+  ],
 
   themeConfig: {
     navbar: {
