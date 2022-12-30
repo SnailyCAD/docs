@@ -1,0 +1,93 @@
+[
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "EMS_FD",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "Emergency Medical Services",
+        "position": 0
+    },
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "EMS_FD",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "Los Santos Fire Department",
+        "position": 1
+    },
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "EMS_FD",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "Blaine County Fire Department",
+        "position": 2
+    },
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "LEO",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "Los Santos Police Department",
+        "position": 3
+    },
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "LEO",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "Los Santos County Sheriff's Office",
+        "position": 4
+    },
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "LEO",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "Blaine County Sherriff's Office",
+        "position": 5
+    },
+    {
+        "callsign": "",
+        "whitelisted": false,
+        "isDefaultDepartment": false,
+        "type": "LEO",
+        "statusValueId": null,
+        "defaultOfficerRankId": null,
+        "isConfidential": false,
+        "extraFields": null,
+        "defaultOfficerRank": null,
+        "value": "San Andreas Highway Patrol",
+        "position": 6
+    }
+]
