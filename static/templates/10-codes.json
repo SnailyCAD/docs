@@ -1,0 +1,657 @@
+[
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-1 • Frequency change",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-5 • Meal break",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-6 • Busy",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_OFF_DUTY",
+        "whatPages": [
+            "EMS_FD",
+            "LEO",
+            "DISPATCH"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-7 • Out of Service",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_ON_DUTY",
+        "whatPages": [
+            "DISPATCH",
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-8 • In Service",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-9 • Repeat transmission",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-15 • Suspect in custody & transporting to station",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO",
+            "EMS_FD"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-16 • Stolen vehicle",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-17 • Suspicious person",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-20 • Location",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-22 • Disregard",
+        "position": null
+    },
+    {
+        "shouldDo": "ON_SCENE",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-23 • Arrived on scene",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-25 • Domestic dispute / disturbance \t",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-26 • ETA",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-32 • Request backup",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-3 • Stop transmitting",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-4 • Affirmative",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-10 • Fight in progress",
+        "position": null
+    },
+    {
+        "shouldDo": "ON_SCENE",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-11 • Traffic stop",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-12 • Active ride along",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-13 • Shots fired",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-27 • License check for valid",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-28 • Plate check for valid",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-29 • NCIC Warrant check",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-30 • Wanted person",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-32 • Request backup",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-35 • Wrap the scene up",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-41 • Beginning of shift",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-42 • Ending of shift",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-43 • Information",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-49 • Homicide",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-50 • Vehicle accident",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-51 • Request tow",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-52 • Request EMS",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-53 • Request Fire Dept",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-55 • Intoxicated driver",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-56 • Intoxicated Pedestrian",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-60 • Person armed with a gun",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-61 • Person armed with a knife",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-62 • Kidnapping",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-64 • Sexual assault",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-65 • Escorting prisoner",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-66 • Reckless driver",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO",
+            "EMS_FD"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-67 • Fire",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-68 • Armed robbery",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-70 • Foot pursuit",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-71 • Request supervisor",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-73 • Advise status",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-80 • Vehicle pursuit",
+        "position": null
+    },
+    {
+        "shouldDo": "EN_ROUTE",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": " \t 10-97 • In route",
+        "position": null
+    },
+    {
+        "shouldDo": "PANIC_BUTTON",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "10-99 • Distress",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "11-44 • Person deceased",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "Signal 11 • Running radar",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "EMS_FD",
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "Code 4 • Under control / call over",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "STATUS_CODE",
+        "departments": [],
+        "value": "Code 5 • Felony stop / High risk stop",
+        "position": null
+    }
+]
