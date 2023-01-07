@@ -1,0 +1,827 @@
+[
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "MRP – Marine Patrol / Watercraft Violation",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tSTV – Stolen Vehicle",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tVCP – Vice: Prostitution",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DISW – Disturbance W/Weapon",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "LTR – Littering / Dumping",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SUA – Suicide Attempt",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ABV – Abandoned Vehicle",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DOM – Domestic Disturbance",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "PWL – Prowler",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tTAI – Traffic Accident, Injury",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ASLW – Assault with Weapon",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tHAR – Harassment",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "NOI – Noise Complaint",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SSV – Suspicious Vehicle",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ATL – Attempt to Locate",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "FRDN – Fraud Now or Just Occurred",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "MOA – Motorist Assist",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "PROP – Found Property",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "911C – Incomplete 911 Cell/Wireless",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DB – Dead Body",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tMNCN – Menacing Now / Just Occurred",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ALA – Alarm, Audible",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "CIVE – Civil Enforcement",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tJUVM – Juvenile Missing",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "RSV – Recovered Stolen Vehicle",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "THS – Theft Shoplifter",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SSP – Suspicious Person",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ARS – Arson",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ESC – Escape / Walk Away",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "MIP - Minor in Possession of Alcohol / Drugs",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tSHOT – Shots Fired/Heard",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "TRP – Trespass",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "TS - Traffic Stop",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DUI – Drunk Driver",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tKDN – Kidnap",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "HMV – Home Visit",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SXN – Sex Crime Now / Just Occurred",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SXE – Sex Crime, Expose (Indecent Exposure)",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DIS – Disturbance Fight",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "MEN – Mental Subject",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SAR – Search & Rescue",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tSUT – Suicide Threat",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tTRF – Traffic Complaint",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "BOM – Bomb Incidents",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "FWK – Firework",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "PUR – Pursuit",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SXR – Sex Crime, Rape",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "VCD – Vice: Drugs",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "911 – Incomplete 911 Wireline",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "COV1 – Cover Officer Request",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ORD – Ordinance Violation",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "SSC - Suspicious Circumstance/Activity",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "TAN – Traffic Accident Non-Injury",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ALR – Alarm, Robbery/Hold Up",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ASL – Assault",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "MENT – Mental",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "THV – Theft From Vehicle",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "AIR – Aircraft Incident",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DETAIL – Detail",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "DROWN – Drowning Incident",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "JUVA – Juvenile Abuse or Neglect",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tROB – Robbery",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "\tJUV – Juvenile Problem",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "TRAIN – Train Accident",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ALO – Alarm, Other",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "MNC – Menacing",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "PRM – Premise / Security Check",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "WSV – Warrant Service",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "THFN – Theft Now or Just Occurred",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "AFD – Assist Fire Department",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "HAZ – Hazard",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "CRM – Criminal Mischief",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "PRK – Parking Complaint",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "TAU - Traffic Accident, Unknown if Injury",
+        "position": null
+    },
+    {
+        "shouldDo": "SET_STATUS",
+        "whatPages": [
+            "LEO"
+        ],
+        "color": "",
+        "type": "SITUATION_CODE",
+        "departments": [],
+        "value": "ALS – Alarm, Silent",
+        "position": null
+    }
+]
