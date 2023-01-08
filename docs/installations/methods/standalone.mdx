@@ -96,6 +96,18 @@ Now we can start configuring the variables in the `.env` file. See next step [3.
 
 #### 3.1 .env info
 
+:::caution
+**WARNING:** Please, do not edit `apps/client/.env` or `apps/api/.env` directly. Always edit the root `.env` file.
+
+When changing something in the `.env` file after the installation process, make sure to run the following steps:
+
+1. `node scripts/copy-env.mjs --client --api`
+2. `yarn workspace @snailycad/client build`
+
+[Read more here](/docs/guides/how-to-properly-update-env)
+
+:::
+
 - `POSTGRES_PASSWORD`: The password to the PostgreSQL database.
 - `POSTGRES_USER`: The username to the PostgreSQL database.
 - `DB_HOST`: The database host. _Most likely `localhost`_
@@ -185,18 +197,6 @@ node scripts/copy-env.mjs --client --api
 ```
 
 <img src="/gifs/copy-env.gif" alt="copy env short clip" loading="lazy" width="600px" />
-
-:::caution
-**WARNING:** Please, do not edit `apps/client/.env` or `apps/api/.env` directly. Always edit the root `.env` file.
-
-When changing something in the `.env` file after the installation process, make sure to run the following steps:
-
-1. `node scripts/copy-env.mjs --client --api`
-2. `yarn workspace @snailycad/client build`
-
-[Read more here](/docs/guides/how-to-properly-update-env)
-
-:::
 
 ### 4. Building everything
 

@@ -28,6 +28,18 @@ node script.js
 
 ### Filling environment questions (.env file)
 
+:::caution
+**WARNING:** Please, do not edit `apps/client/.env` or `apps/api/.env` directly. Always edit the root `.env` file.
+
+When changing something in the `.env` file after the installation process, make sure to run the following steps:
+
+1. `node scripts/copy-env.mjs --client --api`
+2. `yarn workspace @snailycad/client build`
+
+[Read more here](/docs/guides/how-to-properly-update-env)
+
+:::
+
 - `POSTGRES_PASSWORD`: The password to the PostgreSQL database.
 - `POSTGRES_USER`: The username to the PostgreSQL database.
 - `DB_HOST`: The database host. _Most likely `localhost`_
