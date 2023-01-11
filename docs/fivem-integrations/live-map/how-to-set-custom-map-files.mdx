@@ -1,0 +1,25 @@
+---
+sidebar_position: 3
+---
+
+# How to set custom map files
+
+If your community uses a different map you are able to change this. There is some setup required for this.
+
+## Requirements
+
+- Map tiles, must be the following format:
+  - `minimap_sea_0_0.webp`
+  - `minimap_sea_0_1.webp`
+  - `minimap_sea_1_0.webp`
+  - `minimap_sea_1_1.webp`
+  - `minimap_sea_2_0.webp`
+  - `minimap_sea_2_1.webp`
+
+## Steps
+
+1. Get your map tiles ready. (See requirements)
+2. Head to the `<CAD-Root>/apps/client/public/tiles`.
+3. Replace the default map tiles with your map files.
+4. Rebuild the client: `yarn turbo run build`
+5. Restart the CAD
