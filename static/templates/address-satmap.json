@@ -3998,5 +3998,735 @@
         "value": "El Rancho Boulevard",
         "county": "El Burro Heights",
         "postal": "800"
+    },
+    {
+        "value": "South Shambles Street",
+        "county": "El Burro Heights",
+        "postal": "801"
+    },
+    {
+        "value": "South Shambles Street",
+        "county": "Cypress Flats",
+        "postal": "802"
+    },
+    {
+        "value": "South Shambles Street",
+        "county": "Cypress Flats",
+        "postal": "803"
+    },
+    {
+        "value": "South Shambles Street",
+        "county": "Cypress Flats",
+        "postal": "804"
+    },
+    {
+        "value": "Hanger Way",
+        "county": "Cypress Flats",
+        "postal": "805"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "806"
+    },
+    {
+        "value": "Orchardville Avenue",
+        "county": "Cypress Flats",
+        "postal": "807"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "808"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "809"
+    },
+    {
+        "value": "Popular Street",
+        "county": "La Mesa",
+        "postal": "810"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "La Mesa",
+        "postal": "811"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "La Mesa",
+        "postal": "812"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "La Mesa",
+        "postal": "813"
+    },
+    {
+        "value": "Popular Street",
+        "county": "La Mesa",
+        "postal": "814"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "815"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "816"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "817"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "818"
+    },
+    {
+        "value": "Popular Street",
+        "county": "Cypress Flats",
+        "postal": "819"
+    },
+    {
+        "value": "Chum Street",
+        "county": "La Mesa",
+        "postal": "820"
+    },
+    {
+        "value": "El Rancho Boulevard",
+        "county": "Cypress Flats",
+        "postal": "821"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "Cypress Flats",
+        "postal": "822"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "Cypress Flats",
+        "postal": "823"
+    },
+    {
+        "value": "Innoncence Boulevard",
+        "county": "La Mesa",
+        "postal": "824"
+    },
+    {
+        "value": "Roy Lowenstein Boulevard",
+        "county": "La Mesa",
+        "postal": "825"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "Strawberry",
+        "postal": "826"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "Rancho",
+        "postal": "827"
+    },
+    {
+        "value": "Roy Lowenstein Boulevard",
+        "county": "Rancho",
+        "postal": "828"
+    },
+    {
+        "value": "Jamestown Street",
+        "county": "Rancho",
+        "postal": "829"
+    },
+    {
+        "value": "Dutch London Street",
+        "county": "Rancho",
+        "postal": "830"
+    },
+    {
+        "value": "Jamestown Street",
+        "county": "Rancho",
+        "postal": "831"
+    },
+    {
+        "value": "Macdonald Street",
+        "county": "Rancho",
+        "postal": "832"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "Strawberry",
+        "postal": "833"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "Strawberry",
+        "postal": "834"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Strawberry",
+        "postal": "835"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "Strawberry",
+        "postal": "836"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "Davis",
+        "postal": "837"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "Davis",
+        "postal": "838"
+    },
+    {
+        "value": "Brouge Avenue",
+        "county": "Rancho",
+        "postal": "839"
+    },
+    {
+        "value": "Carson Avenue",
+        "county": "Davis",
+        "postal": "840"
+    },
+    {
+        "value": "Roy Lowenstein Boulevard",
+        "county": "Rancho",
+        "postal": "841"
+    },
+    {
+        "value": "Roy Lowenstein Boulevard",
+        "county": "Rancho",
+        "postal": "842"
+    },
+    {
+        "value": "Dutch London Street",
+        "county": "Banning",
+        "postal": "843"
+    },
+    {
+        "value": "Dutch London Street",
+        "county": "Rancho",
+        "postal": "844"
+    },
+    {
+        "value": "Grove Street",
+        "county": "Davis",
+        "postal": "845"
+    },
+    {
+        "value": "Covenant Avenue",
+        "county": "Davis",
+        "postal": "846"
+    },
+    {
+        "value": "Carson Avenue",
+        "county": "Davis",
+        "postal": "847"
+    },
+    {
+        "value": "Macdonald Street",
+        "county": "Strawberry",
+        "postal": "848"
+    },
+    {
+        "value": "Innoncence Boulevard",
+        "county": "Strawberry",
+        "postal": "849"
+    },
+    {
+        "value": "Power Street",
+        "county": "Strawberry",
+        "postal": "850"
+    },
+    {
+        "value": "Alta Street",
+        "county": "Strawberry",
+        "postal": "851"
+    },
+    {
+        "value": "Carson Avenue",
+        "county": "Chamberlain Hills",
+        "postal": "852"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Strawberry",
+        "postal": "853"
+    },
+    {
+        "value": "Forum Drive",
+        "county": "Chamberlain Hills",
+        "postal": "854"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Chamberlain Hills",
+        "postal": "855"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "Strawberry",
+        "postal": "856"
+    },
+    {
+        "value": "Grove Street",
+        "county": "Davis",
+        "postal": "857"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "Davis",
+        "postal": "858"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "Banning",
+        "postal": "859"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "Banning",
+        "postal": "860"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "Banning",
+        "postal": "861"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "Maze Bank Arena",
+        "postal": "862"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "Maze Bank Arena",
+        "postal": "863"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "La Puerta",
+        "postal": "864"
+    },
+    {
+        "value": "Alta Street",
+        "county": "Strawberry",
+        "postal": "865"
+    },
+    {
+        "value": "Alta Street",
+        "county": "La Puerta",
+        "postal": "866"
+    },
+    {
+        "value": "La Puerta Freeway",
+        "county": "La Puerta",
+        "postal": "867"
+    },
+    {
+        "value": "La Puerta Freeway",
+        "county": "La Puerta",
+        "postal": "868"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "La Puerta",
+        "postal": "869"
+    },
+    {
+        "value": "Miriam Turner Overpass",
+        "county": "Elysian Island",
+        "postal": "870"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "Los Santos International Airport",
+        "postal": "871"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "La Puerta",
+        "postal": "872"
+    },
+    {
+        "value": "Davis Avenue",
+        "county": "La Puerta",
+        "postal": "873"
+    },
+    {
+        "value": "La Puerta Freeway",
+        "county": "La Puerta",
+        "postal": "874"
+    },
+    {
+        "value": "La Puerta Freeway",
+        "county": "Los Santos International Airport",
+        "postal": "875"
+    },
+    {
+        "value": "Greenwich Parkway",
+        "county": "Los Santos International Airport",
+        "postal": "876"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "877"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "878"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "879"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "880"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "881"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "882"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "883"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "884"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "885"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "886"
+    },
+    {
+        "value": "Greenwich Parkway",
+        "county": "Los Santos International Airport",
+        "postal": "887"
+    },
+    {
+        "value": "Autopia Parkway",
+        "county": "Los Santos International Airport",
+        "postal": "888"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "889"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "890"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "891"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "892"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "893"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "894"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "895"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "896"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "897"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "898"
+    },
+    {
+        "value": "Runway 1",
+        "county": "Los Santos International Airport",
+        "postal": "899"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "900"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "901"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "902"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "903"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "904"
+    },
+    {
+        "value": "Exceptionalists Way",
+        "county": "Los Santos International Airport",
+        "postal": "905"
+    },
+    {
+        "value": "New Empire Way",
+        "county": "Los Santos International Airport",
+        "postal": "906"
+    },
+    {
+        "value": "Exceptionalists Way",
+        "county": "Los Santos International Airport",
+        "postal": "907"
+    },
+    {
+        "value": "Exceptionalists Way",
+        "county": "Los Santos International Airport",
+        "postal": "908"
+    },
+    {
+        "value": "Exceptionalists Way",
+        "county": "Los Santos International Airport",
+        "postal": "909"
+    },
+    {
+        "value": "Miriam Turner Overpass",
+        "county": "Elysian Island",
+        "postal": "910"
+    },
+    {
+        "value": "Plaice Place",
+        "county": "Elysian Island",
+        "postal": "911"
+    },
+    {
+        "value": "Plaice Place",
+        "county": "Elysian Island",
+        "postal": "912"
+    },
+    {
+        "value": "Plaice Place",
+        "county": "Elysian Island",
+        "postal": "913"
+    },
+    {
+        "value": "Miriam Turner Overpass",
+        "county": "Elysian Island",
+        "postal": "914"
+    },
+    {
+        "value": "Chupacabra Street",
+        "county": "Elysian Island",
+        "postal": "915"
+    },
+    {
+        "value": "Plaice Place",
+        "county": "Elysian Island",
+        "postal": "916"
+    },
+    {
+        "value": "Chupacabra Street",
+        "county": "Elysian Island",
+        "postal": "917"
+    },
+    {
+        "value": "Miriam Turner Overpass",
+        "county": "Elysian Island",
+        "postal": "918"
+    },
+    {
+        "value": "Plaice Place",
+        "county": "Elysian Island",
+        "postal": "919"
+    },
+    {
+        "value": "Chupacabra Street",
+        "county": "Elysian Island",
+        "postal": "920"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "Elysian Island",
+        "postal": "921"
+    },
+    {
+        "value": "Chum Street",
+        "county": "Elysian Island",
+        "postal": "922"
+    },
+    {
+        "value": "Chum Street",
+        "county": "Elysian Island",
+        "postal": "923"
+    },
+    {
+        "value": "Chum Street",
+        "county": "Elysian Island",
+        "postal": "924"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "Elysian Island",
+        "postal": "925"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "Elysian Island",
+        "postal": "926"
+    },
+    {
+        "value": "Signal Street",
+        "county": "Elysian Island",
+        "postal": "927"
+    },
+    {
+        "value": "Voodoo Place",
+        "county": "Elysian Island",
+        "postal": "928"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Elysian Island",
+        "postal": "929"
+    },
+    {
+        "value": "Abattoir Avenue",
+        "county": "Elysian Island",
+        "postal": "930"
+    },
+    {
+        "value": "Abattoir Avenue",
+        "county": "Elysian Island",
+        "postal": "931"
+    },
+    {
+        "value": "Abattoir Avenue",
+        "county": "Elysian Island",
+        "postal": "932"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "Elysian Island",
+        "postal": "933"
+    },
+    {
+        "value": "Chum Street",
+        "county": "Elysian Island",
+        "postal": "934"
+    },
+    {
+        "value": "Abattoir Avenue",
+        "county": "Elysian Island",
+        "postal": "935"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Elysian Island",
+        "postal": "936"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "937"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "938"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "939"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "940"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "941"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "942"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "943"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "944"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "945"
+    },
+    {
+        "value": "Buccaneer Way",
+        "county": "Terminal",
+        "postal": "946"
     }
 ]
