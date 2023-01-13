@@ -3498,5 +3498,505 @@
         "value": "Vespucci Boulevard",
         "county": "Vespucci Canals",
         "postal": "700"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "Del Perro",
+        "postal": "701"
+    },
+    {
+        "value": "Del Perro Freeway",
+        "county": "Del Perro",
+        "postal": "702"
+    },
+    {
+        "value": "North Rockford Drive",
+        "county": "Vespucci Canals",
+        "postal": "703"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "Vespucci Canals",
+        "postal": "704"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "Vespucci Canals",
+        "postal": "705"
+    },
+    {
+        "value": "Imagination Court",
+        "county": "Vespucci Canals",
+        "postal": "706"
+    },
+    {
+        "value": "Prosperity Street",
+        "county": "Vespucci Canals",
+        "postal": "707"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "La Puerta",
+        "postal": "708"
+    },
+    {
+        "value": "Tackle Street",
+        "county": "La Puerta",
+        "postal": "709"
+    },
+    {
+        "value": "Dutch London Street",
+        "county": "La Puerta",
+        "postal": "710"
+    },
+    {
+        "value": "Mutiny Road",
+        "county": "La Puerta",
+        "postal": "711"
+    },
+    {
+        "value": "Shank Street",
+        "county": "La Puerta",
+        "postal": "712"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "Vespucci Canals",
+        "postal": "713"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "Vespucci Canals",
+        "postal": "714"
+    },
+    {
+        "value": "South Rockford Drive",
+        "county": "Vespucci Canals",
+        "postal": "715"
+    },
+    {
+        "value": "South Rockford Drive",
+        "county": "Vespucci Canals",
+        "postal": "716"
+    },
+    {
+        "value": "Del Perro Freeway",
+        "county": "Little Seoul",
+        "postal": "717"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "Little Seoul",
+        "postal": "718"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "Little Seoul",
+        "postal": "719"
+    },
+    {
+        "value": "Decker Street",
+        "county": "Little Seoul",
+        "postal": "720"
+    },
+    {
+        "value": "Ginger Street",
+        "county": "Little Seoul",
+        "postal": "721"
+    },
+    {
+        "value": "South Rockford Drive",
+        "county": "Little Seoul",
+        "postal": "722"
+    },
+    {
+        "value": "Calais Avenue",
+        "county": "Little Seoul",
+        "postal": "723"
+    },
+    {
+        "value": "Calais Avenue",
+        "county": "Little Seoul",
+        "postal": "724"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "Little Seoul",
+        "postal": "725"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "Little Seoul",
+        "postal": "726"
+    },
+    {
+        "value": "Ginger Street",
+        "county": "Little Seoul",
+        "postal": "727"
+    },
+    {
+        "value": "Del Perro Freeway",
+        "county": "Little Seoul",
+        "postal": "728"
+    },
+    {
+        "value": "Ginger Street",
+        "county": "Little Seoul",
+        "postal": "729"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "Little Seoul",
+        "postal": "730"
+    },
+    {
+        "value": "Calais Avenue",
+        "county": "Little Seoul",
+        "postal": "731"
+    },
+    {
+        "value": "Palomino Avenue",
+        "county": "Little Seoul",
+        "postal": "732"
+    },
+    {
+        "value": "La Puerta Freeway",
+        "county": "Little Seoul",
+        "postal": "733"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "Little Seoul",
+        "postal": "734"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "Little Seoul",
+        "postal": "735"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "Downtown",
+        "postal": "736"
+    },
+    {
+        "value": "La Puerta Freeway",
+        "county": "Pillbox Hill",
+        "postal": "737"
+    },
+    {
+        "value": "Alta Street",
+        "county": "Pillbox Hill",
+        "postal": "738"
+    },
+    {
+        "value": "Alta Street",
+        "county": "Pillbox Hill",
+        "postal": "739"
+    },
+    {
+        "value": "Peaceful Street",
+        "county": "Pillbox Hill",
+        "postal": "740"
+    },
+    {
+        "value": "Alta Street",
+        "county": "Pillbox Hill",
+        "postal": "741"
+    },
+    {
+        "value": "Low Power Street",
+        "county": "Pillbox Hill",
+        "postal": "742"
+    },
+    {
+        "value": "Alta Street",
+        "county": "Pillbox Hill",
+        "postal": "743"
+    },
+    {
+        "value": "Power Street",
+        "county": "Pillbox Hill",
+        "postal": "744"
+    },
+    {
+        "value": "Power Street",
+        "county": "Pillbox Hill",
+        "postal": "745"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "Pillbox Hill",
+        "postal": "746"
+    },
+    {
+        "value": "Power Street",
+        "county": "Pillbox Hill",
+        "postal": "747"
+    },
+    {
+        "value": "Del Perro Freeway",
+        "county": "Downtown",
+        "postal": "748"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Textile City",
+        "postal": "749"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Pillbox Hill",
+        "postal": "750"
+    },
+    {
+        "value": "Elgin Avenue",
+        "county": "Legion Square",
+        "postal": "751"
+    },
+    {
+        "value": "Elgin Avenue",
+        "county": "Pillbox Hill",
+        "postal": "752"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Mission Row",
+        "postal": "753"
+    },
+    {
+        "value": "Adam's Apple Boulevard",
+        "county": "Mission Row",
+        "postal": "754"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "Mission Row",
+        "postal": "755"
+    },
+    {
+        "value": "Atlee Street",
+        "county": "Mission Row",
+        "postal": "756"
+    },
+    {
+        "value": "Strawberry Avenue",
+        "county": "Textile City",
+        "postal": "757"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "Textile City",
+        "postal": "758"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "Textile City",
+        "postal": "759"
+    },
+    {
+        "value": "Atlee Street",
+        "county": "Mission Row",
+        "postal": "760"
+    },
+    {
+        "value": "Mission Row PD",
+        "county": "Mission Row",
+        "postal": "761"
+    },
+    {
+        "value": "Sinner Street",
+        "county": "Mission Row",
+        "postal": "762"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "La Mesa",
+        "postal": "763"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "La Mesa",
+        "postal": "764"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "La Mesa",
+        "postal": "765"
+    },
+    {
+        "value": "Los Santos Freeway",
+        "county": "La Mesa",
+        "postal": "766"
+    },
+    {
+        "value": "Supply Street",
+        "county": "La Mesa",
+        "postal": "767"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "La Mesa",
+        "postal": "768"
+    },
+    {
+        "value": "Popular Street",
+        "county": "La Mesa",
+        "postal": "769"
+    },
+    {
+        "value": "Supply Street",
+        "county": "La Mesa",
+        "postal": "770"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "Murrieta Heights",
+        "postal": "771"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "Murrieta Heights",
+        "postal": "772"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "Murrieta Heights",
+        "postal": "773"
+    },
+    {
+        "value": "Sustancia Road",
+        "county": "El Burro Heights",
+        "postal": "774"
+    },
+    {
+        "value": "Sustancia Road",
+        "county": "El Burro Heights",
+        "postal": "775"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "Palomino Highlands",
+        "postal": "776"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "Palomino Highlands",
+        "postal": "777"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "778"
+    },
+    {
+        "value": "El Rancho Boulevard",
+        "county": "El Burro Heights",
+        "postal": "779"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "Palomino Highlands",
+        "postal": "780"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "781"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "782"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "783"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "784"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "785"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "786"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "787"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "El Burro Heights",
+        "postal": "788"
+    },
+    {
+        "value": "Elysian Fields Freeway",
+        "county": "El Burro Heights",
+        "postal": "789"
+    },
+    {
+        "value": "El Burro Boulevard",
+        "county": "El Burro Heights",
+        "postal": "790"
+    },
+    {
+        "value": "Labor Place",
+        "county": "El Burro Heights",
+        "postal": "791"
+    },
+    {
+        "value": "Labor Place",
+        "county": "El Burro Heights",
+        "postal": "792"
+    },
+    {
+        "value": "Fudge Lane",
+        "county": "El Burro Heights",
+        "postal": "793"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "El Burro Heights",
+        "postal": "794"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "Murrieta Heights",
+        "postal": "795"
+    },
+    {
+        "value": "Capital Boulevard",
+        "county": "La Mesa",
+        "postal": "796"
+    },
+    {
+        "value": "Innoncence Boulevard",
+        "county": "La Mesa",
+        "postal": "797"
+    },
+    {
+        "value": "Labor Place",
+        "county": "La Mesa",
+        "postal": "798"
+    },
+    {
+        "value": "Orchardville Avenue",
+        "county": "Cypress Flats",
+        "postal": "799"
+    },
+    {
+        "value": "El Rancho Boulevard",
+        "county": "El Burro Heights",
+        "postal": "800"
     }
 ]
