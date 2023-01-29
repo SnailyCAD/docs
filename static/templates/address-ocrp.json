@@ -963,5 +963,115 @@
         "value": "Vespucci Boulevard",
         "county": "Mission Row",
         "postal": "210"
+    },
+    {
+        "value": "Fantastic Place",
+        "county": "Mission Row",
+        "postal": "211"
+    },
+    {
+        "value": "Adam's Apple Boulevard",
+        "county": "Mission Row",
+        "postal": "212"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "Strawberry",
+        "postal": "213"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "Mission Row",
+        "postal": "214"
+    },
+    {
+        "value": "Little Bighorn Avenue",
+        "county": "Textile City",
+        "postal": "215"
+    },
+    {
+        "value": "Atlee Street",
+        "county": "Mission Row",
+        "postal": "216"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "Mission Row",
+        "postal": "217"
+    },
+    {
+        "value": "Adam's Apple Boulevard",
+        "county": "Mission Row",
+        "postal": "218"
+    },
+    {
+        "value": "Popular Street",
+        "county": "La Mesa",
+        "postal": "219"
+    },
+    {
+        "value": "Del Perro Freeway",
+        "county": "La Mesa",
+        "postal": "220"
+    },
+    {
+        "value": "Popular Street",
+        "county": "La Mesa",
+        "postal": "221"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "La Mesa",
+        "postal": "222"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "La Mesa",
+        "postal": "223"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "La Mesa",
+        "postal": "224"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "La Mesa",
+        "postal": "225"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "La Mesa",
+        "postal": "226"
+    },
+    {
+        "value": "Supply Street",
+        "county": "La Mesa",
+        "postal": "227"
+    },
+    {
+        "value": "San Andreas Avenue",
+        "county": "La Mesa",
+        "postal": "228"
+    },
+    {
+        "value": "Vespucci Boulevard",
+        "county": "La Mesa",
+        "postal": "229"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "La Mesa",
+        "postal": "230"
+    },
+    {
+        "value": "Olympic Freeway",
+        "county": "La Mesa",
+        "postal": "231"
+    },
+    {
+        "value": "Sandcastle Way",
+        "county": "Del Perro Beach",
+        "postal": "300"
     }
 ]
