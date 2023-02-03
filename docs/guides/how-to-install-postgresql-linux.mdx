@@ -1,0 +1,74 @@
+# How to install PostgreSQL on Linux
+
+In this short guide you will learn how to install PostgreSQL for SnailyCADv4 on Linux.
+
+:::info
+This guide is mainly directed for users using Ubuntu. However, most commands will work for any Linux distro
+:::
+
+## Installing PostgreSQL
+
+Here we will update the apt packages and install PostgreSQL
+
+```bash
+sudo apt update && sudo apt install postgresql postgresql-contrib
+```
+
+## Starting PostgreSQL service
+
+Now we must start the PostgreSQL service. This will allow us to connect to the database.
+
+```bash
+sudo systemctl start postgresql.service
+```
+
+## PostgreSQL configuration
+
+Firslty we must connect to the database via the command line:
+
+```bash
+psql -d postgres
+```
+
+### Creating SnailyCAD user
+
+**create user**
+
+:::caution
+This username must match the `POSTGRES_USER` in your ENV/.env file.
+:::
+
+```sql
+CREATE USER "snailycad";
+```
+
+**set permissions**
+
+```sql
+ALTER USER "snailycad" WITH SUPERUSER;
+```
+
+**setting a password**
+
+:::caution
+This password must match the `POSTGRES_PASSWORD` in your ENV/.env file.
+:::
+
+```sql
+ALTER USER "snailycad" PASSWORD 'replace-with-your-password';
+```
+
+### Creating SnailyCADv4 database
+
+:::caution
+This database name must match the `POSTGRES_DB` in your ENV/.env file.
+:::
+
+```sql
+CREATE DATABASE "snaily-cadv4";
+```
+
+## Next steps
+
+Now you've successfully setup PostgreSQL on Ubuntu for SnailyCADv4.
+Make sure to update your `.env` file or your ENV (Manager app) to use the same values your used in this guide.
