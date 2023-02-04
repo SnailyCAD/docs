@@ -9,7 +9,7 @@ const config = {
   favicon: "/icons/logo.svg",
   title: "SnailyCAD Documentation",
   tagline: "Documentation provided for SnailyCAD",
-  url: "https://cad-docs.caspertheghost.me",
+  url: "https://snailycad.org",
   baseUrl: "/",
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",

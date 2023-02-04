@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <Layout title={siteConfig.title} description="Documentation provided for SnailyCADv4">
       <Head>
-        <meta property="og:image" content="https://cad-docs.caspertheghost.me/icons/logo.svg" />
+        <meta property="og:image" content="https://docs.snailycad.org/icons/logo.svg" />
         <script
           async
           defer
           data-website-id="5d735bf8-9086-43df-9da8-62c2e49401d5"
-          src="https://umami-nine-olive.vercel.app/umami.js"
+          src="https://cool-kid.caspertheghost.me/umami.js"
         />
       </Head>
     </Layout>
