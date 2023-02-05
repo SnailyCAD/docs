@@ -49,6 +49,14 @@ const config = {
     ],
   ],
   themeConfig: {
+    metadata: [
+      { name: "og:image", content: "https://docs.snailycad.org/icons/logo.png" },
+      { name: "og:image:alt", content: "SnailyCAD" },
+      { name: "og:url", content: "https://docs.snailycad.org" },
+      { name: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:image", content: "https://docs.snailycad.org/icons/logo.png" },
+    ],
     navbar: {
       title: "SnailyCADv4 Docs",
       items: [

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Layout title={siteConfig.title} description="Documentation provided for SnailyCADv4">
       <Head>
-        <meta property="og:image" content="https://docs.snailycad.org/icons/logo.svg" />
+        <link rel="icon" href="https://docs.snailycad.org/icons/logo.png" />
         <script
           async
           defer
