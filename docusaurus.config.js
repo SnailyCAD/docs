@@ -22,6 +22,11 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          filename: "sitemap.xml",
+        },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
@@ -43,7 +48,6 @@ const config = {
       },
     ],
   ],
-
   themeConfig: {
     navbar: {
       title: "SnailyCADv4 Docs",
