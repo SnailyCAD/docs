@@ -1,0 +1,51 @@
+---
+sidebar_position: 2
+---
+
+# Updating the Discord Bot
+
+This guide will show you how to update the Discord Bot to the latest version.
+
+## 1. Updating local code
+
+Firstly, open a terminal and navigate to the directory where you have the bot installed.
+Then, run the following command:
+
+```bash
+git pull origin main
+```
+
+:::caution
+If you encounter any merge conflicts, please resolve them before continuing.
+
+```bash
+git stash && git pull origin main
+```
+
+:::
+
+## 2. Updating dependencies
+
+Secondly, we must update dependencies that might've changes from the last release. To do so, run the following command:
+
+```bash
+yarn
+```
+
+## 3. Configuration
+
+If there's something that needs to be changed in the .env file, make sure to do that properly. [View the guide here](/docs/guides/how-to-properly-update-env)
+
+## 4. Build the bot
+
+```bash
+yarn build
+```
+
+## 5. Starting the bot
+
+After completing all the steps above, we are ready to start the bot. To do this run the following command:
+
+```bash
+yarn start
+```
