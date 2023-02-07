@@ -1,0 +1,12 @@
+# Unable to enable SECURE_COOKIES_FOR_IFRAME
+
+This error will appear if you try to enable `SECURE_COOKIES_FOR_IFRAME` in the `.env` file but your SnailyCAD instance is not using HTTPS.
+
+```
+Secure cookies (SECURE_COOKIES_FOR_IFRAME) could not be enabled because this SnailyCAD instance is not using HTTPS.
+```
+
+## Possible ways to fix it
+
+- Enable HTTPS on your SnailyCAD instance (Proxy, Cloudflare, etc.)
+- Disable `SECURE_COOKIES_FOR_IFRAME` in the `.env` file when not using HTTPS
