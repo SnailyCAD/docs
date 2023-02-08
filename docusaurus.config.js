@@ -23,8 +23,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         sitemap: {
-          changefreq: "weekly",
-          priority: 0.5,
+          changefreq: "daily",
+          priority: 0.6,
           filename: "sitemap.xml",
         },
         docs: {
