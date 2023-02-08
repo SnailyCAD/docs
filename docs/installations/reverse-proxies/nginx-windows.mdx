@@ -24,15 +24,13 @@ This guide does not yet include SSL setup due to complexity. For now, I recommen
 
 First, we need to install NGINX. [Download the latest release here](https://nginx.org/en/download.html)
 
-{/* todo: image */}
-[NGINX Windows Download](/nginx-windows/nginx-download)
+![NGINX Windows Download](/nginx-windows/download-nginx.png)
 
 ### 1.2. Extract NGINX download
 
 Once you have downloaded the NGINX archive, you must extract it to `C:\nginx`.
 
-{/* todo: image */}
-[NGINX Extract](/nginx-windows/nginx-extract)
+![NGINX Extract](/nginx-windows/extract-nginx.png)
 
 ## 2. Starting NGINX
 
@@ -275,7 +273,7 @@ nginx: the configuration file C:\nginx/conf/nginx.conf syntax is ok
 nginx: configuration file C:\nginx/conf/nginx.conf test is successful
 ```
 
-### 3. Restarting NGINX
+## 4. Restarting NGINX
 
 To restart NGINX, run the following command:
 
@@ -287,7 +285,7 @@ nginx -s reload
 This command must be run every time you make changes to the `nginx.conf` file in the `C:\nginx` directory.
 :::
 
-## 4. Updating SnailyCAD configuration
+## 5. Updating SnailyCAD configuration
 
 You must now update the SnailyCAD configuration to use the SSL certificate. To do this, open the SnailyCAD `.env` file:
 
