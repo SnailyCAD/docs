@@ -29,3 +29,282 @@ Once you have downloaded the NGINX archive, you must extract it to `C:\nginx`.
 
 {/* todo: image */}
 [NGINX Extract](/nginx-windows/nginx-extract)
+
+## 2. Starting NGINX
+
+To start NGINX you must open a command prompt and run the following command:
+
+```bash
+cd C:\nginx
+start nginx.exe
+```
+
+If you have done everything correctly, you should be able to access the NGINX welcome page at <http://localhost>.
+
+:::tip
+Keep this command prompt open. You will need to run some more commands in this command prompt.
+:::
+
+## 3. Configuring NGINX
+
+### 3.1. Setting `server_names_hash_bucket_size`
+
+To allow for longer domain names, we must set this value to `64`. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
+
+```bash
+http {
+  # ...
+  server_names_hash_bucket_size 64;
+  # ...
+}
+```
+
+:::tip
+A full example of the `nginx.conf` file can be found further down this page.
+:::
+
+### 3.2. Configuring the API
+
+First, we need to configure the API. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
+
+```bash
+http {
+  # ...
+
+  # SnailyCAD API Reverse Proxy
+  server {
+    # Replace `example.com` with your domain name.
+    server_name cad-api.example.com;
+
+    location / {
+      proxy_pass http://localhost:8080; # The API port of SnailyCAD's API (Default: 8080)
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+
+    # Security headers
+    add_header X-XSS-Protection          "1; mode=block" always;
+    add_header X-Content-Type-Options    "nosniff" always;
+    add_header Referrer-Policy           "no-referrer" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    add_header X-DNS-Prefetch-Control on;
+    add_header Cross-Origin-Resource-Policy "same-site";
+
+    # keep this as-is unless you know what you're doing.
+    listen 80;
+  }
+
+  #...
+}
+```
+
+:::tip
+A full example of the `nginx.conf` file can be found further down this page.
+:::
+
+### 3.3. Configuring the client
+
+Once the API is configured, we must add the client block. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
+
+```bash
+
+http {
+  # ...
+
+  # SnailyCAD Client Reverse Proxy
+  server {
+    # Replace `example.com` with your domain name.
+    server_name cad.example.com;
+
+    location / {
+      proxy_pass http://localhost:3000; # The API port of SnailyCAD's client (Default: 3000)
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+
+    # Security headers
+    add_header X-XSS-Protection          "1; mode=block" always;
+    add_header X-Content-Type-Options    "nosniff" always;
+    add_header Referrer-Policy           "no-referrer" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    add_header X-DNS-Prefetch-Control on;
+    add_header Cross-Origin-Resource-Policy "same-site";
+
+    # keep this as-is unless you know what you're doing.
+    # for SSL, see step 6
+    listen 80;
+  }
+
+  # ...
+}
+```
+
+:::tip
+A full example of the `nginx.conf` file can be found below.
+:::
+
+<details>
+  <summary>Complete example `nginx.conf` file</summary>
+
+```bash
+
+#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    server_names_hash_bucket_size 64;
+
+    sendfile        on;
+
+    keepalive_timeout  65;
+
+    gzip  on;
+
+    # SnailyCAD API Reverse Proxy
+    server {
+      # Replace `example.com` with your domain name.
+      server_name cad-api.example.com;
+
+      location / {
+        proxy_pass http://localhost:8080; # The API port of SnailyCAD's API (Default: 8080)
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+      }
+
+
+      # Security headers
+      add_header X-XSS-Protection          "1; mode=block" always;
+      add_header X-Content-Type-Options    "nosniff" always;
+      add_header Referrer-Policy           "no-referrer" always;
+      add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+      add_header X-DNS-Prefetch-Control on;
+      add_header Cross-Origin-Resource-Policy "same-site";
+
+      # keep this as-is unless you know what you're doing.
+      listen 80;
+    }
+
+
+    # SnailyCAD Client Reverse Proxy
+    server {
+      # Replace `example.com` with your domain name.
+      server_name cad.example.com;
+
+      location / {
+        proxy_pass http://localhost:3000; # The API port of SnailyCAD's client (Default: 3000)
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+      }
+
+
+      # Security headers
+      add_header X-XSS-Protection          "1; mode=block" always;
+      add_header X-Content-Type-Options    "nosniff" always;
+      add_header Referrer-Policy           "no-referrer" always;
+      add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+      add_header X-DNS-Prefetch-Control on;
+      add_header Cross-Origin-Resource-Policy "same-site";
+
+      # keep this as-is unless you know what you're doing.
+      listen 80;
+    }
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
+}
+```
+
+</details>
+
+### 2.3 Verify NGINX configuration
+
+To verify the NGINX configuration, run the following command:
+
+```bash
+nginx -t
+```
+
+If the configuration is valid, you should see the following output:
+
+```bash
+nginx: the configuration file C:\nginx/conf/nginx.conf syntax is ok
+nginx: configuration file C:\nginx/conf/nginx.conf test is successful
+```
+
+### 3. Restarting NGINX
+
+To restart NGINX, run the following command:
+
+```bash
+nginx -s reload
+```
+
+:::tip
+This command must be run every time you make changes to the `nginx.conf` file in the `C:\nginx` directory.
+:::
+
+## 4. Updating SnailyCAD configuration
+
+You must now update the SnailyCAD configuration to use the SSL certificate. To do this, open the SnailyCAD `.env` file:
+
+```bash
+# This is the URL to your site where the CAD is hosted.
+CORS_ORIGIN_URL="http://cad.example.com"
+
+# This is the URL to your site where the CAD is hosted.
+NEXT_PUBLIC_CLIENT_URL="http://cad.example.com"
+
+# The URL to where the API is hosted.
+NEXT_PUBLIC_PROD_ORIGIN="http://cad-api.example.com/v1"
+
+# The domain of your site. Without any subdomains or paths.
+DOMAIN="example.com"
+```
+
+:::tip
+Replace `example.com` with your domain name.
+:::
+
+:::tip
+You can now access SnailyCAD via `http://cad.example.com` with the API accessible via `http://cad-api.example.com`.
+:::
