@@ -30,22 +30,37 @@ Firslty we must connect to the database via the command line:
 psql -d postgres
 ```
 
+Note that you might run into this error, if you try to execute this command as a root user:
+
+:::caution
+This is the error you might get: `psql: error: FATAL:  role "root" does not exist`
+*(Note that the role might change based of what user you're logged in)*
+:::
+
+To avoid it, simply execute the command as the postgres user, by executing this command (No password should be needed):
+
+```bash
+sudo -u postgres -i
+```
+
+Then you can execute the first command that was mentionned before `psql -d postgres` and you can continue with the guide.
+
 ### Creating SnailyCAD user
 
-**create user**
+**Create user**
 
 :::caution
 This username must match the `POSTGRES_USER` in your ENV/.env file.
 :::
 
 ```sql
-CREATE USER "snailycad";
+`postgres=#` CREATE USER "snailycad";
 ```
 
 **set permissions**
 
 ```sql
-ALTER USER "snailycad" WITH SUPERUSER;
+`postgres=#` ALTER USER "snailycad" WITH SUPERUSER;
 ```
 
 **setting a password**
@@ -55,7 +70,7 @@ This password must match the `POSTGRES_PASSWORD` in your ENV/.env file.
 :::
 
 ```sql
-ALTER USER "snailycad" PASSWORD 'replace-with-your-password';
+`postgres=#` ALTER USER "snailycad" PASSWORD 'replace-with-your-password';
 ```
 
 ### Creating SnailyCADv4 database
@@ -65,7 +80,7 @@ This database name must match the `POSTGRES_DB` in your ENV/.env file.
 :::
 
 ```sql
-CREATE DATABASE "snaily-cadv4";
+`postgres=#` CREATE DATABASE "snaily-cadv4";
 ```
 
 ## Next steps
