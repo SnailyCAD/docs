@@ -1,0 +1,47 @@
+[
+  {
+    "value": "Apartment"
+  },
+  {
+    "value": "Basement"
+  },
+  {
+    "value": "Building"
+  },
+  {
+    "value": "Department"
+  },
+  {
+    "value": "Floor"
+  },
+  {
+    "value": "Hangar"
+  },
+  {
+    "value": "Lobby"
+  },
+  {
+    "value": "Lower"
+  },
+  {
+    "value": "Office"
+  },
+  {
+    "value": "Upper"
+  },
+  {
+    "value": "Penthouse"
+  },
+  {
+    "value": "Room"
+  },
+  {
+    "value": "Suite"
+  },
+  {
+    "value": "Trailer"
+  },
+  {
+    "value": "Unit"
+  }
+]
