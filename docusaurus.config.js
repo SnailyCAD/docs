@@ -35,6 +35,8 @@ const config = {
   ],
 
   plugins: [
+    ["@docusaurus/plugin-google-gtag", { trackingID: "G-HE45R7EFY2", anonymizeIP: true }],
+    ["@docusaurus/plugin-google-tag-manager", { containerId: "GTM-528C8P8" }],
     require.resolve("@cmfcmf/docusaurus-search-local"),
     [
       "@docusaurus/plugin-client-redirects",
