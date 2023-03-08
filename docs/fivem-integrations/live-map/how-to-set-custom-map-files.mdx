@@ -8,18 +8,23 @@ If your community uses a different map you are able to change this. There is som
 
 ## Requirements
 
-- Map tiles, must be the following format:
-  - `minimap_sea_0_0.webp`
-  - `minimap_sea_0_1.webp`
-  - `minimap_sea_1_0.webp`
-  - `minimap_sea_1_1.webp`
-  - `minimap_sea_2_0.webp`
-  - `minimap_sea_2_1.webp`
+- Map tiles, must be the following names:
+  - `minimap_sea_0_0`
+  - `minimap_sea_0_1`
+  - `minimap_sea_1_0`
+  - `minimap_sea_1_1`
+  - `minimap_sea_2_0`
+  - `minimap_sea_2_1`
 
 ## Steps
 
+:::info
+This is only supported starting from SnailyCAD `1.51.0`
+:::
+
 1. Get your map tiles ready. (See requirements)
-2. Head to the `<CAD-Root>/apps/client/public/tiles`.
-3. Replace the default map tiles with your map files.
-4. Rebuild the client: `yarn turbo run build`
-5. Restart the CAD
+2. Open SnailyCAD's admin dashboard
+3. Head to CAD-Settings -> Live Map
+4. Locate `Map Tiles`
+5. Upload the 6 map tiles
+6. Save the settings
