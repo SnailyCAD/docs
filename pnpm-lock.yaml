@@ -5,22 +5,22 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.0(@docusaurus/core@2.4.0)
   '@docusaurus/core':
-    specifier: ^2.4.0
+    specifier: ^2.3.0
     version: 2.4.0(@docusaurus/types@2.4.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)
   '@docusaurus/plugin-client-redirects':
-    specifier: ^2.4.0
+    specifier: ^2.3.0
     version: 2.4.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)
   '@docusaurus/plugin-google-gtag':
-    specifier: ^2.4.0
+    specifier: ^2.3.0
     version: 2.4.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)
   '@docusaurus/plugin-google-tag-manager':
-    specifier: ^2.4.0
+    specifier: ^2.3.0
     version: 2.4.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)
   '@docusaurus/preset-classic':
-    specifier: ^2.4.0
+    specifier: ^2.3.0
     version: 2.4.0(@algolia/client-search@4.16.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)
   '@docusaurus/theme-search-algolia':
-    specifier: ^2.4.0
+    specifier: ^2.3.0
     version: 2.4.0(@algolia/client-search@4.16.0)(@docusaurus/types@2.4.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)
   '@mdx-js/react':
     specifier: ^1.6.21
@@ -658,7 +658,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.12.9)
       '@babel/plugin-transform-parameters': 7.21.3(@babel/core@7.12.9)
     dev: false
@@ -2943,7 +2943,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 18.15.11
     dev: false
 
   /@types/scheduler@0.16.3:
