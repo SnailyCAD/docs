@@ -1,0 +1,58 @@
+# Docker
+
+Find out how to update SnailyCADv4 manually when using the docker installation method.
+
+### Getting started
+
+First, shut down your SnailyCAD instance, to do so run the following command:
+
+```bash
+docker-compose -f production.docker-compose.yml down
+```
+
+### Updating local code
+
+First we must update our local code:
+
+```bash
+git pull origin main
+```
+
+:::caution
+If you encounter any merge conflicts, please resolve them before continuing.
+
+This can be done by backing up any locale changes you've made including `apps/client/i18n.config.mjs`. Then you can safely run the following command:
+
+```bash
+git stash && git pull origin main
+```
+
+:::
+
+### Updating dependencies
+
+Secondly, we must update dependencies that might've changes from the last release. To do so, run the following command:
+
+```bash
+yarn
+```
+
+### Configuration
+
+If there's something that needs to be changed in the .env file, make sure to do that properly. [View the guide here](/docs/guides/how-to-properly-update-env)
+
+### Building everything
+
+Now we must build all the packages & apps again. _(client, schemas, config, types)_
+
+```sh
+docker-compose -f production.docker-compose.yml build
+```
+
+### Starting SnailyCAD
+
+To bring the CAD back up run the following command:
+
+```bash
+docker-compose -f production.docker-compose.yml up -d
+```

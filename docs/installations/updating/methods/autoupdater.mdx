@@ -1,0 +1,49 @@
+# Autoupdater
+
+Find out how to update SnailyCADv4 automatically when using the standalone or autoinstaller method.
+
+:::caution
+
+**This method can only be used for Standalone or autoinstaller installations. [How to update Docker installations](/docs/installations/updating/methods/docker)**
+
+:::
+
+### Getting started
+
+First, shut down your SnailyCAD instance, to do so run the following command:
+
+**pm2**
+
+```bash
+pm2 stop all
+```
+
+**Command Prompt/Terminal**
+
+Simply press `CTRL + C` to stop your SnailyCAD instance.
+
+### Updating
+
+:::caution
+
+1. If there are things that need to be updated in the `.env` file. Please update this before running
+   the command.
+2. Make sure that you're in the root of your SnailyCAD instance folder.
+
+:::
+
+Simply run the command below. **This will run all the commands of the manual way.**
+
+```bash
+curl https://raw.githubusercontent.com/SnailyCAD/autoupdater/main/dist/index.js > autoupdater.mjs
+
+node autoupdater.mjs
+```
+
+### Starting SnailyCAD
+
+To bring the CAD back up run the following command:
+
+```bash
+yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+```

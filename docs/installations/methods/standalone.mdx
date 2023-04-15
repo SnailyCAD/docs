@@ -209,7 +209,7 @@ Now we must build all the packages & apps. _(client, schemas, config, types)_
 _**Note:** this process might take 2 to 5minutes_
 
 ```bash
-yarn turbo run build
+yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
 ```
 
 <img src="/gifs/turbo-build.gif" alt="turbo build short clip" loading="lazy" width="600px" />
