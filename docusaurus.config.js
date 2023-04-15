@@ -30,6 +30,30 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
+        blog: {
+          path: "changelog",
+          editUrl: ({ locale, blogDirPath, blogPath }) =>
+            `https://github.com/snailycad/docs/edit/main/${blogDirPath}/${blogPath}`,
+          editLocalizedFiles: false,
+          blogTitle: "SnailyCAD Changelog",
+          blogDescription: "SnailyCAD Changelog",
+          blogSidebarCount: 5,
+          blogSidebarTitle: "All Versions",
+          routeBasePath: "changelog",
+          include: ["**/*.{md,mdx}"],
+          exclude: [
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
+          ],
+          postsPerPage: 10,
+          rehypePlugins: [],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
+          showReadingTime: true,
+        },
       }),
     ],
   ],
@@ -67,6 +91,11 @@ const config = {
           docId: "getting-started/index",
           position: "left",
           label: "Documentation",
+        },
+        {
+          to: "changelog",
+          position: "left",
+          label: "Changelog",
         },
         {
           position: "left",
