@@ -1,9 +1,80 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # How to properly update the `.env` file
 
 There are a few commands that are required to run to correctly update the .env file.
 
-1. Stop SnailyCAD. (CTRL+C)
-2. Update and the save your `.env` file
-3. Run: `node scripts/copy-env.mjs --client --api`
-4. Rebuild the client: `yarn workspace @snailycad/client build`
-5. Start SnailyCAD
+### 1. Stop your SnailyCAD instance
+
+Before we can edit the `.env` file, we must first stop SnailyCAD.
+
+:::info
+
+Make sure you are in the same directory as your SnailyCAD instance.
+
+:::
+
+**Standalone**
+
+If you are running SnailyCAD standalone, you can simply press `CTRL+C` in the terminal window where SnailyCAD is running.
+
+**Docker**
+
+If you are running SnailyCAD with Docker, you can stop SnailyCAD by running the following command:
+
+```bash
+docker-compose -f production.docker-compose.yml down
+```
+
+### 2. Update the ENV file
+
+Now that SnailyCAD is stopped, we can update the `.env` file.
+
+### 3. Building and copying
+
+Now that we have updated the `.env` file, we need to rebuild the client and copy the `.env` file to the client and API.
+
+<Tabs groupId="installation-method">
+  <TabItem value="standalone" label="Standalone" default>
+
+If you are running SnailyCAD standalone, you can run the following command to rebuild the client:
+
+```bash
+node scripts/copy-env.mjs --client --api && yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
+```
+
+  </TabItem>
+  <TabItem value="docker" label="Docker">
+
+If you are running SnailyCAD with Docker, you can run the following command to rebuild the client:
+
+```bash
+docker-compose -f production.docker-compose.yml build
+```
+
+  </TabItem>
+</Tabs>
+
+### 4. Start SnailyCAD
+
+Now that we have updated the `.env` file, we can start SnailyCAD again.
+
+<Tabs groupId="installation-method">
+  <TabItem value="standalone" label="Standalone" default>
+If you are running SnailyCAD standalone, you can run the following command to start SnailyCAD:
+
+```bash
+yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+```
+
+  </TabItem>
+  <TabItem value="docker" label="Docker">
+If you are running SnailyCAD with Docker, you can run the following command to start SnailyCAD:
+
+```bash
+docker-compose -f production.docker-compose.yml up -d
+```
+
+  </TabItem>
+</Tabs>
