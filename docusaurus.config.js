@@ -29,6 +29,7 @@ const config = {
         },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateTime: true,
         },
         blog: {
           path: "changelog",
@@ -66,10 +67,56 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
-          { to: "/docs/guides/how-to-translate", from: "/docs/features/translating" },
-          { to: "/docs/guides/how-to-add-a-custom-favicon", from: "/docs/features/favicon" },
-          { to: "/docs/guides/how-to-install-custom-fonts", from: "/docs/features/custom-fonts" },
           { to: "/docs/guides/how-to-start-with-screen", from: "/docs/features/using-screen" },
+          {
+            to: "/docs/guides/requirements/how-to-install-git-linux",
+            from: "/docs/guides/how-to-install-git-linux",
+          },
+          {
+            to: "/docs/guides/requirements/how-to-install-git",
+            from: "/docs/guides/how-to-install-git",
+          },
+          {
+            to: "/docs/guides/requirements/how-to-install-node-yarn-npm-linux",
+            from: "/docs/guides/how-to-install-node-yarn-npm-linux",
+          },
+          {
+            to: "/docs/guides/requirements/how-to-install-node-yarn-npm",
+            from: "/docs/guides/how-to-install-node-yarn-npm",
+          },
+          {
+            to: "/docs/guides/requirements/how-to-install-postgresql-linux",
+            from: "/docs/guides/how-to-install-postgresql-linux",
+          },
+          {
+            to: "/docs/guides/requirements/how-to-install-postgresql",
+            from: "/docs/guides/how-to-install-postgresql",
+          },
+          {
+            to: "/docs/guides/product/how-set-custom-sounds",
+            from: "/docs/guides/how-set-custom-sounds",
+          },
+          {
+            to: "/docs/guides/product/how-to-add-a-custom-favicon",
+            from: "/docs/guides/how-to-add-a-custom-favicon",
+          },
+          {
+            to: "/docs/guides/product/how-to-install-custom-fonts",
+            from: "/docs/guides/how-to-install-custom-fonts",
+          },
+          {
+            to: "/docs/guides/product/how-to-translate",
+            from: "/docs/guides/how-to-translate",
+          },
+          { to: "/docs/guides/product/how-to-translate", from: "/docs/features/translating" },
+          {
+            to: "/docs/guides/product/how-to-add-a-custom-favicon",
+            from: "/docs/features/favicon",
+          },
+          {
+            to: "/docs/guides/product/how-to-install-custom-fonts",
+            from: "/docs/features/custom-fonts",
+          },
         ],
       },
     ],
@@ -98,14 +145,14 @@ const config = {
           label: "Changelog",
         },
         {
-          position: "left",
+          position: "right",
           href: "https://discord.gg/eGnrPqEH7U",
           label: "Discord",
         },
         {
           href: "https://github.com/SnailyCAD/snaily-cadv4",
           label: "GitHub",
-          position: "left",
+          position: "right",
         },
       ],
     },

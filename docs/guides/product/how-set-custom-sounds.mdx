@@ -1,13 +1,33 @@
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# How to properly update the `.env` file
+# How to set custom sounds
 
-There are a few commands that are required to run to correctly update the .env file.
+In this guide, you will learn how to manage custom sounds for your SnailyCAD instance.
+All sound files are stored locally in the CAD, this allows you to change the sounds to your liking.
+
+:::info
+
+SnailyCADv4 currently supports the following actions that are connected to a sound:
+
+| Action           | Sound (filename)       |
+| ---------------- | ---------------------- |
+| Panic Button     | `panic-button.mp3`     |
+| Signal 100       | `signal100.mp3`        |
+| Added to call    | `added-to-call.mp3`    |
+| Roleplay stopped | `roleplay-stopped.mp3` |
+| Status Update    | `status-update.mp3`    |
+| Incoming Call    | `incoming-call.mp3`    |
+| LEO Tone         | `leo-tone.mp3`         |
+| EMS/FD Tone      | `ems-fd-tone.mp3`      |
+
+:::
+
+## How to change these files
 
 ### 1. Stop your SnailyCAD instance
 
-Before we can edit the `.env` file, we must first stop SnailyCAD.
+Before we can manage any custom sounds, we must first stop SnailyCAD.
 
 :::info
 
@@ -32,13 +52,19 @@ docker-compose -f production.docker-compose.yml down
   </TabItem>
 </Tabs>
 
-### 2. Update the ENV file
+### 2. Open your SnailyCAD sounds directory
 
-Now that SnailyCAD is stopped, we can update the `.env` file.
+The sounds directory can be found at: `apps/client/public/sounds`
 
-### 3. Building and copying
+### 3. Replace the files
 
-Now that we have updated the `.env` file, we need to rebuild the client and copy the `.env` file to the client and API.
+Here you can replace, add or remove sound files. You will notice, not all sounds are present in the directory. This is because only a few are provided by default.
+
+:::caution
+**Your custom sound files must match the filenames listed above and must have `.mp3` extensions**
+:::
+
+### 4. Rebuild your SnailyCAD instance
 
 <Tabs groupId="installation-method">
   <TabItem value="standalone" label="Standalone" default>
@@ -46,7 +72,7 @@ Now that we have updated the `.env` file, we need to rebuild the client and copy
 If you are running SnailyCAD standalone, you can run the following command to rebuild the client:
 
 ```bash
-node scripts/copy-env.mjs --client --api && yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
+yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
 ```
 
   </TabItem>
@@ -61,9 +87,7 @@ docker-compose -f production.docker-compose.yml build
   </TabItem>
 </Tabs>
 
-### 4. Start SnailyCAD
-
-Now that we have updated the `.env` file, we can start SnailyCAD again.
+### 5. Start your SnailyCAD instance
 
 <Tabs groupId="installation-method">
   <TabItem value="standalone" label="Standalone" default>
@@ -83,3 +107,10 @@ docker-compose -f production.docker-compose.yml up -d
 
   </TabItem>
 </Tabs>
+
+:::info
+
+_default sounds were provided by [rhys19](https://github.com/rhys19). Thanks a lot!
+See original [GitHub issue](https://github.com/SnailyCAD/snaily-cadv4/issues/394)_
+
+:::info
