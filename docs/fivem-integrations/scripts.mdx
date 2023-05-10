@@ -9,7 +9,7 @@ SnailyCAD has several FiveM integrations.
 - `sna-call911`: `/call911`
 - `sna-calltow`: `/calltow`
 - `sna-calltaxi`: `/calltaxi`
-- `sna-alpr`: ALPR integration that connects with [Wraith ARS 2x](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-3-1/1058277)
+- [`sna-alpr`: ALPR integration that connects with Wraith ARS 2x](#sna-alpr)
 - `sna-postals`: define custom postals for the scripts above. [Learn here how to change them](/docs/fivem-integrations/live-map/how-to-set-custom-postals)
 
 ## Downloads
@@ -45,3 +45,10 @@ ensure sna-calltaxi
 ```
 
 3. Restart your server and your done!
+
+### sna-alpr
+
+ALPR Integration that connects to the [Wraith ARS 2X](https://forum.cfx.re/t/release-wraith-ars-2x-police-radar-and-plate-reader-v1-3-1/1058277) resource.
+
+**How it works:** When you lock onto a plate, `sna-alpr` will automatically try and lookup the locked plate.
+It will show simple results such as owner, registration status, etc. It will also fetch any BOLOs for that vehicle.
