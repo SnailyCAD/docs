@@ -1,0 +1,113 @@
+---
+sidebar_position: 0
+---
+
+# `.env` Reference
+
+A `.env` file is a special file that is used to store configuration settings for SnailyCAD.
+
+## Reference
+
+### `POSTGRES_PASSWORD`
+
+The password to the PostgreSQL database.
+
+:::caution
+This password **must not** contain the following characters: `$` or `"` or `'`.
+:::
+
+### `POSTGRES_USER`
+
+The username to the PostgreSQL database.
+
+### `POSTGRES_DB`
+
+The database name. We recommend: `snaily-cadv4`
+
+### `DB_HOST`
+
+The database host URL. _Most likely `localhost`._
+
+:::note
+**Only when using Docker installation:** change this to `postgres`.
+:::
+
+### `DB_PORT`
+
+The port to the database.
+
+### `JWT_SECRET`
+
+This is a random value to keep the CAD secured.
+
+:::caution
+This password **must not** contain the following characters: `$` or `"` or `'`.
+:::
+
+### `CORS_ORIGIN_URL` & `NEXT_PUBLIC_CLIENT_URL`
+
+The URL/IP to where the CAD is hosted at, see examples below.
+
+:::tip
+In support, this will be called the `client`.
+
+**Valid Examples:**
+
+- `https://cad.example.com` - subdomain
+- `https://mycad.com` - Top level domain
+- `http://192.168.0.190:3000` - LAN IP-address
+- `http://83.39.20.30:3000` - WAN IP-address
+
+**Invalid Examples:**
+
+- `localhost` - will simply not work.
+- `cad.example.com` - missing `https://` or `http://`.
+- `http://192.168.x.x:3000` - default URL, will not work.
+
+:::
+
+### `NEXT_PUBLIC_PROD_ORIGIN`
+
+The URL/IP to where the API is hosted at (**`/v1` is required.**), see examples below.
+
+:::tip
+In support, this will be called the `API`.
+
+**Valid Examples:**
+
+- `https://cad-api.example.com` - subdomain
+- `http://192.168.0.190:8080/v1` - LAN IP-address
+- `http://83.39.20.30:8080/v1` - WAN IP-address
+
+**Invalid Examples:**
+
+- `https://cad-api.example.com` - missing `/v1`
+- `cad-api.example.com` - missing `https://` or `http://`.
+- `localhost` - will simply not work.
+- `http://192.168.x.x:8080/v1` - default URL, will not work.
+
+:::
+
+### `PORT_API`
+
+The port where the API should run on.
+
+:::tip
+**Default:** `8080`
+:::
+
+### `PORT_API`
+
+The port where the API should run on.<br/>**Default:** `8080`
+
+### `PORT_CLIENT`
+
+The port where the client should run on.<br/>**Default:** `3000`
+
+### `ENCRYPTION_TOKEN`
+
+Used to generate encrypted values.<br/>[Generate one here](https://codebeautify.org/generate-random-string)
+
+:::caution
+**This token must be exactly 32 characters long.**
+:::

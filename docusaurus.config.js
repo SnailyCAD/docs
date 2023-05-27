@@ -116,6 +116,10 @@ const config = {
             to: "/docs/guides/product/how-to-install-custom-fonts",
             from: "/docs/features/custom-fonts",
           },
+          {
+            from: "/docs/guides/how-to-properly-update-env",
+            to: "/docs/guides/env/how-to-properly-update-env",
+          },
         ],
       },
     ],
