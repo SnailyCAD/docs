@@ -27,24 +27,45 @@ set socket_port 30121 # `sna-live-map` default socket port
 ensure sna-live-map
 ```
 
-5. Start the resource in your server.
+4. Start the resource in your server.
 
-## Connecting to SnailyCADv4
-
-:::caution
-When specifying your `Live map URL` you must ensure it is the same content type as your CAD. If your CAD uses HTTPS so must your Live Map URL, you can do this by proxying it with a domain name and SSL certificate in the same way as your CAD URL.
-:::
+## Connecting to SnailyCADv4 without SSL
 
 1. Start the resource in your server.
 2. Open the CAD-Settings page and head to the `Misc Settings` tab.
-3. Find the `Live map URL` field and paste your copied URL from step.
-   -> `http://FIVEM_SERVER_IP:PORT`. Example: `http://182.148.288.102:30121`.
+3. Find the `Live map URL` field and paste your copied URL.
+   - `http://FIVEM_SERVER_IP:PORT`. Example: `http://182.148.288.102:30121`.
 4. Open the live map via the dispatch dropdown.
 5. All done!
 
+## Connecting to SnailyCADv4 with SSL
+
+1. Start the resource in your server.
+2. Open the CAD-Settings page and head to the `Misc Settings` tab.
+3. Find the `Live map URL` field and enter the URL to your CAD Client.
+   - Example: `https://cad.example.com`
+4. In your nginx config for the CAD Client add the following to the config with your FiveM Server IP;
+
+```bash
+server {
+   server_name cad.example.com
+   ...
+   location /socket.io/ {
+    proxy_pass http://FIVEM_SERVER_IP:30121$uri$is_args$args;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+}
+```
+
+5. Validate your nginx config `nginx -t` and if its successful then run `nginx -s reload`
+6. Now your Live Map on the CAD should update displaying players without showing any errors
+
 ## Troubleshooting
 
-When experiencing issues with the Live Map always review your browser console (usually F12) and check for any present errors that might suggest why the live map connection is failing.
+- When experiencing issues with the Live Map always review your browser console (usually F12) and check for any present errors that might suggest why the live map connection is failing.
+- Players will need their Discord ID and/or Steam ID on their CAD account to show on the live map
 
 ## Latest features
 
