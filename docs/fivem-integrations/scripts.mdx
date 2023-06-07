@@ -11,6 +11,7 @@ SnailyCAD has several FiveM integrations.
 - `sna-calltaxi`: `/calltaxi`
 - [`sna-alpr`: ALPR integration that connects with Wraith ARS 2x](#sna-alpr)
 - `sna-postals`: define custom postals for the scripts above. [Learn here how to change them](/docs/fivem-integrations/live-map/how-to-set-custom-postals)
+- `sna-sync`: Sync SnailyCAD's signal 100s with FiveM.
 
 ## Downloads
 
@@ -23,7 +24,7 @@ You can [view the releases here](https://github.com/SnailyCAD/fivem-integrations
 To use these scripts, you must add a few options in your `server.cfg` file.
 
 ```conf
-set snailycad_url "http://api.example.com/v1"
+setr snailycad_url "http://api.example.com/v1"
 set snailycad_api_key "XXXXXX"
 setr snailycad_use_postal "true"
 ```
@@ -42,6 +43,7 @@ ensure sna-alpr
 ensure sna-call911
 ensure sna-calltow
 ensure sna-calltaxi
+ensure sna-sync
 ```
 
 3. Restart your server and your done!
