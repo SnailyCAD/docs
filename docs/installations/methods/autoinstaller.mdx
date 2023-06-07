@@ -11,7 +11,7 @@ This guide explains how to setup SnailyCADv4 **with an automated installer proce
 All the items listed below are required to get the CAD up and running smoothly.
 
 - [Git](https://git-scm.com/downloads) ([Windows Guide](https://youtu.be/EsNgheQPZs4)) ([Linux Guide](/docs/guides/how-to-install-git-linux))
-- [Node.js](https://nodejs.org) **(16.13.x or 18.x is required.)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux))
+- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux))
 - [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux#yarn))
 - [PostgreSQL](https://www.postgresql.org/download/) **(version 14 or higher)** ([Video Guide](https://www.youtube.com/watch?v=ZKWZvafvqwM)) ([Linux Guide](/docs/guides/how-to-install-postgresql-linux))
 
@@ -58,6 +58,10 @@ When changing something in the `.env` file after the installation process, make 
 - `ENCRYPTION_TOKEN`: Used to generate encrypted values. **Must be 32 characters long**
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
 
+:::tip
+**Please take a few minutes and read the [in-depth guide for each environment variable here](/docs/guides/env/reference).**
+:::
+
 ### Starting SnailyCAD
 
 After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
@@ -81,8 +85,9 @@ The ports set for the client and API **must be forwarded** in your firewall if y
 
 Default ports:
 
-- Client port: `3000`
-- API port: `8080`
+- **Client port**: `3000`
+- **API port**: `8080`
+- **Proxy ports:** `433` and `80`
 
 :::
 

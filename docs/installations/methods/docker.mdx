@@ -9,7 +9,7 @@ sidebar_position: 4
 All the items listed below are required to get the CAD up and running smoothly.
 
 - [Git](https://git-scm.com/downloads) ([Windows Guide](https://youtu.be/EsNgheQPZs4)) ([Linux Guide](/docs/guides/how-to-install-git-linux))
-- [Node.js](https://nodejs.org) **(16.13.x or 18.x is required.)** ([Video Guide](https://youtu.be/rp308wNdXU8))
+- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Video Guide](https://youtu.be/rp308wNdXU8))
 - [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Video Guide](https://youtu.be/rp308wNdXU8))
 - [Docker Desktop](https://docker.com/get-started) (Windows), [Docker](https://docker.com/get-started) (Linux)
 
@@ -97,6 +97,10 @@ Now we can start configuring the variables in the `.env` file. See next step [3.
 - `PORT_CLIENT`: The port where the client should run on. _(Default: 3000)_
 - `ENCRYPTION_TOKEN`: Used to generate encrypted values. **Must be 32 characters long**
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
+
+:::tip
+**Please take a minute and read the [in-depth document for each item here](/docs/guides/env/reference)**
+:::
 
 <details>
   <summary>View Example .env file</summary>
@@ -209,8 +213,9 @@ The ports set for the client and API **must be forwarded** in your firewall if y
 
 Default ports:
 
-- Client port: `3000`
-- API port: `8080`
+- **Client port**: `3000`
+- **API port**: `8080`
+- **Proxy ports:** `433` and `80`
 
 :::
 

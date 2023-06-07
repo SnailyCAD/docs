@@ -1,86 +1,99 @@
-# How to install custom fonts in SnailyCADv4
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
-SnailyCADv4 allows you to install custom fonts. This guide will show you how.
+# How to install custom fonts
 
-## 1. Downloading the font
+In this guide you will learn how to install custom fonts for SnailyCADv4
 
-You must download your font as a `.woff2` or `.ttf` type.
+### 1. Download the font
 
-## 2. Adding the font to the client
+You must download your font as a `.woff2` or `.ttf` type. These are the latest web font types.
 
-Once you've downloaded your font, it needs to be placed in a special folder: `apps/client/public/fonts`.
-If the `public/fonts` folder does not exist yet, you can create it.
+### 2. Install the font
 
-Once created, place your font in the `/public/fonts` folder.
+Once you've downloaded your font, it needs to be placed in a special folder: `./apps/client/public/fonts`.
 
-## 3. Including the font in the client
+:::info
+If the `./apps/client/public/fonts` folder does not exist yet, you can create it. Once created, place your font in the `./apps/client/public/fonts` folder.
+:::
+
+### 3. Add required CSS to use the font
 
 We must now edit some code to include this font in the client. Open the file: `apps/client/src/styles/fonts.scss`.
 
 Now add the following to the file:
 
-```scss
+```css
 @font-face {
   font-family: "MyFontNameHere";
   src: url("../../public/fonts/MyFontNameHere.woff2");
+  font-display: swap;
 }
 ```
 
 Once you've added the font-face to the file, we must now update the old font name to the new font name.
-Search for:
+**Search for:**
 
-```scss
+```css
 html,
-body {
+body,
+#map-calls,
+.leaflet-container {
   font-family: "Assistant", sans-serif;
 }
 ```
 
 and **Replace with:**
 
-```scss
+```css
 html,
-body {
+body,
+#map-calls,
+.leaflet-container {
   font-family: "MyFontNameHere", sans-serif;
 }
 ```
 
-## 4. Re-building the client.
+### 4. Rebuild your SnailyCAD instance
 
-Once you've followed all the steps **correctly**, we can now re-build the client. First stop the CAD, then run the following command:
+<Tabs groupId="installation-method">
+  <TabItem value="standalone" label="Standalone" default>
 
-### Standalone
+If you are running SnailyCAD standalone, you can run the following command to rebuild the client:
 
-```sh
-yarn workspace @snailycad/client build
+```bash
+yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
 ```
 
-### Docker
+  </TabItem>
+  <TabItem value="docker" label="Docker">
 
-```sh
+If you are running SnailyCAD with Docker, you can run the following command to rebuild the client:
+
+```bash
 docker-compose -f production.docker-compose.yml build
 ```
 
-## 5. Starting the CAD
+  </TabItem>
+</Tabs>
 
-Once you've followed all the above steps, we can restart the CAD again with the following command:
+### 5. Start your SnailyCAD instance
 
-### Standalone
-
-**Client**
-
-```bash
-yarn workspace @snailycad/client start
-```
-
-**API**
+<Tabs groupId="installation-method">
+  <TabItem value="standalone" label="Standalone" default>
+If you are running SnailyCAD standalone, you can run the following command to start SnailyCAD:
 
 ```bash
-yarn workspace @snailycad/api start
+yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 ```
 
-### Docker
+  </TabItem>
+  <TabItem value="docker" label="Docker">
+If you are running SnailyCAD with Docker, you can run the following command to start SnailyCAD:
 
 ```bash
 docker-compose -f production.docker-compose.yml up -d
 ```
+
+  </TabItem>
+</Tabs>

@@ -1,3 +1,6 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # Autoupdater
 
 Find out how to update SnailyCADv4 automatically when using the standalone or autoinstaller method.
@@ -10,17 +13,22 @@ Find out how to update SnailyCADv4 automatically when using the standalone or au
 
 ### Getting started
 
-First, shut down your SnailyCAD instance, to do so run the following command:
+First, shut down your SnailyCAD instance:
 
-**pm2**
+<Tabs groupId="running-method">
+  <TabItem value="terminal" label="Terminal/Command Prompt" default>
+If you are running SnailyCAD in the foreground in a Terminal or Command Prompt. Simply press `CTRL + C` to stop your SnailyCAD instance.
+
+  </TabItem>
+  <TabItem value="pm2" label="pm2">
+If you are running SnailyCAD with Docker, you can run the following command to start SnailyCAD:
 
 ```bash
 pm2 stop all
 ```
 
-**Command Prompt/Terminal**
-
-Simply press `CTRL + C` to stop your SnailyCAD instance.
+  </TabItem>
+</Tabs>
 
 ### Updating
 

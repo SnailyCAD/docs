@@ -5,14 +5,17 @@ sidebar_position: 2
 # Standalone installation
 
 This guide explains how to setup your own SnailyCADv4 instance **without Docker**.
+
+:::tip
 You can also find [a video version](https://youtu.be/06NiiO8-rIM) of this guide.
+:::
 
 ## Requirements
 
 All the items listed below are required to get SnailyCADv4 up and running smoothly.
 
 - [Git](https://git-scm.com/downloads) ([Windows Guide](https://youtu.be/EsNgheQPZs4)) ([Linux Guide](/docs/guides/how-to-install-git-linux))
-- [Node.js](https://nodejs.org) **(16.13.x or 18.x is required.)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux))
+- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux))
 - [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/how-to-install-node-yarn-npm-linux#yarn))
 - [PostgreSQL](https://www.postgresql.org/download/) **(version 14 or higher)** ([Video Guide](https://www.youtube.com/watch?v=ZKWZvafvqwM)) ([Linux Guide](/docs/guides/how-to-install-postgresql-linux))
 
@@ -73,11 +76,11 @@ yarn
 
 ### 3. Configuration
 
-Configuration can be a bit complicated, so pay close attention. The following steps will help you configure SnailyCADv4's environment variables.
+**Configuration can be a bit complicated, so pay close attention.** The following steps will help you configure SnailyCADv4's environment variables.
 These variables are used by SnailyCADv4 to connect to the database and store special tokens used for SnailyCAD's features.
 
 :::tip
-In the support channels, this will be referenced as the `.env` file.
+In the support channels, this will be referenced as the ".env file" or "ENV".
 :::
 
 We must first copy the `.env.example` file to `.env`:
@@ -125,6 +128,10 @@ When changing something in the `.env` file after the installation process, make 
 - `PORT_CLIENT`: The port where the client should run on. _(Default: 3000)_
 - `ENCRYPTION_TOKEN`: Used to generate encrypted values. **Must be 32 characters long**
 - `DATABASE_URL`: **Do not change unless you know what you're doing!**
+
+:::tip
+**Please take a few minutes and read the [in-depth guide for each environment variable here](/docs/guides/env/reference).**
+:::
 
 <details>
   <summary>View Example .env file</summary>
@@ -237,8 +244,9 @@ The ports set for the client and API **must be forwarded** in your firewall if y
 
 Default ports:
 
-- Client port: `3000`
-- API port: `8080`
+- **Client port**: `3000`
+- **API port**: `8080`
+- **Proxy ports:** `433` and `80`
 
 :::
 

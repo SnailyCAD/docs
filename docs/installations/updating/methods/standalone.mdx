@@ -1,22 +1,30 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # Standalone
 
 Find out how to update SnailyCADv4 manually when using the standalone installation method.
 
 ### Getting started
 
-First, shut down your SnailyCAD instance, to do so run the following command:
+First, shut down your SnailyCAD instance:
 
-**pm2**
+<Tabs groupId="running-method">
+  <TabItem value="terminal" label="Terminal/Command Prompt" default>
+If you are running SnailyCAD in the foreground in a Terminal or Command Prompt. Simply press `CTRL + C` to stop your SnailyCAD instance.
+
+  </TabItem>
+  <TabItem value="pm2" label="pm2">
+If you are running SnailyCAD with Docker, you can run the following command to start SnailyCAD:
 
 ```bash
 pm2 stop all
 ```
 
-**Command Prompt/Terminal**
+  </TabItem>
+</Tabs>
 
-Simply press `CTRL + C` to stop your SnailyCAD instance.
-
-### Updating local code
+### 1. Update local code
 
 First we must update our local code:
 
@@ -35,7 +43,7 @@ git stash && git pull origin main
 
 :::
 
-### Updating dependencies
+### 2. Update dependencies
 
 Secondly, we must update dependencies that might've changes from the last release. To do so, run the following command:
 
@@ -43,11 +51,11 @@ Secondly, we must update dependencies that might've changes from the last releas
 yarn
 ```
 
-### Configuration
+### 3. Configuration
 
-If there's something that needs to be changed in the .env file, make sure to do that properly. [View the guide here](/docs/guides/how-to-properly-update-env)
+If there's something that needs to be changed in the .env file, make sure to do that properly. [View the guide here](/docs/guides/env/how-to-properly-update-env)
 
-### Building everything
+### 4. Rebuild everything
 
 Now we must build all the packages & apps again. _(client, schemas, config, types)_
 
@@ -55,7 +63,7 @@ Now we must build all the packages & apps again. _(client, schemas, config, type
 yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
 ```
 
-### Starting SnailyCAD
+### 5. Start SnailyCAD
 
 To bring the CAD back up run the following command:
 

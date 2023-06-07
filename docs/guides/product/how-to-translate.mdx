@@ -2,51 +2,37 @@
 
 In this guide you will learn how to use an existing locale or how to add a new custom locale.
 
-## Using an existing locale
+## Adding a new custom locale
 
-To use an existing locale, you need to set as default in `i18n.config.mjs`:
-
-:::caution
-
-It is advised not to edit an existing language directly.
-This could cause merge conflicts in the future.
-Update the language remotely on GitHub via a Pull Request or create a new language entry.
-
-:::
-
-```js
-// apps/client/i18n.config.mjs
-// ...
-{
- i18n: {
-    locales: ["en", /* other locales might be here */],
-    defaultLocale: "en", // replace en with the locale above to corresponds with your language
-  },
-}
-// ...
-
-```
-
-Restarting the client will now set the default locale to the locale you set.
-
-## Adding a custom locale
-
-To add a custom locale, there are a few more steps.
+To add a custom locale, there are a few steps required.
 
 1. Open the following directory: `apps/client/locales`
-2. Duplicate the `en` folder and rename to a correct [locale code](https://github.com/meikidd/iso-639-1/blob/master/src/data.mjs)
+2. Duplicate the **`en`** folder and rename to a correct [locale code](https://github.com/meikidd/iso-639-1/blob/master/src/data.js)
 3. Start editing the `.json` files in the **newly duplicated** folder.
 4. Once finished, add your locale to `i18n.config.mjs`:
 
 ```js
 // apps/client/i18n.config.mjs
-// ...
-{
- i18n: {
-    locales: [/* the previous locales */, "YOUR_LOCALE_HERE"],
-    defaultLocale: "YOUR_LOCALE_HERE", // replace this with your locale
-  },
-}
-// ...
-
+export const i18n = {
+  locales: [, /* the previous locales */ "YOUR_LOCALE_HERE"],
+  defaultLocale: "YOUR_LOCALE_HERE", // replace this with your locale
+};
 ```
+
+## Using an existing locale as default locale
+
+To use an existing locale, you need to set as default in `i18n.config.mjs`:
+
+:::tip
+Users can also set their own locale for their CAD account separately.
+:::
+
+```js
+// apps/client/i18n.config.mjs
+export const i18n = {
+  locales: ["en" /* other locales might be here */],
+  defaultLocale: "en", // replace en with the locale above to corresponds with your language
+};
+```
+
+Restarting the client will now set the default locale to the locale you set.
