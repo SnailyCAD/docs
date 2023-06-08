@@ -8,10 +8,6 @@ sidebar_position: 1
 This guide is targetted for Windows users. [A Linux based guide can be found here](/docs/installations/reverse-proxies/nginx)
 :::
 
-:::note
-This guide does not yet include SSL setup due to complexity. For now, I recommend you take a look at [win-acme](https://win-acme.com) for generating SSL certificates.
-:::
-
 ## Terminology
 
 - **API**: The API of SnailyCAD - the backend.
@@ -94,7 +90,7 @@ http {
     add_header Referrer-Policy           "no-referrer" always;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
     add_header X-DNS-Prefetch-Control on;
-    add_header Cross-Origin-Resource-Policy "same-site";
+    add_header Cross-Origin-Resource-Policy "cross-origin";
 
     # keep this as-is unless you know what you're doing.
     listen 80;
@@ -205,7 +201,7 @@ http {
       add_header Referrer-Policy           "no-referrer" always;
       add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
       add_header X-DNS-Prefetch-Control on;
-      add_header Cross-Origin-Resource-Policy "same-site";
+      add_header Cross-Origin-Resource-Policy "cross-origin";
 
       # keep this as-is unless you know what you're doing.
       listen 80;
@@ -258,7 +254,7 @@ http {
 
 </details>
 
-### 2.3 Verify NGINX configuration
+### 3.4 Verify NGINX configuration
 
 To verify the NGINX configuration, run the following command:
 
@@ -284,6 +280,41 @@ nginx -s reload
 :::tip
 This command must be run every time you make changes to the `nginx.conf` file in the `C:\nginx` directory.
 :::
+
+### 4.1 Starting NGINX on boot
+
+To start NGINX when the system is restarted you will need to add a task to the Windows Task Scheduler which will run a batch file from the NGINX folder `C:\nginx`. The code for this batch file is provided below, you can copy it into a new file called `start.bat` and save this to your NGINX folder.
+
+```bat
+@ECHO OFF
+REM Start Nginx
+tasklist /FI "IMAGENAME eq nginx.exe" 2>NUL | find /I /N "nginx.exe">NUL
+IF NOT "%ERRORLEVEL%"=="0" (
+   REM Nginx is NOT running, so start it
+   c:
+   cd \nginx
+   start nginx.exe
+   ECHO Nginx started.
+) else (
+   ECHO Nginx is already running.
+)
+```
+
+Once you have added the file you'll need to open Task Scheduler and add a new task. You can follow the steps below to add this task;
+
+- Open Task Scheduler, and in the 'Task Scheduler Library' you will want to click 'Create Task...` from the menu on the right, or buy right clicking on the folder.
+- Give it a name like "Start NGINX", and select 'Run whether user is logged on or not'.
+- Click the 'Triggers' tab.
+  - Make a new trigger and in the top drop down select 'At startup'.
+  - Tick 'Repeat task every:' and set it to '5 minutes'.
+  - Click 'OK'.
+- Click the 'Actions' tab.
+  - Make a new action and select 'Start a program' from the top drop down.
+  - Browse to where the batch script was saved, which should be `C:\nginx\start.bat`.
+  - Click 'OK'.
+- You can now click 'OK' at the bottom os the task and you will need to enter the details of the user the task will run under, this should be the same account that NGINX will be running under.
+
+This task will check every 5 minutes to see if NGINX is running, and if it is not it will start a new instance of NGINX.
 
 ## 5. SSL
 
