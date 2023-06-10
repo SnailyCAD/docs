@@ -59,7 +59,6 @@ server {
   add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
   add_header X-DNS-Prefetch-Control on;
   add_header Cross-Origin-Resource-Policy "same-site";
-  add_header X-Frame-Options DENY always;
 
   # keep this as-is unless you know what you're doing.
   # for SSL, see step 6
@@ -104,7 +103,6 @@ server {
   add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
   add_header X-DNS-Prefetch-Control on;
   add_header Cross-Origin-Resource-Policy "same-site";
-  add_header X-Frame-Options DENY always;
 
   # keep this as-is unless you know what you're doing.
   # for SSL, see step 6

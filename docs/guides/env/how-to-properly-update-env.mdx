@@ -55,7 +55,7 @@ node scripts/copy-env.mjs --client --api && yarn turbo run build --filter="{pack
 If you are running SnailyCAD with Docker, you can run the following command to rebuild the client:
 
 ```bash
-docker-compose -f production.docker-compose.yml build
+node scripts/copy-env.mjs --client --api && docker-compose -f production.docker-compose.yml build
 ```
 
   </TabItem>

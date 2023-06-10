@@ -1,0 +1,33 @@
+.root {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.widget .grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.widget .cell {
+  width: max-content;
+}
+
+.widget .reaction {
+  width: 100%;
+  transition: transform 150ms;
+}
+
+.widget .reaction:hover {
+  transform: scale(1.1);
+}
+
+.widget .footer {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.widget .reactionIcon {
+  font-size: 1.8em;
+}
