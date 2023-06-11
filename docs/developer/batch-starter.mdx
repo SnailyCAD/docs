@@ -1,8 +1,11 @@
-# `start.bat` file
+# Bat runner file
 
 When using the standalone version you can use this file to start the client and API simultaneously.
 
-```batch
+1. Create a file called `start.bat` in the `snaily-cadv4` directory.
+2. Add the following contents to the file:
+
+```bash
 set "client_command=yarn workspace @snailycad/client start"
 set "api_command=yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
 
