@@ -114,10 +114,10 @@ POSTGRES_PASSWORD="Y8CURkTv"
 # This is the username to the postgress database.
 POSTGRES_USER="postgres"
 
-# The database host - Set as 'postgres' when using docker-compose
+# The database host - Set as 'postgres' when using docker compose
 DB_HOST="postgres"
 
-# The database port - keep port as '5432' when using docker-compose
+# The database port - keep port as '5432' when using docker compose
 DB_PORT="5432"
 
 # The database name.
@@ -148,7 +148,7 @@ DOMAIN="example.com"
 SECURE_COOKIES_FOR_IFRAME="false"
 
 # The port of which the API will run on. Default: 8080
-# When using Docker, make sure to change this in the `production.docker-compose.yml` file too.
+# When using Docker, make sure to change this in the `production.docker compose.yml` file too.
 PORT_API=8080
 
 # The port of which the client will run on. Default: 3000
@@ -166,7 +166,19 @@ DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_
 
 </details>
 
-#### 3.2 Docker network
+#### 3.2 Moving env file
+
+Once you've **correctly configured all the variables**, we must copy the `.env` file to the client and API:
+
+**Windows/Linux:**
+
+```bash
+node scripts/copy-env.mjs --client --api
+```
+
+<img src="/gifs/copy-env.gif" alt="copy env short clip" loading="lazy" width="600px" />
+
+#### 3.3 Docker network
 
 Now we must setup a Docker network so the CAD can communicate with it's services.
 
@@ -183,7 +195,7 @@ This command must **always** be run after changing the `.env` file
 :::
 
 ```bash
-docker-compose -f production.docker-compose.yml build
+docker compose -f production.docker compose.yml build
 ```
 
 ### 5. Starting SnailyCADv4
@@ -194,13 +206,16 @@ _**Note:** When running the command for the fist time, this will
 pull down all services from the Docker Hub. This can take a few minutes._
 
 ```bash
-docker-compose -f production.docker-compose.yml up -d
+docker compose -f production.docker compose.yml up -d
 ```
 
-#### 5.1 Tips
+:::tip Docker tips
 
-- To stop SnailyCADv4, enter `docker-compose -f production.docker-compose.yml down` in a command prompt/terminal in the directory where you installed the CAD and wait for the services to stop.
-- To view Docker's logs for SnailyCAdv4, enter `docker-compose -f production.docker-compose.yml logs` in a command prompt/terminal in the directory where you installed the CAD.
+- **Stop SnailyCADv4:** enter `docker compose -f production.docker compose.yml down` in a command prompt/terminal in the directory where you installed the CAD and wait for the services to stop.
+
+- **View SnailyCADv4 logs:** enter `docker compose -f production.docker compose.yml logs` in a command prompt/terminal in the directory where you installed the CAD.
+
+:::
 
 ### 6. Accessing SnailyCADv4
 

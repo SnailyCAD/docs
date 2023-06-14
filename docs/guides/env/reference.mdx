@@ -36,6 +36,10 @@ The database host URL. _Most likely `localhost`._
 
 The port to the database.
 
+:::note
+**Only when using Docker installation:** keep this as `5432`
+:::
+
 ### `JWT_SECRET`
 
 This is a random value to keep the CAD secured.
@@ -112,6 +116,36 @@ Used to generate encrypted values.<br/>[Generate one here](https://codebeautify.
 **This token must be exactly 32 characters long.**
 :::
 
+### `DOMAIN`
+
+The domain you might be using. (Optional, however, recommended)
+
+:::caution WARNING
+
+1. **You may only set this when using a domain name.**
+2. This **must** be the **TLD** of the domain. (e.g.: `example.com` or `mycommunity.com`)
+
+:::
+
+:::tip
+
+**Valid Examples:**
+
+- `https://example.com`
+- `http://example.com`
+- `http://example.com:3000`
+
+**Invalid Examples:**
+
+- `https://cad.example.com` - subdomain cannot be used. must be top level domain
+- `192.38.33.29` - an IP is not a domain
+
+:::
+
+### `SECURE_COOKIES_FOR_IFRAME`
+
+Only enable when uterly required. (This may not work all the time; work-in-progress.)
+
 ### Example .env file
 
 ```bash
@@ -123,10 +157,10 @@ POSTGRES_PASSWORD="Y8CURkTv"
 # This is the username to the postgress database.
 POSTGRES_USER="postgres"
 
-# The database host - Set as 'postgres' when using docker-compose
+# The database host - Set as 'postgres' when using docker compose
 DB_HOST="localhost"
 
-# The database port - keep port as '5432' when using docker-compose
+# The database port - keep port as '5432' when using docker compose
 DB_PORT="5432"
 
 # The database name.
@@ -157,14 +191,11 @@ DOMAIN="example.com"
 SECURE_COOKIES_FOR_IFRAME="false"
 
 # The port of which the API will run on. Default: 8080
-# When using Docker, make sure to change this in the `production.docker-compose.yml` file too.
+# When using Docker, make sure to change this in the `production.docker compose.yml` file too.
 PORT_API=8080
 
 # The port of which the client will run on. Default: 3000
 PORT_CLIENT=3000
-
-# Errors get reported to Linear (Project manager). This is done so errors can be fixed faster.
-TELEMETRY_ENABLED="true"
 
 # Do not change this.
 NODE_ENV="production"
