@@ -125,6 +125,12 @@ const config = {
     ],
   ],
   themeConfig: {
+    algolia: {
+      appId: "",
+      apiKey: "",
+      indexName: "",
+      contextualSearch: true,
+    },
     metadata: [
       { name: "og:image", content: "https://docs.snailycad.org/icons/logo.png" },
       { name: "og:image:alt", content: "SnailyCAD" },
