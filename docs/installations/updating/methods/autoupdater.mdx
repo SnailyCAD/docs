@@ -11,13 +11,14 @@ Find out how to update SnailyCADv4 automatically when using the standalone or au
 
 :::
 
-### Getting started
+### 1. Shut down SnailyCAD
 
 First, shut down your SnailyCAD instance:
 
 <Tabs groupId="running-method">
   <TabItem value="terminal" label="Terminal/Command Prompt" default>
-If you are running SnailyCAD in the foreground in a Terminal or Command Prompt. Simply press `CTRL + C` to stop your SnailyCAD instance.
+
+If you are running SnailyCAD in the foreground in a Terminal or Command Prompt. Simply press `ctrl + C` to stop your SnailyCAD instance.
 
   </TabItem>
   <TabItem value="pm2" label="pm2">
@@ -30,7 +31,7 @@ pm2 stop all
   </TabItem>
 </Tabs>
 
-### Updating
+### 2. Run the autoupdater
 
 :::caution
 
@@ -48,7 +49,7 @@ curl https://raw.githubusercontent.com/SnailyCAD/autoupdater/main/dist/index.js 
 node autoupdater.mjs
 ```
 
-### Starting SnailyCAD
+### 3. Start SnailyCAD
 
 To bring the CAD back up run the following command:
 
