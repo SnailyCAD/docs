@@ -61,7 +61,6 @@ const config = {
   plugins: [
     ["@docusaurus/plugin-google-gtag", { trackingID: "G-HE45R7EFY2", anonymizeIP: true }],
     ["@docusaurus/plugin-google-tag-manager", { containerId: "GTM-528C8P8" }],
-    require.resolve("@cmfcmf/docusaurus-search-local"),
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -126,9 +125,9 @@ const config = {
   ],
   themeConfig: {
     algolia: {
-      appId: "",
-      apiKey: "",
-      indexName: "",
+      appId: "PKWSL980WF",
+      apiKey: "1a0f0fda665bc995bd8de8d14f5c6eee",
+      indexName: "snailycad",
       contextualSearch: true,
     },
     metadata: [
