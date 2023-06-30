@@ -46,7 +46,7 @@ If you are running SnailyCAD standalone, you can simply press `CTRL+C` in the te
 If you are running SnailyCAD with Docker, you can stop SnailyCAD by running the following command:
 
 ```bash
-docker compose -f production.docker compose.yml down
+docker compose -f production.docker-compose.yml down
 ```
 
   </TabItem>
@@ -81,7 +81,7 @@ yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filte
 If you are running SnailyCAD with Docker, you can run the following command to rebuild the client:
 
 ```bash
-docker compose -f production.docker compose.yml build
+docker compose -f production.docker-compose.yml build
 ```
 
   </TabItem>
@@ -102,7 +102,7 @@ yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @
 If you are running SnailyCAD with Docker, you can run the following command to start SnailyCAD:
 
 ```bash
-docker compose -f production.docker compose.yml up -d
+docker compose -f production.docker-compose.yml up -d
 ```
 
   </TabItem>
