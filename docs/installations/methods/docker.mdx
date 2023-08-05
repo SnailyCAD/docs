@@ -229,11 +229,7 @@ docker compose -f production.docker-compose.yml up -d
 
 ### 6. Accessing SnailyCADv4
 
-By default, you can access SnailyCADv4 via a web browser on your [LAN IP](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) and the `PORT_CLIENT`, example: `http://192.168.92.20:3000`
-
-You can also connect SnailyCADv4 to a domain via a proxy such as [NGINX](https://nginx.org) or [Apache](https://apache.org)
-
-:::info
+:::info Port forwarding
 The ports set for the client and API **must be forwarded** in your firewall if you're **not** using some proxy.
 
 Default ports:
@@ -244,6 +240,9 @@ Default ports:
 
 :::
 
-:::caution
-Do **not** use `localhost` for Accessing SnailyCAD. It will not work!
+:::caution localhost
+You cannot use `localhost` to access SnailyCADv4. It will not work!
 :::
+
+By default, you can access SnailyCADv4 via a web browser on your [LAN IP](https://www.whatismybrowser.com/detect/what-is-my-local-ip-address) and the `PORT_CLIENT`, example: `http://192.168.92.20:3000`. However, if you want to access SnailyCADv4 via a domain, you must setup a reverse proxy.
+We have guides for [NGINX](/docs/installations/reverse-proxies/nginx), an [Apache Guide](https://apache.org) can be found here.

@@ -45,7 +45,23 @@ Keep this command prompt open. You will need to run some more commands in this c
 
 ## 3. Configuring NGINX
 
-### 3.1. Setting `server_names_hash_bucket_size`
+### 3.1. Setting `client_max_body_size`
+
+To allow for larger uploads, we must set this value to `100M`. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
+
+```bash
+http {
+  # ...
+  client_max_body_size 100M;
+  # ...
+}
+```
+
+:::tip upload sizes
+This will allow uploads up to 100MB. If you want to limit the upload size to a smaller size, you can change the value to something else. For example, `10M` will limit the upload size to 10MB.
+:::
+
+### 3.2. Setting `server_names_hash_bucket_size`
 
 To allow for longer domain names, we must set this value to `64`. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
 
@@ -61,9 +77,11 @@ http {
 A full example of the `nginx.conf` file can be found further down this page.
 :::
 
-### 3.2. Configuring the API
+### 3.3. Configuring the API
 
 First, we need to configure the API. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
+
+Make sure to replace the marked examples with your own values.
 
 ```bash
 http {
@@ -94,6 +112,7 @@ http {
     add_header Cross-Origin-Resource-Policy "cross-origin";
 
     # keep this as-is unless you know what you're doing.
+    # for SSL, see step 6
     listen 80;
   }
 
@@ -105,9 +124,11 @@ http {
 A full example of the `nginx.conf` file can be found further down this page.
 :::
 
-### 3.3. Configuring the client
+### 3.4. Configuring the client
 
 Once the API is configured, we must add the client block. Open the `C:\nginx\conf\nginx.conf` file and add the following code to the `http` block:
+
+Make sure to replace the marked examples with your own values.
 
 ```bash
 
@@ -174,11 +195,10 @@ http {
     include       mime.types;
     default_type  application/octet-stream;
     server_names_hash_bucket_size 64;
+    client_max_body_size 100M;
 
     sendfile        on;
-
     keepalive_timeout  65;
-
     gzip  on;
 
     # SnailyCAD API Reverse Proxy
@@ -255,7 +275,7 @@ http {
 
 </details>
 
-### 3.4 Verify NGINX configuration
+### 3.5 Verify NGINX configuration
 
 To verify the NGINX configuration, run the following command:
 
@@ -303,17 +323,17 @@ IF NOT "%ERRORLEVEL%"=="0" (
 
 Once you have added the file you'll need to open Task Scheduler and add a new task. You can follow the steps below to add this task;
 
-- Open Task Scheduler, and in the 'Task Scheduler Library' you will want to click 'Create Task...` from the menu on the right, or buy right clicking on the folder.
-- Give it a name like "Start NGINX", and select 'Run whether user is logged on or not'.
-- Click the 'Triggers' tab.
-  - Make a new trigger and in the top drop down select 'At startup'.
-  - Tick 'Repeat task every:' and set it to '5 minutes'.
-  - Click 'OK'.
-- Click the 'Actions' tab.
-  - Make a new action and select 'Start a program' from the top drop down.
-  - Browse to where the batch script was saved, which should be `C:\nginx\start.bat`.
-  - Click 'OK'.
-- You can now click 'OK' at the bottom os the task and you will need to enter the details of the user the task will run under, this should be the same account that NGINX will be running under.
+1. Open Task Scheduler, and in the `Task Scheduler Library` you will want to click `Create Task...` from the menu on the right, or buy right clicking on the folder.
+2. Give it a name like `Start NGINX`, and select 'Run whether user is logged on or not'.
+3. Click the `Triggers` tab.
+   1. Make a new trigger and in the top drop down select `At startup`.
+   2. Tick `Repeat task every:` and set it to `5 minutes`.
+   3. Click 'OK'.
+4. Click the `Actions` tab.
+   1. Make a new action and select `Start a program` from the top drop down.
+   2. Browse to where the batch script was saved, which should be `C:\nginx\start.bat`.
+   3. Click `OK`.
+5. You can now click `OK` at the bottom os the task and you will need to enter the details of the user the task will run under, this should be the same account that NGINX will be running under.
 
 This task will check every 5 minutes to see if NGINX is running, and if it is not it will start a new instance of NGINX.
 
@@ -365,17 +385,21 @@ Once you have opened `wacs.exe`, you should see the following screen:
 
 ### 5.3. Configuring NGINX for SSL
 
-Once you have generated the SSL certificate, you must now configure NGINX to use the SSL certificate. Open the `C:\nginx\conf\nginx.conf` file and add the following code to both `server` blocks:
+Once you have generated the SSL certificate, you must now configure NGINX to use the SSL certificate. Open the `C:\nginx\conf\nginx.conf` file and add or update the following code to **both** `server` blocks:
 
 ```bash
 # ...
 server {
   # ...
+
+  # Previous was `listen 80;`:
   listen 443 ssl http2;
 
-  ssl_certificate C:/ssl/xxxxxxxxxxxxx-chain.pem; # The path to your SSL certificate (-chan.pem file)
+  # Add the following lines:
+  ssl_certificate C:/ssl/xxxxxxxxxxxxx-chain.pem; # The path to your SSL certificate (-chain.pem file)
   ssl_certificate_key C:/ssl/xxxxxxxxxxxxx-key.pem; # The path to your SSL certificate key (-key.pem file)
   ssl_session_timeout 5m;
+
   # ...
 }
 
