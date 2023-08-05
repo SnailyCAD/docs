@@ -30,20 +30,27 @@ Firslty we must connect to the database via the command line:
 psql -d postgres
 ```
 
+:::caution error: FATAL: role "root" does not exist
+
 Note that you might run into this error, if you try to execute this command as a root user:
 
-:::caution
-This is the error you might get: `psql: error: FATAL:  role "root" does not exist`
-*(Note that the role might change based of what user you're logged in)*
-:::
+```bash
+psql: error: FATAL:  role "root" does not exist
+```
 
-To avoid it, simply execute the command as the postgres user, by executing this command (No password should be needed):
+To avoid it, simply switch to the postgres user:
 
 ```bash
 sudo -u postgres -i
 ```
 
-Then you can execute the first command that was mentionned before `psql -d postgres` and you can continue with the guide.
+Then you can execute the first command that was mentionned before and you can continue with the guide.
+
+```bash
+psql -d postgres
+```
+
+:::
 
 ### Creating SnailyCAD user
 
