@@ -4,9 +4,9 @@ This guide will show you how to use Cloudflare Tunnels for SnailyCAD. With Cloud
 
 ## Requirements
 
-- A domain name with Cloudflare DNS
-- [A SnailyCAD instance](/docs/installations)
-- [A Cloudflare account](https://dash.cloudflare.com/sign-up)
+-   A domain name with Cloudflare DNS
+-   [A SnailyCAD instance](/docs/installations)
+-   [A Cloudflare account](https://dash.cloudflare.com/sign-up)
 
 ## Getting started
 
@@ -15,50 +15,55 @@ This guide will show you how to use Cloudflare Tunnels for SnailyCAD. With Cloud
 1. Navigate to the [Cloudflare Zero Trust Dashboard](https://one.dash.cloudflare.com) and login with your Cloudflare account.
 2. In the left sidebar, click on `Access` then `Tunnels` (also in the sidebar).
 
-## 2. Creating a tunnel for the SnailyCAD API
+## 2. Create a tunnel for system
 
-1. Click on `Create Tunnel`
-2. Enter a name for your tunnel (e.g.: SnailyCAD API).
-3. Click on `Save Tunnel`
-4. Follow the instructions on the page to install Cloudflared on your server (Install Connector).
-5. Once connected, click `Next`
-6. Enter the configuration for your domain:
+:::caution
+You are only able to create 1 tunnel per system.
+:::
 
-   - **Subdomain:** This is the subdomain you want to use for your SnailyCAD API. For example, if you want to use `cad-api.example.com` then you would enter `cad-api` here.
-   - **Domain:** The domain connected to your Cloudflare account. For example, if you want to use `cad-api.example.com` then you would enter `example.com` here.
-   - **Path:** Leave empty.
+1. Click on `Create a Tunnel`
+2. Enter a name for your tunnel (e.g.: "SnailyCAD Tunnel")
+3. Follow the instructions on the page to install Cloudflared on your server (Install Connector).
+4. Once connected, click `Next`
 
-   - **Service Type:** Select `HTTPS`
-   - **URL:** `http://localhost:8080`
+## 3. Create Hostname for SnailyCAD API
 
-7. Click `Save Tunnel`
-8. Head back to the Tunnels dashboard.
+1. Enter the configuration for your domain:
 
-## 3. Creating a tunnel for the SnailyCAD Client
+    - **Subdomain:** This is the subdomain you want to use for your SnailyCAD API. For example, if you want to use `cad-api.example.com` then you would enter `cad-api` here.
+    - **Domain:** The domain connected to your Cloudflare account. For example, if you want to use `cad-api.example.com` then you would enter `example.com` here.
+    - **Path:** Leave empty.
 
-1. Click on `Create Tunnel`
-2. Enter a name for your tunnel (e.g.: SnailyCAD Client).
-3. Click on `Save Tunnel`
-4. Follow the instructions on the page to install Cloudflared on your server (Install Connector).
-5. Once connected, click `Next`
-6. Enter the configuration for your domain:
+    - **Service Type:** Select `HTTP`
+    - **URL:** `localhost:8080`
 
-   - **Subdomain:** This is the subdomain you want to use for your SnailyCAD API. For example, if you want to use `cad.example.com` then you would enter `cad` here.
-   - **Domain:** The domain connected to your Cloudflare account. For example, if you want to use `cad.example.com` then you would enter `example.com` here.
-   - **Path:** Leave empty.
+2. Click `Save Tunnel`
+3. Head back to the Tunnels dashboard.
 
-   - **Service Type:** Select `HTTPS`
-   - **URL:** `http://localhost:3000`
+## 4. Create Hostname for SnailyCAD Client
 
-7. Click `Save Tunnel`
+1. Click on the tunnel you just created
+2. Click on the `Configure` button
+3. Navigate to the `Public Hostname` tab
+4. Click on `Add a public hostname`
+5. Enter the configuration for your domain:
 
-## 4. Configuring SnailyCAD
+    - **Subdomain:** This is the subdomain you want to use for your SnailyCAD API. For example, if you want to use `cad.example.com` then you would enter `cad` here.
+    - **Domain:** The domain connected to your Cloudflare account. For example, if you want to use `cad.example.com` then you would enter `example.com` here.
+    - **Path:** Leave empty.
+
+    - **Service Type:** Select `HTTP`
+    - **URL:** `localhost:3000`
+
+6. Click `Save hostname`
+
+## 5. Configuring SnailyCAD
 
 1. Open your SnailyCAD `.env` file.
 
-   - **`CORS_ORIGIN_URL`:** Set this to your SnailyCAD Client domain. For example, `https://cad.example.com`
-   - **`NEXT_PUBLIC_CLIENT_URL`:** Set this to your SnailyCAD Client domain. For example, `https://cad.example.com`
-   - **`NEXT_PUBLIC_PROD_ORIGIN`:** Set this to your SnailyCAD API domain. For example: `https://cad-api.example.com/v1` (**Note:** You need to add `/v1` at the end of the URL)
+    - **`CORS_ORIGIN_URL`:** Set this to your SnailyCAD Client domain. For example, `https://cad.example.com`
+    - **`NEXT_PUBLIC_CLIENT_URL`:** Set this to your SnailyCAD Client domain. For example, `https://cad.example.com`
+    - **`NEXT_PUBLIC_PROD_ORIGIN`:** Set this to your SnailyCAD API domain. For example: `https://cad-api.example.com/v1` (**Note:** You need to add `/v1` at the end of the URL)
 
 2. Follow [this guide to properly update your .env file](/docs/guides/env/how-to-properly-update-env)
 3. All Done! 🎉
