@@ -1,0 +1,43 @@
+---
+date: "2023-08-16"
+---
+
+# Release 1.67.0
+
+This release includes tons of improvements, bug fixes, and new features.
+
+**Updated FiveM Integrations**
+
+Since this update and [`fivem-integrations@0.5.0`], you are now able to do the following things:
+
+- Authenticate with your SnailyCAD instance using User API Tokens: `/sn-auth`.
+- See what user you're currently authenticated as: `/sn-whoami`.
+- See your active unit's name & id: `/sn-active-unit`.
+- Set the status of your active unit: `/sn-set-status` (if no statusCode is provided, a modal will open with all possible status codes.).
+- Toggle the panic button state of your active unit: `/sn-panic-button`.
+
+**New Audit Log Types**
+
+There are a few new audit log types:
+
+- `Signal100Toggled`
+- `Call911Create`
+
+**Images for registered vehicles and vehicle values**
+
+Citizens can now add images to your registered vehicles. Admins are also able to upload previews for vehicle values.
+
+**Improved Live Map Actions**
+
+The live map actions have been improved. Some actions are now stacked in a dropdown menu.
+This change was made to clear up to UI [for future updates](https://github.com/SnailyCAD/snaily-cadv4/issues/1752).
+
+**Pagination fixes**
+
+Several pages didn't yet have pagination. The latest release fixed this.
+
+**Bug fixes**
+
+This release includes several bug fixes and stability improvements.
+
+> [Full Changelog](https://github.com/SnailyCAD/snaily-cadv4/releases/tag/1.67.0)
