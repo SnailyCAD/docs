@@ -1,0 +1,42 @@
+# `sna-call911`
+
+This integration allows a citizen to easily create a 911 call with their current location attached.
+
+## Available Commands
+
+| Command       | Description                                                       |
+| :------------ | :---------------------------------------------------------------- |
+| `/sn-call911` | Creates a 911 call with location attached, add a description too. |
+
+## Showcase
+
+## Installation
+
+1. Download the latest release from the [releases tab](https://github.com/SnailyCAD/fivem-integrations/releases/latest). Make sure to only download the `.zip` files
+2. Create a `[sna]` folder to orginize all your SnailyCAD integrations.
+3. Extract the `.zip` file into the `[sna]` folder.
+4. Add the following to your `server.cfg` file:
+
+```
+ensure sna-call911
+```
+
+## Configuration
+
+To configure this integration, simply add the following to your `server.cfg` file:
+
+:::tip
+If you already did this for a different SnailyCAD integration, you don't have to do it again.
+:::
+
+```cfg
+setr snailycad_url "http://api.example.com/v1"
+setr snailycad_use_postal "true"
+set snailycad_api_key "XXXXXX"
+```
+
+| Setting              | Description                                                                    | Required? |
+| -------------------- | ------------------------------------------------------------------------------ | --------- |
+| snailycad_url        | The URL to your SnailyCAD API. (Example: `https://cad-api.mycommunity.com/v1`) | Yes       |
+| snailycad_api_key    | The API key to your SnailyCAD API.                                             | Yes       |
+| snailycad_use_postal | Whether or not to use the postal code when creating calls (Tow, Taxi, 911)     | No        |
