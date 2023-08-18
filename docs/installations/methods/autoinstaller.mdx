@@ -33,9 +33,15 @@ node autoinstaller.mjs
 ### Filling environment questions (.env file)
 
 :::caution
-Never edit the `apps/client/.env` or `apps/api/.env` files directly. Always edit the root `.env` file.
+**WARNING:** Please, do not edit `apps/client/.env` or `apps/api/.env` directly. Always edit the root `.env` file.
+
+When changing something in the `.env` file after the installation process, make sure to run the following steps:
+
+1. `node scripts/copy-env.mjs --client --api`
+2. `yarn turbo run build --filter=@snailycad/client`
 
 [Read more here](/docs/guides/env/how-to-properly-update-env)
+
 :::
 
 - `POSTGRES_PASSWORD`: The password to the PostgreSQL database.

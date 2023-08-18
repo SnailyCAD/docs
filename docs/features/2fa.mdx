@@ -18,4 +18,14 @@ ENCRYPTION_TOKEN=""
 # ...
 ```
 
-Once you've added this to your `.env` file, [follow the steps outlined here](docs/guides/env/how-to-properly-update-env) to properly update your `.env` file.
+:::caution
+
+<span style={{ fontWeight: "bold" }}>Warning:</span> When changing anything in the `.env` file, make
+sure to run the following steps:
+
+1. `node scripts/copy-env.mjs --client --api`
+2. `yarn turbo run build --filter=@snailycad/client`
+
+[Read more here](/docs/guides/env/how-to-properly-update-env)
+
+:::
