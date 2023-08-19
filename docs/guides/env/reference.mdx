@@ -13,7 +13,7 @@ A `.env` file is a special file that is used to store configuration settings for
 The password to the PostgreSQL database.
 
 :::caution
-This password **must not** contain the following characters: `$` or `"` or `'`.
+This password **must not** contain the following characters: `#`, `$`, `"`, `'`.
 :::
 
 ### `POSTGRES_USER`
@@ -45,7 +45,7 @@ The port to the database.
 This is a random value to keep the CAD secured.
 
 :::caution
-This password **must not** contain the following characters: `$` or `"` or `'`.
+This token **must not** contain the following characters: `#`, `$`, `"`, `'`.
 :::
 
 ### `CORS_ORIGIN_URL` & `NEXT_PUBLIC_CLIENT_URL`
