@@ -36,12 +36,14 @@ If you already did this for a different SnailyCAD integration, you don't have to
 
 ```cfg
 setr snailycad_url "http://api.example.com/v1"
-setr snailycad_use_postal "true"
 set snailycad_api_key "XXXXXX"
+setr snailycad_use_postal "true"
+set snailycad_player_leave_auto_off_duty "false"
 ```
 
-| Setting              | Description                                                                    | Required? |
-| -------------------- | ------------------------------------------------------------------------------ | --------- |
-| snailycad_url        | The URL to your SnailyCAD API. (Example: `https://cad-api.mycommunity.com/v1`) | Yes       |
-| snailycad_api_key    | The API key to your SnailyCAD API.                                             | Yes       |
-| snailycad_use_postal | Whether or not to use the postal code when creating calls (Tow, Taxi, 911)     | No        |
+| Setting                              | Description                                                                    | Required? | Default   |
+| ------------------------------------ | ------------------------------------------------------------------------------ | --------- | --------- |
+| snailycad_url                        | The URL to your SnailyCAD API. (Example: `https://cad-api.mycommunity.com/v1`) | Yes       | -         |
+| snailycad_api_key                    | The API key to your SnailyCAD API.                                             | Yes       | -         |
+| snailycad_use_postal                 | Whether or not to use the postal code when creating calls (Tow, Taxi, 911)     | No        | `"false"`  |
+| snailycad_player_leave_auto_off_duty | Whether to automatically set a unit off-duty when they leave the server.       | No        | `"false"` |
