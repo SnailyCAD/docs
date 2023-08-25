@@ -4,16 +4,16 @@ This allows a player to interact with several SnailyCAD features in-game. This i
 
 ## Available Commands
 
-| Command                          | Description                                                                     |
-| :------------------------------- | :------------------------------------------------------------------------------ |
-| `/sn-auth`                       | Authenticate with your SnailyCAD instance using User API Tokens.                |
-| `/sn-whoami`                     | See what user you're currently authenticated as.                                |
-| `/sn-active-unit`                | See your active unit's name & id.                                               |
-| `/sn-set-status`                 | Set the status of your active unit.                                             |
-| `/sn-panic-button`               | Toggle the panic button state of your active unit.                              |
-| `/sn-attach`                     | View active 911 calls and assign/unassign yourself to/from a 911 call.          |
-| `/sn-attach <case-number>`       | Attach yourself to a 911 call with the provided case number.                    |
-| `/sn-traffic-stop <description>` | Create a 911 call (traffic stop) with location and unit automatically attached. |
+| Command                          | Description                                                                                                  |
+| :------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| `/sn-auth`                       | Authenticate with your SnailyCAD instance using your **Personal API Token.** (_CAD -> Account -> API Token_) |
+| `/sn-whoami`                     | See what user you're currently authenticated as.                                                             |
+| `/sn-active-unit`                | See your active unit's name & id.                                                                            |
+| `/sn-set-status`                 | Set the status of your active unit.                                                                          |
+| `/sn-panic-button`               | Toggle the panic button state of your active unit.                                                           |
+| `/sn-attach`                     | View active 911 calls and assign/unassign yourself to/from a 911 call.                                       |
+| `/sn-attach <case-number>`       | Attach yourself to a 911 call with the provided case number.                                                 |
+| `/sn-traffic-stop <description>` | Create a 911 call (traffic stop) with location and unit automatically attached.                              |
 
 ## Installation
 
@@ -42,8 +42,8 @@ set snailycad_player_leave_auto_off_duty "false"
 ```
 
 | Setting                              | Description                                                                    | Required? | Default   |
-| ------------------------------------ | ------------------------------------------------------------------------------ | --------- | --------- |
+| :----------------------------------- | :----------------------------------------------------------------------------- | --------- | --------- |
 | snailycad_url                        | The URL to your SnailyCAD API. (Example: `https://cad-api.mycommunity.com/v1`) | Yes       | -         |
-| snailycad_api_key                    | The API key to your SnailyCAD API.                                             | Yes       | -         |
-| snailycad_use_postal                 | Whether or not to use the postal code when creating calls (Tow, Taxi, 911)     | No        | `"false"`  |
+| snailycad_api_key                    | The global API key to your SnailyCAD API. (_CAD -> CAD Settings -> API Token_) | Yes       | -         |
+| snailycad_use_postal                 | Whether or not to use the postal code when creating calls (Tow, Taxi, 911)     | No        | `"false"` |
 | snailycad_player_leave_auto_off_duty | Whether to automatically set a unit off-duty when they leave the server.       | No        | `"false"` |
