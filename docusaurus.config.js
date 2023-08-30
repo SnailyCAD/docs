@@ -75,11 +75,11 @@ const config = {
             from: "/docs/guides/how-to-install-git",
           },
           {
-            to: "/docs/guides/requirements/how-to-install-node-yarn-npm-linux",
+            to: "/docs/guides/requirements/how-to-install-node-pnpm-npm-linux",
             from: "/docs/guides/how-to-install-node-yarn-npm-linux",
           },
           {
-            to: "/docs/guides/requirements/how-to-install-node-yarn-npm",
+            to: "/docs/guides/requirements/how-to-install-node-pnpm-npm",
             from: "/docs/guides/how-to-install-node-yarn-npm",
           },
           {
