@@ -38,7 +38,7 @@ node autoinstaller.mjs
 When changing something in the `.env` file after the installation process, make sure to run the following steps:
 
 1. `node scripts/copy-env.mjs --client --api`
-2. `yarn turbo run build --filter=@snailycad/client`
+2. `pnpm turbo run build --filter=@snailycad/client`
 
 [Read more here](/docs/guides/env/how-to-properly-update-env)
 
@@ -67,7 +67,7 @@ When changing something in the `.env` file after the installation process, make 
 After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
 
 ```bash
-yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+pnpm run start
 ```
 
 :::tip

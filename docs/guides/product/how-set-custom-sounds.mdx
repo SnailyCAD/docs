@@ -72,7 +72,7 @@ Here you can replace, add or remove sound files. You will notice, not all sounds
 If you are running SnailyCAD standalone, you can run the following command to rebuild the client:
 
 ```bash
-yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
+pnpm run build
 ```
 
   </TabItem>
@@ -94,7 +94,7 @@ docker compose -f production.docker-compose.yml build
 If you are running SnailyCAD standalone, you can run the following command to start SnailyCAD:
 
 ```bash
-yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+pnpm run start
 ```
 
   </TabItem>

@@ -51,7 +51,7 @@ git stash && git pull origin main
 Secondly, we must update dependencies that might've changes from the last release. To do so, run the following command:
 
 ```bash
-yarn
+pnpm install
 ```
 
 ### 4. Configuration
@@ -63,7 +63,7 @@ If there's something that needs to be changed in the .env file, make sure to do 
 Now we must build all the packages & apps again. _(client, schemas, config, types)_
 
 ```bash
-yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
+pnpm run build
 ```
 
 ### 6. Start SnailyCAD
@@ -71,5 +71,5 @@ yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filte
 To bring the CAD back up run the following command:
 
 ```bash
-yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+pnpm run start
 ```
