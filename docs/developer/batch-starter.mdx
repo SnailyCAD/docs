@@ -6,9 +6,5 @@ When using the standalone version you can use this file to start the client and 
 2. Add the following contents to the file:
 
 ```bash
-set "client_command=yarn workspace @snailycad/client start"
-set "api_command=yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
-
-
-concurrently "%client_command%" "%api_command%"
+pnpm run start
 ```

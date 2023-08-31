@@ -1,0 +1,14 @@
+# How to migrate from yarn to pnpm
+
+Since version `1.70.0`, SnailyCAD uses [pnpm](https://pnpm.js.org/) instead of [yarn](https://yarnpkg.com/).
+This is because pnpm is faster and uses less disk space.
+
+## How to migrate
+
+1. Pull the latest changes: `git pull origin main`
+2. Install pnpm, follow our guides for either:
+   - [Windows](/docs/guides/requirements/how-to-install-node-pnpm-npm)
+   - [Linux](/docs/guides/requirements/how-to-install-node-pnpm-npm-linux)
+3. Remove the `node_modules` folder.
+4. Install the dependencies with `pnpm install`.
+5. Get yourself up to update with the latest commands by reading the documentation.

@@ -15,8 +15,8 @@ You can also find [a video version](https://youtu.be/06NiiO8-rIM) of this guide.
 All the items listed below are required to get SnailyCADv4 up and running smoothly.
 
 - [Git](https://git-scm.com/downloads) ([Windows Guide](https://youtu.be/EsNgheQPZs4)) ([Linux Guide](/docs/guides/requirements/how-to-install-git-linux))
-- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/requirements/how-to-install-node-yarn-npm-linux))
-- [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Windows Guide](https://youtu.be/rp308wNdXU8)) ([Linux Guide](/docs/guides/requirements/how-to-install-node-yarn-npm-linux#yarn))
+- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Windows Guide](https://youtu.be/qfo5MaqQgIo)) ([Linux Guide](/docs/guides/requirements/how-to-install-node-pnpm-npm-linux))
+- [pnpm](https://pnpm.io/installation) ([Windows Guide](https://youtu.be/qfo5MaqQgIo)) ([Linux Guide](/docs/guides/requirements/how-to-install-node-pnpm-npm-linux))
 - [PostgreSQL](https://www.postgresql.org/download/) **(version 14 or higher)** ([Video Guide](https://www.youtube.com/watch?v=ZKWZvafvqwM)) ([Linux Guide](/docs/guides/requirements/how-to-install-postgresql-linux))
 
 ## Getting Started
@@ -69,10 +69,8 @@ cd snaily-cadv4
 Now we will install the dependencies that are required for SnailyCADv4 to function properly.
 
 ```bash
-yarn
+pnpm install
 ```
-
-<img src="/gifs/yarn.gif" alt="yarn install short clip" loading="lazy" width="600px" />
 
 ### 3. Configuration
 
@@ -109,7 +107,7 @@ Now we can start configuring the variables in the `.env` file. See next step [3.
 When changing something in the `.env` file after the installation process, make sure to run the following steps:
 
 1. `node scripts/copy-env.mjs --client --api`
-2. `yarn turbo run build --filter=@snailycad/client`
+2. `pnpm turbo run build --filter=@snailycad/client`
 
 [Read more here](/docs/guides/env/how-to-properly-update-env)
 
@@ -220,7 +218,7 @@ Now we must build all the packages & apps. _(client, schemas, config, types)_
 _**Note:** this process might take 2 to 5minutes_
 
 ```bash
-yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
+pnpm run build
 ```
 
 <img src="/gifs/turbo-build.gif" alt="turbo build short clip" loading="lazy" width="600px" />
@@ -230,7 +228,7 @@ yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filte
 After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
 
 ```bash
-yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+pnpm run start
 ```
 
 :::tip

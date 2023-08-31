@@ -46,7 +46,7 @@ Now that we have updated the `.env` file, we need to rebuild the client and copy
 If you are running SnailyCAD standalone, you can run the following command to rebuild the client:
 
 ```bash
-node scripts/copy-env.mjs --client --api && yarn turbo run build --filter="{packages/**/**}" && yarn turbo run build --filter="{apps/**/**}"
+node scripts/copy-env.mjs --client --api && pnpm run build
 ```
 
   </TabItem>
@@ -70,7 +70,7 @@ Now that we have updated the `.env` file, we can start SnailyCAD again.
 If you are running SnailyCAD standalone, you can run the following command to start SnailyCAD:
 
 ```bash
-yarn run concurrently "yarn workspace @snailycad/client start" "yarn workspace @snailycad/api generate && yarn workspace @snailycad/api start"
+pnpm run start
 ```
 
   </TabItem>

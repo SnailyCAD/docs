@@ -9,8 +9,7 @@ sidebar_position: 4
 All the items listed below are required to get the CAD up and running smoothly.
 
 - [Git](https://git-scm.com/downloads) ([Windows Guide](https://youtu.be/EsNgheQPZs4)) ([Linux Guide](/docs/guides/requirements/how-to-install-git-linux))
-- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Video Guide](https://youtu.be/rp308wNdXU8))
-- [yarn](https://npmjs.com/package/yarn) **(`npm install --global yarn`)** ([Video Guide](https://youtu.be/rp308wNdXU8))
+- [Node.js](https://nodejs.org) **(18.x is supported.)** ([Video Guide](https://youtu.be/qfo5MaqQgIo))
 - [Docker Desktop](https://docker.com/get-started) (Windows), [Docker](https://docker.com/get-started) (Linux)
 
 ## Getting Started
@@ -58,17 +57,7 @@ cd snaily-cadv4
 
 <img src="/gifs/cd.gif" alt="Change directory short clip" loading="lazy" width="600px" />
 
-### 2. Installing dependencies
-
-Now we will install the dependencies that are required for SnailyCADv4 to function properly.
-
-```bash
-yarn
-```
-
-<img src="/gifs/yarn.gif" alt="yarn install short clip" loading="lazy" width="600px" />
-
-### 3. Configuration
+### 2. Configuration
 
 Configuration can be a bit complicated, so pay close attention. The following steps will help you configure SnailyCADv4's environment variables.
 These variables are used by SnailyCADv4 to connect to the database and store special tokens used for SnailyCAD's features.
@@ -92,7 +81,7 @@ cp .env.example .env
 
 Now we can start configuring the variables in the `.env` file. See next step [3.1 .env file](#31-env-info).
 
-#### 3.1 .env info
+#### 2.1 .env info
 
 - `POSTGRES_PASSWORD`: The password to the PostgreSQL database.
 - `POSTGRES_USER`: The username to the PostgreSQL database.
@@ -176,19 +165,7 @@ DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_
 
 </details>
 
-#### 3.2 Moving env file
-
-Once you've **correctly configured all the variables**, we must copy the `.env` file to the client and API:
-
-**Windows/Linux:**
-
-```bash
-node scripts/copy-env.mjs --client --api
-```
-
-<img src="/gifs/copy-env.gif" alt="copy env short clip" loading="lazy" width="600px" />
-
-#### 3.3 Docker network
+#### 2.2 Docker network
 
 Now we must setup a Docker network so the CAD can communicate with it's services.
 
@@ -196,7 +173,7 @@ Now we must setup a Docker network so the CAD can communicate with it's services
 docker network create cad_web
 ```
 
-### 4. Building everything
+### 3. Building everything
 
 Now we must build the Docker container. This will automatically install the dependencies build the packages and more.
 
@@ -208,7 +185,7 @@ This command must **always** be run after changing the `.env` file
 docker compose -f production.docker-compose.yml build
 ```
 
-### 5. Starting SnailyCADv4
+### 4. Starting SnailyCADv4
 
 After completing all the steps above, we are ready to startup the CAD. To do this run the following command:
 
@@ -227,7 +204,7 @@ docker compose -f production.docker-compose.yml up -d
 
 :::
 
-### 6. Accessing SnailyCADv4
+### 5. Accessing SnailyCADv4
 
 :::info Port forwarding
 The ports set for the client and API **must be forwarded** in your firewall if you're **not** using some proxy.
