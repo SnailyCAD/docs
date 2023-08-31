@@ -76,11 +76,11 @@ const config = {
           },
           {
             to: "/docs/guides/requirements/how-to-install-node-pnpm-npm-linux",
-            from: "/docs/guides/how-to-install-node-yarn-npm-linux",
+            from: "/docs/guides/requirements/how-to-install-node-yarn-npm-linux",
           },
           {
             to: "/docs/guides/requirements/how-to-install-node-pnpm-npm",
-            from: "/docs/guides/how-to-install-node-yarn-npm",
+            from: "/docs/guides/requirements/how-to-install-node-yarn-npm",
           },
           {
             to: "/docs/guides/requirements/how-to-install-postgresql-linux",
