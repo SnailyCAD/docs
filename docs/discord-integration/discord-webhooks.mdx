@@ -1,17 +1,6 @@
-# Discord Roles Integration
+# Discord Webhooks Integration
 
-SnailyCADv4 supports Discord based role permisions. Below you'll find out how to get access to it.
-
-### How this feature works
-
-1. Enable it via the CAD-settings
-2. Fetch the roles you'd like to set for each permission
-3. Save
-
-**Later**
-
-- User's permisions get updated, Discord's roles are also updated
-- User authentications via Discord, user's permissions are updated based on their roles.
+Learn how to setup Discord Webhooks in SnailyCADv4.
 
 ## Create Discord application
 
@@ -30,17 +19,14 @@ If you already have an application created in the Discord portal, you can skip t
 
 We'll now have to create the bot in the application.
 
-:::caution
-
-The bot must have `Manage Roles` permissions and the bot's role must also **be above all the roles
-that you'd want to add to users**
-
-:::
-
 1. Head to the `Bot` tab
 2. Create a new bot
 3. Invite this bot to your Discord server
 4. Copy the bot token and save for [#update-env](#update-env)
+
+:::caution
+The bot must have `Manage Webhooks` permissions
+:::
 
 ## Update `.env`
 
