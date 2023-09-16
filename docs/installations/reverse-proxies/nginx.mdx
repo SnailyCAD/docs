@@ -1,11 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 # NGINX Reverse Proxy Guide
 
-:::caution
-This guide is targetted for Linux (Debian, Ubuntu) users. [A Windows based guide can be found here](/docs/installations/reverse-proxies/nginx-windows)
+:::info
+This guide targets Windows and Linux (Debian-based) users.
 :::
 
 ## Terminology
@@ -16,158 +19,509 @@ This guide is targetted for Linux (Debian, Ubuntu) users. [A Windows based guide
 
 ## 1. Installing NGINX
 
-First, we need to install NGINX. To do this, we will use the `apt` package manager. To install NGINX, run the following command:
+First, we need to install NGINX. To do this, we will use the `winget` package manager for Windows or `apt` package manager for Linux.
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
 
 ```bash
-sudo apt install nginx
+winget install nginx
 ```
 
-## 2. Configuring NGINX
-
-Next, we need to configure NGINX. To do this, we will use the `nano` text editor. We will separate the configuration for the API and the client.
-
-### 2.1 Configuring NGINX for SnailyCAD's API
-
-To open the NGINX configuration file, run the following command:
+  </TabItem>
+  <TabItem value="linux" label="Linux">
 
 ```bash
-sudo nano /etc/nginx/sites-available/cad-api
+# Update the package manager database
+sudo apt update
+# Install the nginx package
+sudo apt install nginx -y
 ```
 
-Now, we need to add the following configuration to the file:
+  </TabItem>
+</Tabs>
+
+## 2. Starting NGINX
+
+To start NGINX you must open a command prompt or terminal and run the following command:
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
 
 ```bash
-# SnailyCAD API Reverse Proxy
-server {
-  # Replace `example.com` with your domain name.
-  server_name cad-api.example.com;
+cd C:\nginx
+nginx
+```
 
-  location / {
-    proxy_pass http://localhost:8080; # The API port of SnailyCAD's API (Default: 8080)
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_cache_bypass $http_upgrade;
-  }
+  </TabItem>
+  <TabItem value="linux" label="Linux">
 
+```bash
+sudo systemctl start nginx
+```
 
-  # Security headers
-  add_header X-XSS-Protection          "1; mode=block" always;
-  add_header X-Content-Type-Options    "nosniff" always;
-  add_header Referrer-Policy           "no-referrer" always;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-  add_header X-DNS-Prefetch-Control on;
-  add_header Cross-Origin-Resource-Policy "same-site";
+  </TabItem>
+</Tabs>
 
-  # keep this as-is unless you know what you're doing.
-  # for SSL, see step 6
-  listen 80;
+If you have done everything correctly, you should be able to access the NGINX welcome page at http://localhost.
+
+:::tip
+Keep this command prompt open. You will need to run some more commands in this command prompt.
+:::
+
+## 3. Configuring NGINX
+
+### 3.1. Setting `client_max_body_size`
+
+To allow for larger uploads, we must set this value to `100M`. Open the `C:\nginx\conf\nginx.conf` (Windows) or `/etc/nginx/nginx.conf` (Linux) file and add the following code to the `http` block:
+
+```bash
+http {
+  # ...
+  client_max_body_size 100M;
+  # ...
+}
+```
+
+:::tip upload sizes
+This will allow uploads up to 100MB. If you want to limit the upload size to a smaller size, you can change the value to something else. For example, `10M` will limit the upload size to 10MB.
+:::
+
+### 3.2. Setting `server_names_hash_bucket_size`
+
+To allow for longer domain names, we must set this value to `64`. Open the `C:\nginx\conf\nginx.conf` (Windows) or `/etc/nginx/nginx.conf` (Linux) file and add the following code to the `http` block:
+
+```bash
+http {
+  # ...
+  server_names_hash_bucket_size 64;
+  # ...
 }
 ```
 
 :::tip
-To save the file, press `CTRL + X` and then `Y` to confirm.
+A full example of the `nginx.conf` file can be found further down this page.
 :::
 
-### 2.2 Configuring NGINX for SnailyCAD's client (UI)
+### 3.3. Configuring the API
 
-Again, to open the NGINX configuration file, run the following command:
+First, we need to configure the API. Open the `C:\nginx\conf\nginx.conf` (Windows) or `/etc/nginx/nginx.conf` (Linux) file and add the following code to the `http` block:
 
-```bash
-sudo nano /etc/nginx/sites-available/cad-client
-```
-
-Now, we need to add the following configuration to the file:
+Make sure to replace the marked examples with your own values.
 
 ```bash
-# SnailyCAD Client Reverse Proxy
-server {
-  # Replace `example.com` with your domain name.
-  server_name cad.example.com;
+http {
+  # ...
 
-  location / {
-    proxy_pass http://localhost:3000; # The API port of SnailyCAD's client (Default: 3000)
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_cache_bypass $http_upgrade;
+  # SnailyCAD API Reverse Proxy
+  server {
+    # Replace `example.com` with your domain name.
+    server_name cad-api.example.com;
+
+    location / {
+      proxy_pass http://localhost:8080; # The API port of SnailyCAD's API (Default: 8080)
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_cache_bypass $http_upgrade;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+
+    # Security headers
+    add_header X-XSS-Protection          "1; mode=block" always;
+    add_header X-Content-Type-Options    "nosniff" always;
+    add_header Referrer-Policy           "no-referrer" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    add_header X-DNS-Prefetch-Control on;
+    add_header Cross-Origin-Resource-Policy "cross-origin";
+
+    # keep this as-is unless you know what you're doing.
+    # for SSL, see step 6
+    listen 80;
   }
 
-
-  # Security headers
-  add_header X-XSS-Protection          "1; mode=block" always;
-  add_header X-Content-Type-Options    "nosniff" always;
-  add_header Referrer-Policy           "no-referrer" always;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-  add_header X-DNS-Prefetch-Control on;
-  add_header Cross-Origin-Resource-Policy "same-site";
-
-  # keep this as-is unless you know what you're doing.
-  # for SSL, see step 6
-  listen 80;
+  #...
 }
 ```
 
 :::tip
-To save the file, press `CTRL + X` and then `Y` to confirm.
+A full example of the `nginx.conf` file can be found further down this page.
 :::
 
-### 2.3 Verify NGINX configuration
+### 3.4. Configuring the client
+
+Once the API is configured, we must add the client block. Open the `C:\nginx\conf\nginx.conf` (Windows) or `/etc/nginx/nginx.conf` (Linux) file and add the following code to the `http` block:
+
+Make sure to replace the marked examples with your own values.
+
+```bash
+
+http {
+  # ...
+
+  # SnailyCAD Client Reverse Proxy
+  server {
+    # Replace `example.com` with your domain name.
+    server_name cad.example.com;
+
+    location / {
+      proxy_pass http://localhost:3000; # The API port of SnailyCAD's client (Default: 3000)
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection 'upgrade';
+      proxy_set_header Host $host;
+      proxy_cache_bypass $http_upgrade;
+    }
+
+
+    # Security headers
+    add_header X-XSS-Protection          "1; mode=block" always;
+    add_header X-Content-Type-Options    "nosniff" always;
+    add_header Referrer-Policy           "no-referrer" always;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    add_header X-DNS-Prefetch-Control on;
+    add_header Cross-Origin-Resource-Policy "same-site";
+
+    # keep this as-is unless you know what you're doing.
+    # for SSL, see step 6
+    listen 80;
+  }
+
+  # ...
+}
+```
+
+:::tip
+A full example of the `nginx.conf` file can be found below.
+:::
+
+<details>
+  <summary>Complete example `nginx.conf` file</summary>
+
+```bash
+
+#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    server_names_hash_bucket_size 64;
+    client_max_body_size 100M;
+
+    sendfile        on;
+    keepalive_timeout  65;
+    gzip  on;
+
+    # SnailyCAD API Reverse Proxy
+    server {
+      # Replace `example.com` with your domain name.
+      server_name cad-api.example.com;
+
+      location / {
+        proxy_pass http://localhost:8080; # The API port of SnailyCAD's API (Default: 8080)
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+      }
+
+
+      # Security headers
+      add_header X-XSS-Protection          "1; mode=block" always;
+      add_header X-Content-Type-Options    "nosniff" always;
+      add_header Referrer-Policy           "no-referrer" always;
+      add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+      add_header X-DNS-Prefetch-Control on;
+      add_header Cross-Origin-Resource-Policy "cross-origin";
+
+      # keep this as-is unless you know what you're doing.
+      listen 80;
+    }
+
+
+    # SnailyCAD Client Reverse Proxy
+    server {
+      # Replace `example.com` with your domain name.
+      server_name cad.example.com;
+
+      location / {
+        proxy_pass http://localhost:3000; # The API port of SnailyCAD's client (Default: 3000)
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+      }
+
+
+      # Security headers
+      add_header X-XSS-Protection          "1; mode=block" always;
+      add_header X-Content-Type-Options    "nosniff" always;
+      add_header Referrer-Policy           "no-referrer" always;
+      add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+      add_header X-DNS-Prefetch-Control on;
+      add_header Cross-Origin-Resource-Policy "same-site";
+
+      # keep this as-is unless you know what you're doing.
+      listen 80;
+    }
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
+}
+```
+
+</details>
+
+### 3.5 Verify NGINX configuration
 
 To verify the NGINX configuration, run the following command:
 
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
 ```bash
-sudo nginx -t
+cd C:\nginx
+nginx -t
 ```
 
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+nginx -t
+```
+
+  </TabItem>
+</Tabs>
+
 If the configuration is valid, you should see the following output:
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+```bash
+nginx: the configuration file C:\nginx\conf\nginx.conf syntax is ok
+nginx: configuration file C:\nginx\conf\nginx.conf test is successful
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
 
 ```bash
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-## 3. Enabling NGINX configuration
+  </TabItem>
+</Tabs>
 
-Now, we need to enable the NGINX configuration. To do this, run the following commands:
+### 3.6. Restarting NGINX
+
+To update the running nginx with new config, run the following command:
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/cad-api /etc/nginx/sites-enabled/
-sudo ln -s /etc/nginx/sites-available/cad-client /etc/nginx/sites-enabled/
+cd C:\nginx
+nginx -s reload
 ```
 
-## 4. Restarting NGINX
-
-Finally, we need to restart NGINX. To do this, run the following command:
+  </TabItem>
+  <TabItem value="linux" label="Linux">
 
 ```bash
-sudo systemctl restart nginx
+sudo systemctl reload nginx
+```
+
+  </TabItem>
+</Tabs>
+
+:::tip
+This command must be run every time you make changes to the `nginx.conf` file in the `C:\nginx` (Windows) or `/etc/nginx` (Linux) directory.
+:::
+
+## 4. Updating SnailyCAD configuration
+
+You must now update your SnailyCAD instance configuration to use the domain. To do this, open your SnailyCAD instance `.env` file:
+
+```bash
+# This is the URL to your site where the CAD is hosted.
+CORS_ORIGIN_URL="http://cad.example.com"
+
+# This is the URL to your site where the CAD is hosted.
+NEXT_PUBLIC_CLIENT_URL="http://cad.example.com"
+
+# The URL to where the API is hosted.
+NEXT_PUBLIC_PROD_ORIGIN="http://cad-api.example.com/v1"
+
+# The domain of your site. Without any subdomains or paths.
+DOMAIN="example.com"
+```
+
+:::info
+Now SnailyCAD is running behind NGINX. You can now access SnailyCAD by visiting `http://cad.example.com` with the API accessible via `http://cad-api.example.com`.
+:::
+
+## 5. Starting NGINX on boot
+
+To start NGINX when the system is restarted you will need to add a task to the Task Scheduler or systemd (Linux), which will run the NGINX automatically for you.
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+To achieve this on Windows, create a file with name `start.bat` inside `C:\nginx` directory and add the following code.
+
+```bat
+@ECHO OFF
+REM Start Nginx
+tasklist /FI "IMAGENAME eq nginx.exe" 2>NUL | find /I /N "nginx.exe">NUL
+IF NOT "%ERRORLEVEL%"=="0" (
+   REM Nginx is NOT running, so start it
+   start nginx
+   ECHO Nginx started.
+) else (
+   ECHO Nginx is already running.
+)
+```
+
+Once you have added the file you'll need to open Task Scheduler and add a new task. You can follow the steps below to add this task:
+
+1. Open Task Scheduler, and in the `Task Scheduler Library` you will want to click `Create Task...` from the menu on the right, or buy right clicking on the folder.
+2. Give it a name like `Start NGINX`, and select 'Run whether user is logged on or not'.
+3. Click the `Triggers` tab.
+   1. Make a new trigger and in the top drop down select `At startup`.
+   2. Tick `Repeat task every:` and set it to `5 minutes`.
+   3. Click 'OK'.
+4. Click the `Actions` tab.
+   1. Make a new action and select `Start a program` from the top drop down.
+   2. Browse to where the batch script was saved, which should be `C:\nginx\start.bat`.
+   3. Click `OK`.
+5. You can now click `OK` at the bottom os the task and you will need to enter the details of the user the task will run under, this should be the same account that NGINX will be running under.
+
+:::info
+This task will check every 5 minutes to see if NGINX is running, and if it is not it will start a new instance of NGINX.
+:::
+
+  </TabItem>
+
+  <TabItem value="linux" label="Linux">
+
+To achieve this on Linux, run the following commands inside the terminal.
+
+```bash
+# Enable nginx on boot
+sudo systemctl enable nginx
+# Start nginx
+sudo systemctl start nginx
 ```
 
 :::tip
-SnailyCAD is now running behind NGINX. You can now access SnailyCAD by visiting `http://cad.example.com` with the API accessible via `http://cad-api.example.com`.
+An example of the `nginx.service` file can be found below.
 :::
 
-## 5. Enabling Firewall
-
-To enable the firewall, we will use the `ufw` tool. To install `ufw`, run the following command:
+<details>
+  <summary>Example of `/lib/systemd/system/nginx.service` file</summary>
 
 ```bash
-sudo apt install ufw
+# Stop dance for nginx
+# =======================
+#
+# ExecStop sends SIGSTOP (graceful stop) to the nginx process.
+# If, after 5s (--retry QUIT/5) nginx is still running, systemd takes control
+# and sends SIGTERM (fast shutdown) to the main process.
+# After another 5s (TimeoutStopSec=5), and if nginx is alive, systemd sends
+# SIGKILL to all the remaining processes in the process group (KillMode=mixed).
+#
+# nginx signals reference doc:
+# http://nginx.org/en/docs/control.html
+#
+[Unit]
+Description=A high performance web server and a reverse proxy server
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/nginx.pid
+ExecStartPre=/usr/sbin/nginx -t -q -g 'daemon on; master_process on;'
+ExecStart=/usr/sbin/nginx -g 'daemon on; master_process on;'
+ExecReload=/usr/sbin/nginx -g 'daemon on; master_process on;' -s reload
+ExecStop=-/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid
+TimeoutStopSec=5
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
 ```
 
-Now, we need to allow the SSH, HTTP and HTTPS ports. To do this, run the following commands:
+</details>
+
+  </TabItem>
+</Tabs>
+
+## 6. Firewall
+
+To secure your server we recommend to enable firewall, to do that following the instructions below.
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+The first time you run the nginx, opens a window and ask you to give NGINX firewall access.
+
+  </TabItem>
+
+  <TabItem value="linux" label="Linux">
+
+To enable firewall under Linux, we will use the `ufw` tool. To install `ufw`, run the following command:
 
 ```bash
+# Update the package manager database
+sudo apt update
+# Install the ufw package
+sudo apt install ufw -y
+```
+
+Now we need to allow `SSH`, `HTTP` and `HTTPS` ports. To do this, run the following commands:
+
+```bash
+# Allow access to SSH port (22)
 sudo ufw allow ssh
+# Allow access to HTTP port (80)
 sudo ufw allow http
+# Allow access to HTTPS port (443)
 sudo ufw allow https
 ```
 
-Now, we need to enable the firewall. To do this, run the following command:
+Now we need to enable the firewall. To do this, run the following command:
 
 ```bash
 sudo ufw enable
@@ -177,27 +531,96 @@ sudo ufw enable
 You will be asked to confirm the action. Type `y` and press `Enter` to confirm.
 :::
 
-## 6. SSL
+  </TabItem>
+</Tabs>
 
-To enable SSL, we will use the `certbot` tool. To install `certbot`, run the following command:
+## 7. SSL
+
+To enable SSL on Windows or Linux system we have to download some tools.
+
+### 7.1. Installing tools
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+To enable SSL on Windows system, we will use [win-acme](https://github.com/win-acme/win-acme/releases) tool, to generate our SSL certificates.
+
+Download the latest release of win-acme from [here](https://github.com/win-acme/win-acme/releases/latest) (filename: `win-acme.<version>.x64.pluggable.zip`). Once downloaded, extract the archive (`.zip`) to `C:\win-acme` and open `wacs.exe`.
+
+  </TabItem>
+
+  <TabItem value="linux" label="Linux">
+To enable SSL on Linux system, we will use the `certbot` tool. To install `certbot`, run the following command:
 
 ```bash
 sudo apt install certbot python3-certbot-nginx
 ```
 
-Now, we need to generate the SSL certificate. To do this, run the following command:
+  </TabItem>
+</Tabs>
+
+### 7.2. Generating SSL certificates
+
+<Tabs groupId="operation-systems">
+<TabItem value="windows" label="Windows" default>
+
+Once you have opened `wacs.exe`, you should see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme.png)
+
+1. Press **`M` (Create certificate (full options))** then `Enter` to create a new certificate. You should now see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme-m-pressed.png)
+
+2. Press **`2` (Manual Input)** then `Enter`. You should now see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme-manual-input.png)
+
+3. Enter the domains required for your SnailyCAD instance. For example, your client and API URL: `cad.example.com, cad-api.example.com`.
+
+4. Press `Enter` to continue. You should now see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme-manual-input-domains.png)
+
+5. Press **2 (Separate certificate for each host (e.g. sub.example.com))** then `Enter`. You should now see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme-manual-input-domains-2.png)
+
+6. Press **6 ([dns] Create verification records manually)** then `Enter`.
+
+7. Press **2 (RSA Key)** then `Enter`. You should now see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme-store-certificate.png)
+
+8. Press **2 (PEM encoded files (Apache, nginx, etc.))** then `Enter`. It will now ask you to enter the path to where you want to store the certificate. For example, `C:\ssl`. Press `Enter` to continue.
+
+9. Press **1 (None)** then `Enter`. It may ask you for additional steps, press **5 (No additional steps)** then `Enter`. It may also ask you for an installation step, press **3 (No additional installation steps)** then `Enter`.
+
+10. It should now ask you to accept the terms of service. Press `y` then `Enter` to accept the terms of service. It should now generate the SSL certificate. Once it has finished, you should see the following screen:
+
+![win-acme](/nginx-windows/win-acme/win-acme-dns-header-info.png)
+
+11. **Important:** You must now add the DNS records to your domain. For example, if you are using Cloudflare, you must add the DNS records to Cloudflare. Once you have added the DNS records, press `Enter` to continue.
+
+12. Continue following the prompts until it successfully generates the SSL certificate.
+
+13. You can now close `wacs.exe`.
+
+</TabItem>
+
+<TabItem value="linux" label="Linux">
+
+Once you have install the `certbot`, run the following command to generate the SSL certificates for `nginx`:
 
 ```bash
 certbot --nginx
 ```
 
 :::tip
-You will be asked to enter your email address and agree to the terms of service.
-Once accepted the ToS, Certbot will ask you to select the domain name you want to generate the SSL certificate for.
-Select the domain name you want to generate the SSL certificate for and press `Enter`.
+You will be asked to enter your email address and agree to the terms of service. Once accepted the ToS, Certbot will ask you to select the domain name you want to generate the SSL certificate for. Select the domain name you want to generate the SSL certificate for and press `Enter`.
 :::
 
-Now, Certbot will generate the SSL certificate for you. Once it's done, you should see the following output:
+Now Certbot will generate the SSL certificate for you. Once it's done, you should see the following output:
 
 ```bash
 Certificate Deployed
@@ -205,9 +628,130 @@ Successfully deployed certificate for https://cad.example.com
 #...
 ```
 
-## 7. Updating SnailyCAD configuration
+</TabItem>
+</Tabs>
 
-You must now update your SnailyCAD instance configuration to use the SSL certificate. To do this, open your SnailyCAD instance `.env` file:
+### 7.3. Configuring NGINX for SSL
+
+<Tabs groupId="operation-systems">
+<TabItem value="windows" label="Windows" default>
+
+Once you have generated the SSL certificate, you must now configure NGINX to use the SSL certificate. Open the `C:\nginx\conf\nginx.conf` file and add or update the following code to both `server` blocks:
+
+```bash
+# ...
+server {
+  # ...
+
+  # Previous was `listen 80;`:
+  listen 443 ssl http2;
+
+  # Add the following lines:
+  ssl_certificate C:/ssl/xxxxxxxxxxxxx-chain.pem; # The path to your SSL certificate (-chain.pem file)
+  ssl_certificate_key C:/ssl/xxxxxxxxxxxxx-key.pem; # The path to your SSL certificate key (-key.pem file)
+  ssl_session_timeout 5m;
+
+  # ...
+}
+
+# ...
+```
+
+:::tip HTTPS:// REDIRECT
+You can also add a redirect from `http://` to `https://`, by adding the following code to a new `server` block:
+
+```bash
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  server_name _;
+
+  return 301 https://$host$request_uri;
+}
+```
+
+:::
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+Nothing to do, continue to the next section.
+
+</TabItem>
+</Tabs>
+
+### 7.4. Verify NGINX configuration
+
+To verify the NGINX configuration, run the following command:
+
+<Tabs groupId="operation-systems">
+<TabItem value="windows" label="Windows" default>
+
+```bash
+cd C:\nginx
+nginx -t
+```
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+```bash
+nginx -t
+```
+
+</TabItem>
+</Tabs>
+
+If the configuration is valid, you should see the following output:
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+```bash
+nginx: the configuration file C:\nginx\conf\nginx.conf syntax is ok
+nginx: configuration file C:\nginx\conf\nginx.conf test is successful
+```
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+```bash
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+
+</TabItem>
+</Tabs>
+
+### 7.5. Restarting NGINX
+
+To update the running nginx with new config, run the following command:
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+```bash
+cd C:\nginx
+nginx -s reload
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+sudo systemctl reload nginx
+```
+
+  </TabItem>
+</Tabs>
+
+:::tip
+This command must be run every time you make changes to the `nginx.conf` file in the `C:\nginx` (Windows) or `/etc/nginx` (Linux) directory.
+:::
+
+## 8. Updating SnailyCAD configuration
+
+You must now update yout SnailyCAD instance configuration to use the SSL certificate. To do this, stop any running SnailyCAD instance (if exist), open your SnailyCAD instance `.env` file and change the following:
 
 ```bash
 # This is the URL to your site where the CAD is hosted.
@@ -228,13 +772,34 @@ Replace `example.com` with your domain name.
 :::
 
 :::tip
-You can now access SnailyCAD via `https://cad.example.com` with the API accessible via `https://cad-api.example.com`.
+You can now access SnailyCAD via https://cad.example.com with the API accessible via https://cad-api.example.com.
 :::
 
 ## Troubleshooting
 
-If you are having issues with NGINX, you can check the NGINX logs. To do this, run the following command:
+If you are having issues with NGINX, you can check the NGINX logs.
+
+<Tabs groupId="operation-systems">
+  <TabItem value="windows" label="Windows" default>
+
+To enable nginx logs, edit `C:\nginx\conf\nginx.conf` file and uncomment the following line:
+
+```bash
+error_log  logs\error.log;
+```
+
+:::tip
+Reload the NGINX instance to enable `error` logging. After that check the `error.log` file inside `C:\nginx\logs`.
+:::
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+To do this, run the following command:
 
 ```bash
 sudo tail -f /var/log/nginx/error.log
 ```
+
+</TabItem>
+</Tabs>
