@@ -8,4 +8,4 @@
 6. Make your changes
 7. Commit your changes (`git commit -m "Added a cool new feature"`)
 8. Push to the branch (`git push origin my-cool-feature`)
-9. [Open a pull request](https://github.com/SnailyCAD/snaily-cadv4/pulls)
+9. [Open a pull request](https://github.com/SnailyCAD/docs/pulls)
