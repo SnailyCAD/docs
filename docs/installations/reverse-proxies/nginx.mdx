@@ -19,14 +19,18 @@ This guide targets Windows and Linux (Debian-based) users.
 
 ## 1. Installing NGINX
 
-First, we need to install NGINX. To do this, we will use the `winget` package manager for Windows or `apt` package manager for Linux.
+First, we need to install NGINX server on ur machine/server. To do this on Windows system, we download the latest version from (official site)[https://nginx.org/en/download.html]. If we use Linux we use `apt` package manager.
 
 <Tabs groupId="operation-systems">
   <TabItem value="windows" label="Windows" default>
 
-```bash
-winget install nginx
-```
+Click the url with the form of `nginx/Windows-x.x.x` (see the image below), this start the download of an `.zip` file.
+
+![nginx-download](/nginx-windows/download-nginx.png)
+
+Then extract the `nginx-x.x.x.zip` in `C:` drive and rename the dir from `nginx-x.x.x` to `nginx`. After that the nginx folder look like the image below.
+
+![extract-nginx](/nginx-windows/extract-nginx.png)
 
   </TabItem>
   <TabItem value="linux" label="Linux">
