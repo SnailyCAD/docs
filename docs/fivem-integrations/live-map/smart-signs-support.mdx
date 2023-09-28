@@ -5,22 +5,6 @@ This allows dispatchers to view all SmartSigns and allows dispatchers with the `
 
 ## How to use
 
-:::warning Not currently supported
-The latest version of SmartSigns has a bug in the code. It currently will not place the SmartSigns on the correct X-axis.
-A bug report has been opened and we are awaiting a fix.
-
-Once London Studios has pushed a fix for this issue, you will be able to immediately use this feature.
-
-**Manually fixing this issue**
-
-If you are comfortable with editing the code yourself, you can manually update the code to fix this issue:
-
-1. Open the `sv_smartsigns.lua` file and go to line `325`.
-2. Replace `["x"] = v.coords.z,` with `["x"] = v.coords.x,`
-3. Save the file and start/restart the resource.
-
-:::
-
 1. Purchase & Download the latest version of [`SmartSigns`](https://forum.cfx.re/t/smart-signs-customisable-traffic-signs-real-time-edits-configurable-paid-resource/2604493).
 2. Install the resource as `SmartSigns` in your `resources` folder.
 3. Download the latest release of [`sna-live-map`](https://github.com/SnailyCAD/live-map/releases/latest).
