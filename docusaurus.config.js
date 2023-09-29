@@ -18,7 +18,7 @@ const config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         sitemap: {
@@ -27,12 +27,13 @@ const config = {
           filename: "sitemap.xml",
         },
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve("./sidebars/docs.js"),
           showLastUpdateTime: true,
+          path: "docs",
         },
         blog: {
           path: "changelog",
-          editUrl: ({ locale, blogDirPath, blogPath }) =>
+          editUrl: ({ blogDirPath, blogPath }) =>
             `https://github.com/snailycad/docs/edit/main/${blogDirPath}/${blogPath}`,
           editLocalizedFiles: false,
           blogTitle: "SnailyCAD Changelog",
@@ -59,6 +60,16 @@ const config = {
   ],
 
   plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "user-guide",
+        showLastUpdateTime: true,
+        path: "user-guide",
+        routeBasePath: "user-guide",
+        sidebarPath: require.resolve("./sidebars/docs.js"),
+      },
+    ],
     ["@docusaurus/plugin-google-gtag", { trackingID: "G-HE45R7EFY2", anonymizeIP: true }],
     ["@docusaurus/plugin-google-tag-manager", { containerId: "GTM-528C8P8" }],
     [
@@ -146,6 +157,11 @@ const config = {
           docId: "getting-started/index",
           position: "left",
           label: "Documentation",
+        },
+        {
+          to: "user-guide",
+          position: "left",
+          label: "User Guide",
         },
         {
           to: "changelog",
