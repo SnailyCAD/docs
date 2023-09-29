@@ -3,18 +3,32 @@ sidebar_position: 0
 title: "Authentication"
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 Authentication is the first step to using SnailyCAD, and is required to access any of the features.
 This page will explain how to login and signup to your community's instance of SnailyCAD.
+
+<Tabs>
+<TabItem value="login" label="Login" default>
 
 ## Login
 
 If you already have an account on your community's instance of SnailyCAD, you can simply login by going to the URL provided by your community,
 and entering your username and password.
 
+![Login Form](/user-guide/auth/login.png)
+
+</TabItem>
+
+<TabItem value="signup" label="Signup">
+
 ## Signup
 
 If you do not have an account on your community's instance of SnailyCAD, you can signup by going to the URL provided by your community,
 and clicking the "Don't have an account? Register here." link that's placed directly above the login form.
+
+![Signup Link](/user-guide/auth/register-link.png)
 
 :::info
 
@@ -28,3 +42,7 @@ If you do not have the registration code, you will need to get this from your co
 After signing up, some communities may have a review process enabled, which means you will need to wait for an administrator to review your account before you can login.
 If this is the case, you will see a message on the login page stating that your account is pending.
 :::
+
+</TabItem>
+
+</Tabs>
