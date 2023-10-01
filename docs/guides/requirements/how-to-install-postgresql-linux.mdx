@@ -30,7 +30,7 @@ Firslty we must connect to the database via the command line:
 psql -d postgres
 ```
 
-:::caution error: FATAL: role "root" does not exist
+:::warning error: FATAL: role "root" does not exist
 
 Note that you might run into this error, if you try to execute this command as a root user:
 
@@ -56,7 +56,7 @@ psql -d postgres
 
 **Create user**
 
-:::caution
+:::warning
 This username must match the `POSTGRES_USER` in your ENV/.env file.
 :::
 
@@ -72,7 +72,7 @@ This username must match the `POSTGRES_USER` in your ENV/.env file.
 
 **setting a password**
 
-:::caution
+:::warning
 This password must match the `POSTGRES_PASSWORD` in your ENV/.env file.
 :::
 
@@ -82,7 +82,7 @@ This password must match the `POSTGRES_PASSWORD` in your ENV/.env file.
 
 ### Creating SnailyCADv4 database
 
-:::caution
+:::warning
 This database name must match the `POSTGRES_DB` in your ENV/.env file.
 :::
 

@@ -12,7 +12,7 @@ A `.env` file is a special file that is used to store configuration settings for
 
 The password to the PostgreSQL database.
 
-:::caution
+:::warning
 This password **must not** contain the following characters: `#`, `$`, `"`, `'`.
 :::
 
@@ -44,7 +44,7 @@ The port to the database.
 
 This is a random value to keep the CAD secured.
 
-:::caution
+:::warning
 This token **must not** contain the following characters: `#`, `$`, `"`, `'`.
 :::
 
@@ -112,7 +112,7 @@ The port where the client should run on.<br/>**Default:** `3000`
 
 Used to generate encrypted values.<br/>[Generate one here](https://codebeautify.org/generate-random-string)
 
-:::caution
+:::warning
 **This token must be exactly 32 characters long.**
 :::
 
@@ -120,7 +120,7 @@ Used to generate encrypted values.<br/>[Generate one here](https://codebeautify.
 
 The domain you might be using. (Optional, however, recommended)
 
-:::caution WARNING
+:::warning WARNING
 
 1. **You may only set this when using a domain name.**
 2. This **must** be the **TLD** of the domain. (e.g.: `example.com` or `mycommunity.com`)
