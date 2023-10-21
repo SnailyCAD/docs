@@ -4,7 +4,7 @@
 const { themes } = require("prism-react-renderer/dist");
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
   favicon: "/icons/logo.svg",
   title: "SnailyCAD Documentation",
   tagline: "Documentation provided for SnailyCAD",
@@ -183,9 +183,7 @@ const config = {
     prism: {
       theme: themes.github,
       darkTheme: themes.dracula,
-      additionalLanguages: ["lua"],
+      additionalLanguages: ["bash", "json", "lua"],
     },
   },
 };
-
-module.exports = config;
