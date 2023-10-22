@@ -11,6 +11,10 @@ import TabItem from "@theme/TabItem";
 This guide targets Windows and Linux (Debian-based) users.
 :::
 
+:::warning
+Ports `80` and `443` must be open on your server. If you are using a firewall, you must allow these ports.
+:::
+
 ## Terminology
 
 - **API**: The API of SnailyCAD - the backend.
@@ -648,7 +652,8 @@ server {
   # ...
 
   # Previous was `listen 80;`:
-  listen 443 ssl http2;
+  listen 443 ssl;
+  http2 on;
 
   # Add the following lines:
   ssl_certificate C:/ssl/xxxxxxxxxxxxx-chain.pem; # The path to your SSL certificate (-chain.pem file)
