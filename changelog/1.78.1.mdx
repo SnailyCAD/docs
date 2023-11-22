@@ -1,0 +1,20 @@
+---
+date: "2023-11-18"
+---
+
+# Release 1.78.1
+
+This release includes a major bug fix and some other fixes.
+
+**Incorrect behaviour unit merging**
+
+When having `Units Inactivity` set to a value, it would not correctly read the units from the database,
+since it would think the units weren't active for long enough.
+This has been fixed in this release.
+
+**API Build**
+
+SnailyCAD API now requires a build before it can be started. This change should be automatic.
+This should lower memory usage since it doesn't have to build/transpile the API on the fly.
+
+> [Full Changelog](https://github.com/SnailyCAD/snaily-cadv4/releases/tag/1.78.1)
