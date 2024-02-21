@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
 # SnailyCAD Manager Installation
 
 This guide will help you to install SnailyCAD Manager on your operating system of choice, quickly and easily. SnailyCAD Manager is a desktop application that allows you to manage instances of SnailyCAD with ease.
@@ -10,7 +13,7 @@ This guide will help you to install SnailyCAD Manager on your operating system o
 
 Before you start, make sure you have the following requirements installed on your system:
 
-:::tip
+:::important
 SnailyCAD Manager now supports both Windows and Linux with the release of v3!
 :::
 
@@ -23,5 +26,47 @@ SnailyCAD Manager now supports both Windows and Linux with the release of v3!
 
 Please select the operating system you are using to install SnailyCAD Manager:
 
-- [Windows](/docs/installations/methods/manager/windows)
-- [Linux](/docs/installations/methods/manager/linux)
+<Tabs groupId="manager-os">
+  <TabItem value="windows" label="Windows" default>
+  
+[Download the latest version of SnailyCAD Manager](https://github.com/SnailyCAD-Manager/v3/releases/latest/download/snailycad-manager.exe) and run the installer.
+
+SnailyCAD is now installed and ready to use. SnailyCAD Manager v3 is available by default at [`http://localhost:60120`](http://localhost:60120).
+
+Please view the [CLI Guide](/docs/installations/methods/manager/cli) for more information on how to use the command line interface to change SnailyCAD Manager's settings, and more.
+
+:::tip
+SnailyCAD Manager v3 will work with a reverse proxy, if you wish to set one up!
+:::
+
+  </TabItem>
+
+  <TabItem value="linux" label="Linux">
+
+Open your terminal
+
+Run the following command to set yourself as the root user (required):
+
+```bash
+sudo -i
+```
+
+Run the following command to download the latest version of SnailyCAD Manager:
+
+```bash
+pnpm create snailycad-manager
+```
+
+Done 🎉
+
+SnailyCAD Manager v3 is available at `YOUR_SERVER_IP:60120` by default, and is port forwarded by default.
+
+Please view the [CLI Guide](/docs/installations/methods/manager/cli) for more information on how to use the command line interface to change SnailyCAD Manager's settings, and more.
+
+:::tip
+SnailyCAD Manager v3 will work with a reverse proxy, if you wish to set one up!
+:::
+
+  </TabItem>
+
+</Tabs>
