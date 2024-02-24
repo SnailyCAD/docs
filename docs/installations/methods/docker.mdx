@@ -164,7 +164,15 @@ DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_
 
 </details>
 
-#### 2.2 Docker network
+#### 2.2 Copying the .env file
+
+After configuring the `.env` file, we must copy it to the Client and API. This is done by running the following command:
+
+```bash
+node scripts/copy-env.mjs --client --api
+```
+
+#### 2.3 Docker network
 
 Now we must setup a Docker network so the CAD can communicate with it's services.
 
