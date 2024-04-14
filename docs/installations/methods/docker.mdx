@@ -171,6 +171,31 @@ After configuring the `.env` file, we must copy it to the Client and API. This i
 ```bash
 node scripts/copy-env.mjs --client --api
 ```
+#### 2.2.1 Copying the .env file
+ If the above command gave the Error 
+
+```bash
+node:internal/errors:496
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'dotenv' imported from /home/willow/snaily-cadv4/scripts/copy-env.mjs
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1193:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+```
+Run then try step 2.2 again
+```bash
+pnpm i dotenv
+```
 
 #### 2.3 Docker network
 
