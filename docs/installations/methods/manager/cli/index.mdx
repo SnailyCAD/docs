@@ -1,0 +1,40 @@
+---
+title: SnailyCAD Manager CLI
+---
+
+import CodeBlock from "@theme/CodeBlock";
+
+## Introduction
+
+SnailyCAD Manager v3 comes with a CLI tool that allows you to manage SnailyCAD Manager's settings, as well as manage environment variables for each instance. (More features will be added in the future)
+
+## Usage
+
+The CLI tool can be accessed by running `scm` in your terminal. This will show you the available commands/flags.
+
+<CodeBlock>
+
+<span
+  style={{
+    color: "rgba(248, 248, 242, .3)",
+  }}
+>
+  {"> scm\n\n"}
+</span>
+
+{"Usage: scm <command> [options]\n\n"}
+
+<div>
+  <span style={{ color: "rgba(248, 248, 242, .7)" }}>{"Commands:\n"}</span>
+  <span>{"  password-reset   Reset the admin password\n"}</span>
+  <span>
+    {"  env              Read or set environment variables for the provided instance ID\n"}
+  </span>
+  <span>{"  settings         Read or set settings for the provided instance ID\n"}</span>
+  <br />
+  <span style={{ color: "rgba(248, 248, 242, .7)" }}>{"Options:\n"}</span>
+  <span>{"  -h, --help       Show help\n"}</span>
+  <span>{"  -v, --version    Show version number\n"}</span>
+</div>
+
+</CodeBlock>
